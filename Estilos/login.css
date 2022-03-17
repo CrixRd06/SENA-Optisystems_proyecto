@@ -66,12 +66,12 @@ body{
 	margin-left: -25px;
 }
 
-.check{
-	word-break: break-all;
-	margin-left: 40px;
-	margin-right: 55px;
-	margin-top:10px;
-	text-align: center;
-  	text-decoration: none;
-  	display:inline-block;
+.cajaCondiciones{
+	padding: 35px;
+	display: flex;
+	align-items:flex-start;
+	gap: 10px;
+}
+a{
+	text-decoration: none;
 }
