@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(../Imagenes/woman-1851464.jpg) no-repeat center top;
+	background: url(/Imagenes/colinas\ fondo.jpg) no-repeat center top;
 	background-size: cover;
 	font-family: 'Arial', sans-serif;
 }
@@ -9,7 +9,7 @@ body{
 .login-box{
 	width: 650px;
 	height: 400px;
-	background: #009b34;
+	background: rgb(0, 155, 52, 0.8);
 	color: white;
 	position: absolute;
 	top: 20%;
@@ -17,7 +17,6 @@ body{
 	box-sizing: border-box;
 	opacity: 100%;
 	border-radius: 10px;
-	
 }
 
 .formulario_grupo{

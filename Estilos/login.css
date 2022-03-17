@@ -55,6 +55,16 @@ body{
 #submit{
 	margin-top: 30px;
 	margin-left: 115px;
+	background-color: white; /* Green */
+	border: none;
+	border-radius: 8px;
+	color: black;
+	padding: 15px 28px;
+	text-align: center;
+	text-decoration: none;
+	display:block;
+	font-size: 16px;
+	cursor: pointer;
 }
 
 .recordar{
@@ -66,12 +76,24 @@ body{
 	margin-left: -25px;
 }
 
-.check{
-	word-break: break-all;
-	margin-left: 40px;
-	margin-right: 55px;
+section#acept{
+	margin-top: 10px;
+	width: 300px;
+	margin-left: 20px;
+}
+
+#check{
+	margin-left: 20px;
+	margin-right: 5px;
 	margin-top:10px;
 	text-align: center;
   	text-decoration: none;
   	display:inline-block;
+}
+
+#terminos{
+	padding-left: 0px;
+	width: 100px;
+	margin-left: 0;
+	margin-right: 200px;
 }

@@ -33,9 +33,9 @@ header nav ul{
  	text-align: center;
  	font-family: 'Arial', sans-serif;
  	font-size: 20px;
- 	padding:8px;
+ 	padding:4px;
  	margin-top: -160px;
- 	margin-left: 120px;
+ 	margin-left: 170px;
  	margin-bottom: 50px;
  }
 
@@ -46,7 +46,7 @@ header nav ul li{
 header nav ul li a{
 	text-decoration: none;
 	color: black;
-	padding:10px 15px;
+	padding:8px 8px;
 	display:block;
 }
 
@@ -98,9 +98,8 @@ header nav ul input{
 	width: 100%;
 }
 
-
 .comprar {
-	margin-top: 170px;
+	margin-top: 150px;
   background-color: #4CAF50; /* Green */
   border: none;
   border-radius: 8px;
@@ -130,7 +129,7 @@ header nav ul input{
 }
 
 .agregar:hover {
-  background-color: #3e8e41;
+  background-color: #f2f2f2;
 }
 
 .info{
@@ -143,22 +142,142 @@ header nav ul input{
 	font-size: 35px;
 }
 
+/*Inicio parte footer*/
 
 footer{
 	position: absolute;
 	left: -20px;
+	top: 100%;
 	right: 30px;
-	bottom: -20px;
-	height: 30px;
 	width: 1263px;
-	color: white;
-	background: #009b34;
+	background:  #f7f7f7;
 	text-align: center;
 }
 
-footer h3{
-	color:white;
+/* Inicio Menu rapido */
+
+#menu-r{
+	width: 200px;
+	text-align: left;
+	color:#009b34;
+	font-size: x-large;
+	margin-top: 60px;
+	margin-left: 60px;
+
 }
+
+footer nav#menurap{
+	text-align: left;
+	width:400px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+footer nav#menurap ul li{
+	list-style: none;
+	padding: 8px 8px;
+	margin-right: 0px;
+	font-size: 18px;
+}
+
+footer nav#menurap ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer nav#menurap ul li a{
+	text-decoration: none; 
+	color: #000000;
+	display:block;
+}
+
+/* fin Menu rapido */
+
+/* Inicio mapa */
+
+#ubica{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-left:490px;
+	margin-top: -36px;
+}
+
+footer>div.mapa{
+	margin-left:465px;
+	margin-top: -135px;
+	width:350px;
+	height:330px;
+}
+
+/* Fin mapa */
+
+/* Inicio redes sociales */
+
+
+#social{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-left:880px;
+	margin-top: -38px;
+}
+
+footer>nav.redes{
+	text-align: right;
+	width: 350px;
+	margin-left: 850px;
+	color: #009b34;
+	margin-top: -260px;
+}
+
+footer>nav.redes ul{
+	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 40px;
+	padding: 8px;
+}
+
+footer nav.redes ul li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+footer nav.redes ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer nav.redes ul li a{
+	text-decoration: none; 
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+footer nav.redes ul li a#face{
+	color: #3b5998
+}
+
+footer nav.redes ul li a#what{
+	color: #25D366
+}
+
+
+/* Fin redes sociales */
+
+footer h3{
+	color:#009b34;
+	text-align: center;
+}
+
+/* Fin Footer */
 
 @media(max-width:600px){
 	nav ul{
