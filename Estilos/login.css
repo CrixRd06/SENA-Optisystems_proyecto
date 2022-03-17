@@ -76,28 +76,6 @@ body{
 	margin-left: -25px;
 }
 
-<<<<<<< HEAD
-section#acept{
-	margin-top: 10px;
-	width: 300px;
-	margin-left: 20px;
-}
-
-#check{
-	margin-left: 20px;
-	margin-right: 5px;
-	margin-top:10px;
-	text-align: center;
-  	text-decoration: none;
-  	display:inline-block;
-}
-
-#terminos{
-	padding-left: 0px;
-	width: 100px;
-	margin-left: 0;
-	margin-right: 200px;
-=======
 .cajaCondiciones{
 	padding: 35px;
 	display: flex;
@@ -106,5 +84,4 @@ section#acept{
 }
 a{
 	text-decoration: none;
->>>>>>> f5cb898c4135a9eb2ad3c6de77e12b793fd74954
 }
