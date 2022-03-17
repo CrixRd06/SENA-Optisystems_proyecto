@@ -76,6 +76,7 @@ body{
 	margin-left: -25px;
 }
 
+<<<<<<< HEAD
 section#acept{
 	margin-top: 10px;
 	width: 300px;
@@ -96,4 +97,14 @@ section#acept{
 	width: 100px;
 	margin-left: 0;
 	margin-right: 200px;
+=======
+.cajaCondiciones{
+	padding: 35px;
+	display: flex;
+	align-items:flex-start;
+	gap: 10px;
+}
+a{
+	text-decoration: none;
+>>>>>>> f5cb898c4135a9eb2ad3c6de77e12b793fd74954
 }

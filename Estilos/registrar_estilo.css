@@ -53,14 +53,9 @@ body{
 	margin-top: 30px;
 	margin-left: 260px;
 }
-
-
-.check{
-	word-break: break-all;
-	margin-left: 40px;
-	margin-right: 55px;
-	margin-top:10px;
-	text-align: center;
-  	text-decoration: none;
-  	display:block;
+.cajaCondiciones{
+	padding: 35px;
+	display: flex;
+	align-items:flex-start;
+	gap: 10px;
 }
