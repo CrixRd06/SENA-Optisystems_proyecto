@@ -6,13 +6,51 @@ body{
 	font-family: sans-serif;
 }
 
+
+header{
+	background-color: rgb(0, 0, 0, 0.4);
+}
+
+header .menu{
+	float: right;
+	line-height: 100px;
+	margin-right: 30px;
+	margin-top: 20px;
+}
+
+header .menu a{
+	display: inline-block;
+	padding: 15px;
+	line-height: normal;
+	text-decoration: none;
+	color: white;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 25px;
+	margin-right: 5px;
+}
+header .menu a:hover{
+	background-color: rgb(128, 128, 128, 0.5);
+}
+
+header i{
+	margin-right: 10px;
+}
+
+header img{
+	width:10%;
+	height:10%;
+	margin-left:20px;
+	margin-top: 10px;
+}
+
 .login-box{
 	width: 400px;
 	height: 340px;
-	background: #009b34;
+	background: rgb(0, 155, 52, 0.8);
 	color: white;
 	position: absolute;
-	top: 20%;
+	top: 30%;
 	left: 60%;
 	box-sizing: border-box;
 	opacity: 100%;

@@ -6,10 +6,17 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Crear cuenta nueva</title>
 	<link rel="stylesheet" href="/Estilos/registrar_estilo.css">
-	<link rel="stylesheet" href="../Estilos/registrar_estilo.css">
+	<link rel="stylesheet" href="../Estilos/all.css">
 </head>
 
 <body>
+	<header>
+		<img src="/Imagenes/Kf optica sin fondo.png" alt="">
+		<nav class="menu">
+			<a href="../html/login.html"><i class="fa-solid fa-circle-arrow-left"></i>Volver</a>
+		</nav>
+	</header>
+
 	<div class=login-box>
 		<!-- creacion de formulario -->
 		<h1>Crear cuenta nueva</h1>
@@ -23,22 +30,22 @@
 			<!-- apellidos -->
 			<div class="formulario_grupo">
 				<label for="apellidos" class="apellidos">Apellidos</label>
-				<input type="apellidos" class="formulario-input" name="apellidos" placeholder="Ingrese sus apellidos"
+				<input type="text" class="formulario-input" name="apellidos" placeholder="Ingrese sus apellidos"
 					required>
 			</div>
 			<!-- email -->
 			<div class="formulario_grupo">
 				<label for="email" class="email">Email</label>
-				<input type="text" class="formulario-input" name="email" placeholder="Ingrese su email" required>
+				<input type="email" class="formulario-input" name="email" placeholder="Ingrese su email" required>
 			</div>
 
 			<!-- contraseña -->
 			<div class="formulario_grupo">
 				<label for="password" class="password">Contraseña</label>
 				<input type="password" class="formulario-input" name="password" placeholder="Ingrese su contraseña"
-					required>
+				pattern="[A-Za-z0-9]{8,12}" title="Escriba su contraseña con mayusculas y numeros, el minimo es de 8 y el maximo es de 12"	required>
 			</div>
-			<input type="submit" id="submit" value="Crear cuenta">
+			<input type="submit" id="crearc" value="Crear cuenta">
 			<!-- Creación de una checkbox -->
 			<div class="cajaCondiciones">
 				<input type="checkbox" class="inputch" required />
