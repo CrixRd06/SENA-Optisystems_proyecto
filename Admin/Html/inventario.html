@@ -3,13 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>produuctos</title>
-	<link rel="stylesheet" type="text/css" href="Estilos/estilosinventario.css">
+	<title>productos</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilosinventario.css">
 	<link rel="stylesheet" type="text/css" href="Estilos/all.css">
 </head>
 <body>
-	<h1>INVENTARIO</h1>
+
+<!-- Header-->
+<header class="header">
+	<div class="container">
+	<div class="btn-menu">
+		<label for="btn-menu">☰</label>
+	</div>
+		<div class="logo">
+			<img src="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+		</div>
+		<nav class="menu">
+			<a href="../../indexprincipal.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt="">  Cerrar sesión</a>
+		</nav> 
+	</div>
+</header>
+<div class="capa"></div>
+<!-- Header -->
+<!-- Menu lateral -->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+< class="cont-menu">
+	<nav>
+		<a href="#"><i class="fa-light fa-house"></i>Inicio</a>
+		<a href="#">Productos</a>
+		<a href="#">Domicilios</a>
+		<a href="#">Citas</a>
+		<a href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/inventario.html">Inventario</a>
+		<a href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/proveedores.html">Proveedores</a>
+	</nav>
+	<label for="btn-menu">✖️</label></class>
+</div>
+</div>
+<!-- Fin menu lateral -->
+<br>
+<br>
 <table>
+	
 	<caption>GESTION DE PRODUCTOS</caption>
 	<br>
 	<br>
@@ -63,51 +98,151 @@
 	</td>
 	</tr>
 </table>
-<br>	
-<br>	
-<br>	
-
-<input type="checkbox" id="btn-modal">
-<label for="btn-modal" class="lbl-modal">agregar provedores</label>
-<div class="modal">
-	<div class="contenedor">
-	    <header>agregar-producos</header>	
-	    <label for="btn-modal">X</label>
-	    <div class="contenido">
-	    	<section class="form-register">
-	    		<h1>nombre</h1>
-	    		<input class="submit" type="text" name="nombre" placeholder="nombre">
-	    		<h1>cantidad</h1>
-	    		<input class="controls" type="text" name="cantidad" placeholder="cantidad">
-	    		<h1>precio de compras</h1>
-	    		<input class="controls" type="text" name="precio de compra" placeholder="preio de compra">
-	    		<h1>precio de ventas</h1>
-	    		<input class="controls" type="text" name="precio de venta" placeholder="precio de venta">
-	    		<br>	
-	    		<br>	
-	    		<br>	
-                <input type="checkbox" id="mln-modal">
-                <label for="mln-modal" class="mnl-modal">	
-                <div class="todal">
-                    <div class="conter">
-	                    <header>observaciones</header>
-	                    <label for="mln-modal">x</label>
-	                    <div class="contenido">
-	    	                <section class="form-register" name="producto">
-	    		            <h1>observaciones</h1>
-	    		            <option value="	">seleccionar producto</option>
-	    		            <h1>observacionces</h1>
-	    		            <input type="checkbox" type="text" name="observaciones" placeholder="">		
-	    					</section>
-	    					
-	    				</div>
-	    		    </div>
-	    		</div>	
-	    	</section>
-	    </div>
-
-	</div>
 </div>
-
+	  </header>
+	  <!-- Inicio interfáz por pestañas  -->
+	  <div class="contenedorPrincipal warpper">
+		<input class="radio" id="agregar productos" name="group" type="radio" checked/>
+		<input class="radio" id="actualizar" name="group" type="radio" />
+		<input class="radio" id="consultar" name="group" type="radio" />
+		<input class="radio" id="eliminar" name="group" type="radio" />
+		<div class="tabs">
+		  <label class="tab" id="one-tab" for="crear"> agregar producto</label>
+		  <label class="tab" id="two-tab" for="actualizar"
+			>Actualizar Proveedor</label
+		  >
+		  <label class="tab" id="three-tab" for="consultar"
+			>Consultar Proveedor</label
+		  >
+		  <label class="tab" id="four-tab" for="eliminar"
+			>Eliminar Proveedor</label
+		  >
+		</div>
+  
+		<section class="panels">
+		  <h2>Gestión de Proveedores</h2>
+		  <article class="panel" id="one-panel">
+			<form action="">
+			  <h3>
+				agregar producto
+				<i class="fa-solid fa-circle-plus"></i>
+			  </h3>
+			  <input
+				type="text"
+				name="nombre"
+				id=""
+				placeholder="Nombre Proveedor"
+			  />
+			  <input
+				type="email"
+				name="correo"
+				id=""
+				placeholder="Correo Electrónico Proveedor"
+			  />
+			  <input
+				type="text"
+				name="telefono"
+				id=""
+				placeholder="Teléfono Proveedor"
+			  />
+			  <div class="cajaFlex">
+				<button>Limpiar Campos</button>
+				<input type="submit" name="enviar" id="" value="Crear" />
+			  </div>
+			</form>
+		  </article>
+  
+		  <article class="panel" id="two-panel">
+			<form action="">
+			  <h3>
+				Actualizar Proveedor
+				<i class="fa-solid fa-pen"></i>
+			  </h3>
+			  <input
+				type="text"
+				name="nombre"
+				id=""
+				value="Lentes América"
+			  />
+			  <input
+				type="email"
+				name="correo"
+				id=""
+				value="ventas@lentesamerica.com"
+			  />
+			  <input type="text" name="telefono" id="" value="+577447006" />
+			  <div class="cajaFlex">
+				<button>Limpiar Campos</button>
+				<input type="submit" name="enviar" id="" value="Crear" />
+			  </div>
+			</form>
+		  </article>
+  
+		  <article class="panel" id="three-panel">
+			<form action="">
+			  <h3>
+				Consultar Proveedor
+				<i class="fa-solid fa-magnifying-glass"></i>
+			  </h3>
+			  <input
+				type="text"
+				name="nombre"
+				id=""
+				value="Lentes. América"
+				disabled
+			  />
+			  <input
+				type="email"
+				name="correo"
+				id=""
+				value="ventas@lentesamerica.com"
+				disabled
+			  />
+			  <input type="text" name="telefono" id="" value="+577447006" disabled/>
+			  <div class="cajaFlex">
+				<button>Editar</button>
+				<input type="submit" name="editar" id="" value="Regresar" />
+			  </div>
+			</form>
+		  </article>
+  
+		  <article class="panel" id="four-panel">
+			<form action="">
+			  <h3>
+				Eliminar Proveedor
+				<i class="fa-solid fa-circle-minus"></i>
+			  </h3>
+			  <input
+				type="text"
+				name="nombre"
+				id=""
+				value="Lentes América"
+				disabled
+			  />
+			  <input
+				type="email"
+				name="correo"
+				id=""
+				value="ventas@lentesamerica.com"
+				disabled
+			  />
+			  <input type="text" name="telefono" id="" value="+577447006" disabled/>
+			  <div class="cajaFlex">
+				<button>Cancelar</button>
+				<input type="submit" name="enviar" id="" value="Eliminar" />
+			  </div>
+			</form>
+		  </article>
+		</section>
+	  </div>
+	  <!-- Fin interfáz por pestañas  -->
+	</body>
+	<!-- Inicio parte de footer -->
+	<footer>
+	  <h3>
+		@2022 Copyright - Todos los derechos reservados Kf Optica</h3>
+	</footer>
+	<!-- Fin parte de footer -->
+  </html>
 </body>
 </html>
