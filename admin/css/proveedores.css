@@ -104,7 +104,7 @@ form h3 .fa-solid{
     font-size: 20pt !important;
 }
 
-form input, button, select {
+form input, button, select, span {
   background-color: white; /* Green */
   border: none;
   border-radius: 8px;
@@ -121,10 +121,17 @@ form input, button, select {
   gap: 10px;
   width: 100%;
 }
-form button{
-    background-color: gray;
-    color: white;
-    cursor: pointer;
+
+form span:nth-child(1){
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}
+
+form span:nth-child(2){
+  background-color: #009b34;
+  color: white;
+  cursor: pointer;
 }
 
 form button:hover{
@@ -182,21 +189,46 @@ form input[type="submit"]:hover, .botonPrimario:hover{
  .radio{
   display:none;
 } 
-#crear:checked ~ .panels #one-panel,
-#actualizar:checked ~ .panels #two-panel,
-#consultar:checked ~ .panels #three-panel,
-#desactivar:checked ~ .panels #four-panel{
-  display:flex;
-}
-
-#crear:checked ~ .tabs #one-tab,
-#actualizar:checked ~ .tabs #two-tab,
-#consultar:checked ~ .tabs #three-tab,
-#desactivar:checked ~ .tabs #four-tab{
-  background:#009b34;
+.tabChecked{
+  background-color: #009b34;
   color: white;
 }
+.tabChecked:hover{
+  color: white;
+}
+#inputListaProveedores:checked ~ .panels #one-panel,
+#inputAdministraProveedores:checked ~ .panels #three-panel{
+  display:flex;
+}
 /*Fin interfáz por pestañas*/
+table tr th{
+  cursor: pointer;
+  padding:10px 20px;
+  background: #009b34;
+  color: white;
+}
+
+table tr td{
+  cursor: pointer;
+  padding:10px 20px;
+  color: black;
+  text-align: center;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+table tr:nth-child(1){
+  background-color: aqua;
+}
+
+table tr:nth-child(even) {
+  background-color: white;
+}
+table tr:hover{
+  background-color: #ddffe9;
+}
+
 /*Menù lateral*/
 #btn-menu{
 	display: none;

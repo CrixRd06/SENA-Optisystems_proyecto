@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kf optica</title>
 
-  <link rel="stylesheet" href="../Css/proveedores.css" />
+  <link rel="stylesheet" href="../css/proveedores.css" />
   <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
 </head>
 
@@ -19,8 +19,8 @@
     <img src="../Imagenes/logo.png" alt="" class="logo" />
     <nav>
       <ul>
-        <li><a href="proveedores.html" class="seleccionado">Registro Proveedores</a></li>
-        <li><a href="pedidos.html">Historial de Pedidos</a></li>
+        <li><a href="proveedores.html" class="seleccionado">Proveedores</a></li>
+        <li><a href="pedidos.html">Administrar Pedidos</a></li>
         <li><a href="">Ayuda</a></li>
       </ul>
     </nav>
@@ -35,14 +35,14 @@
   <div class="container-menu">
     <div class="cont-menu">
       <nav>
-        <a href="#"><i class="fa-light fa-house"></i>Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Domicilios</a>
-        <a href="#">Citas</a>
-        <a
-          href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/inventario.html">Inventario</a>
-        <a
-          href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/proveedores.html">Proveedores</a>
+        <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
+              <a href="#">Productos</a>
+              <a href="#">Domicilios</a>
+              <a href="citas.html">Citas</a>
+              <a
+                  href="inventario.html">Inventario</a>
+              <a
+                  href="proveedores.html">Proveedores</a>
       </nav>
       <label for="btn-menu">✖️</label>
     </div>
@@ -50,79 +50,101 @@
   <!-- Fin menu lateral -->
   <!-- Inicio interfáz por pestañas  -->
   <div class="contenedorPrincipal warpper">
-    <input class="radio" id="crear" name="group" type="radio" checked />
-    <input class="radio" id="actualizar" name="group" type="radio" />
-    <input class="radio" id="consultar" name="group" type="radio" />
-    <input class="radio" id="desactivar" name="group" type="radio" />
+    <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
+    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
     <div class="tabs">
-      <label class="tab" id="one-tab" for="crear">Crear Proveedor</label>
-      <label class="tab" id="two-tab" for="actualizar">Actualizar Proveedor</label>
-      <label class="tab" id="three-tab" for="consultar">Consultar Proveedor</label>
-      <label class="tab" id="four-tab" for="desactivar">Inhabilitar Proveedor</label>
+      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Proveedores</label>
+      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar Proveedor</label>
     </div>
 
     <section class="panels">
       <h2>Gestión de Proveedores</h2>
-      <article class="panel" id="one-panel">
-        <form action="">
-          <h3>
-            Crear Proveedor
-            <i class="fa-solid fa-circle-plus"></i>
-          </h3>
-          <input type="text" name="nombre" id="" placeholder="Nombre Proveedor" />
-          <input type="email" name="correo" id="" placeholder="Correo Electrónico Proveedor" />
-          <input type="text" name="telefono" id="" placeholder="Teléfono Proveedor" />
-          <div class="cajaFlex">
-            <button>Limpiar Campos</button>
-            <input type="submit" name="enviar" id="" value="Crear" />
-          </div>
-        </form>
-      </article>
 
-      <article class="panel" id="two-panel">
-        <form action="">
-          <h3>
-            Actualizar Proveedor
-            <i class="fa-solid fa-pen"></i>
-          </h3>
-          <input type="text" name="nombre" id="" value="Lentes América" />
-          <input type="email" name="correo" id="" value="ventas@lentesamerica.com" />
-          <input type="text" name="telefono" id="" value="+577447006" />
-          <div class="cajaFlex">
-            <button>Limpiar Campos</button>
-            <input type="submit" name="enviar" id="" value="Crear" />
-          </div>
-        </form>
+      <article class="panel" id="one-panel">
+        <table>
+          <tr>
+            <th>Nombre Empresa</th>
+            <th>Correo electrónico</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+          </tr>
+          <tr onclick="openProvider(this)">
+            <td>Lentes América</td>
+            <td>ventas@lentesamerica.com</td>
+            <td>+577447006</td>
+            <td>calle 8 # 26-4</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>carrera 5 # 37-8</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td>OP Óptica</td>
+            <td>hl</td>
+            <td>hl</td>
+            <td>hk</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td>OP Óptica</td>
+            <td>hl</td>
+            <td>hl</td>
+            <td>hk</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>carrera 5 # 37-8</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>carrera 5 # 37-8</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>carrera 5 # 37-8</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>carrera 5 # 37-8</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td name="v1">OP Óptica</td>
+            <td name="v2">contacto@opOptica.com</td>
+            <td>+573625874</td>
+            <td>carrera 5 # 37-8</td>
+          </tr>
+        </table>
       </article>
 
       <article class="panel" id="three-panel">
         <form action="">
           <h3>
             Consultar Proveedor
-            <i class="fa-solid fa-magnifying-glass"></i>
           </h3>
-          <input type="text" name="nombre" id="" value="Lentes América" disabled />
-          <input type="email" name="correo" id="" value="ventas@lentesamerica.com" disabled />
-          <input type="text" name="telefono" id="" value="+577447006" disabled />
+          <input class="inputsForm" type="text" id="nombre" disabled />
+          <input class="inputsForm" type="email" id="correo" disabled />
+          <input class="inputsForm" type="text" id="telefono" disabled />
+          <input class="inputsForm" type="text" id="direccion" disabled />
           <div class="cajaFlex">
-            <button>Editar</button>
-            <input type="submit" name="editar" id="" value="Regresar" />
-          </div>
-        </form>
-      </article>
-
-      <article class="panel" id="four-panel">
-        <form action="">
-          <h3>
-            Desactivar Proveedor
-            <i class="fa-solid fa-circle-minus"></i>
-          </h3>
-          <input type="text" name="nombre" id="" value="Lentes América" disabled />
-          <input type="email" name="correo" id="" value="ventas@lentesamerica.com" disabled />
-          <input type="text" name="telefono" id="" value="+577447006" disabled />
-          <div class="cajaFlex">
-            <button>Cancelar</button>
-            <input type="submit" name="enviar" id="" value="Desactivar" />
+            <span onclick="editProvider()">Editar</span>
+            <span type="submit" name="editar" id="" >Regresar</span>
           </div>
         </form>
       </article>
@@ -130,6 +152,7 @@
   </div>
   <!-- Fin interfáz por pestañas  -->
 </body>
+<script src="../../scripts/proveedores.js"></script>
 <!-- Inicio parte de footer -->
 <footer>
   <h3>
@@ -137,5 +160,4 @@
   </h3>
 </footer>
 <!-- Fin parte de footer -->
-
 </html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kf optica</title>
-  <link rel="stylesheet" href="../Css/proveedores.css" />
+  <link rel="stylesheet" href="../css/proveedores.css" />
   <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
 </head>
 
@@ -18,9 +18,9 @@
     <img src="../Imagenes/logo.png" alt="" class="logo" />
     <nav>
       <ul>
-        <li><a href="proveedores.html">Registro Proveedores</a></li>
+        <li><a href="proveedores.html">Proveedores</a></li>
         <li>
-          <a href="pedidos.html" class="seleccionado">Historial de Pedidos</a>
+          <a href="pedidos.html" class="seleccionado">Administrar Pedidos</a>
         </li>
         <li><a href="">Ayuda</a></li>
       </ul>
@@ -36,86 +36,121 @@
   <div class="container-menu">
       <div class="cont-menu">
           <nav>
-              <a href="#"><i class="fa-light fa-house"></i>Inicio</a>
+              <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
               <a href="#">Productos</a>
               <a href="#">Domicilios</a>
-              <a href="#">Citas</a>
+              <a href="citas.html">Citas</a>
               <a
-                  href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/inventario.html">Inventario</a>
+                  href="inventario.html">Inventario</a>
               <a
-                  href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/proveedores.html">Proveedores</a>
+                  href="proveedores.html">Proveedores</a>
           </nav>
           <label for="btn-menu">✖️</label>
       </div>
   </div>
   <!-- Fin menu lateral -->
   <div class="contenedorPrincipal warpper">
-    <input class="radio" id="crear" name="group" type="radio" checked />
-    <input class="radio" id="actualizar" name="group" type="radio" />
-    <input class="radio" id="consultar" name="group" type="radio" />
-    <input class="radio" id="desactivar" name="group" type="radio" />
+    <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
+    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
+
     <div class="tabs">
-      <label class="tab" id="one-tab" for="crear">Agregar Pedido</label>
-      <label class="tab" id="two-tab" for="actualizar">Editar Pedido</label>
-      <label class="tab" id="three-tab" for="consultar">Consultar Pedido</label>
-      <label class="tab" id="four-tab" for="desactivar">Cancelar Pedido</label>
+      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Pedidos</label>
+      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar Pedido</label>
     </div>
 
     <section class="panels">
       <h2>Historial de Pedidos</h2>
       <article class="panel" id="one-panel">
-        <form action="">
-          <h3>
-            Agregar Pedido
-            <i class="fa-solid fa-circle-plus"></i>
-          </h3>
-          <input type="date" name="nombre" id="" />
-          <input type="time" name="hora" id="" />
-          <input type="number" name="cantidad" id="" placeholder="Cantidad" />
-          <select name="producto" id="">
-            <option value="">Seleccionar Producto</option>
-            <option value="">Gafas de sol</option>
-            <option value="">Gafas marco delgado</option>
-            <option value="">Gafas Acetato</option>
-            <option value="">Gafas Acero</option>
-            <option value="">Gafas Nilon</option>
-            <option value="">Gafas de aviador clásico</option>
-          </select>
+        <table>
+          <tr>
+            <th>Nombre Producto</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Estado Pedido</th>
+            <th>Anexo</th>
+          </tr>
+          <tr onclick="openProvider(this)">
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
 
-          <input type="file" id="myFile" name="filename" />
+          <tr onclick="openProvider(this)">
+            <td>Lentes de contacto Soflens</td>
+            <td>25</td>
+            <td>11/01/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
 
-          <div class="cajaFlex">
-            <button>Limpiar Campos</button>
-            <input type="submit" name="enviar" id="" value="Crear" />
-          </div>
-        </form>
-      </article>
+          <tr onclick="openProvider(this)">
+            <td>Marco metálico gris</td>
+            <td>3</td>
+            <td>01/05/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
 
-      <article class="panel" id="two-panel">
-        <form action="">
-          <h3>
-            Editar Pedido
-            <i class="fa-solid fa-pen"></i>
-          </h3>
-          <input type="date" name="fecha" value="2022-03-01" id="" />
-          <input type="time" name="hora" value="15:20" id="" />
-          <input type="number" name="cantidad" value="17" id="" placeholder="Cantidad" />
-          <select name="producto" id="">
-            <option value="">Gafas de sol</option>
-            <option value="">Gafas marco delgado</option>
-            <option value="">Gafas Acetato</option>
-            <option value="">Gafas Acero</option>
-            <option value="">Gafas Nilon</option>
-            <option value="">Gafas de aviador clásico</option>
-          </select>
+          <tr onclick="openProvider(this)">
+            <td>Marco Eagle azúl</td>
+            <td>6</td>
+            <td>05/03/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
 
-          <input type="file" id="myFile" name="filename" />
+          <tr onclick="openProvider(this)">
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
 
-          <div class="cajaFlex">
-            <button>Limpiar Campos</button>
-            <input type="submit" name="enviar" id="" value="Actualizar" />
-          </div>
-        </form>
+          <tr onclick="openProvider(this)">
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
+
+          <tr onclick="openProvider(this)">
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>2:15</td>
+            <td>Enviado</td>
+            <td>Factura125_568_GF</td>
+          </tr>
+        </table>
       </article>
 
       <article class="panel" id="three-panel">
@@ -124,52 +159,26 @@
             Consultar Pedido
             <i class="fa-solid fa-magnifying-glass"></i>
           </h3>
-          <input type="date" name="fecha" value="2022-03-01" id="" disabled />
-          <input type="time" name="hora" value="15:20" id="" disabled />
-          <input type="number" name="cantidad" value="17" id="" placeholder="Cantidad" disabled />
-          <select name="producto" id="" disabled>
-            <option value="">Gafas de sol</option>
-            <option value="">Gafas marco delgado</option>
-            <option value="">Gafas Acetato</option>
-            <option value="">Gafas Acero</option>
-            <option value="">Gafas Nilon</option>
-            <option value="">Gafas de aviador clásico</option>
+          <input class="inputsForm" type="text" id="fecha" disabled />
+          <input class="inputsForm" type="text" id="hora" disabled />
+          <input class="inputsForm" type="text" id="cantidad" disabled />
+          <input class="inputsForm" type="text" id="producto" disabled />
+          <input class="inputsForm" type="text" id="estado" disabled />
+          <input class="inputsForm" type="text" id="anexos" disabled />
+
           </select>
 
           <div class="cajaFlex">
-            <button>Editar</button>
-            <button class="botonPrimario" type="submit" name="enviar" id="">Regresar</button>
+            <span onclick="editProvider()">Editar</span>
+            <span class="botonPrimario" type="submit" name="enviar" id="">Regresar</span>
           </div>
         </form>
       </article>
 
-      <article class="panel" id="four-panel">
-        <form action="">
-          <h3>
-            Cancelar Pedido
-            <i class="fa-solid fa-circle-minus"></i>
-          </h3>
-          <input type="date" name="fecha" value="2022-03-01" id="" disabled />
-          <input type="time" name="hora" value="15:20" id="" disabled />
-          <input type="number" name="cantidad" value="17" id="" placeholder="Cantidad" disabled />
-          <select name="producto" id="" disabled>
-            <option value="">Gafas de sol</option>
-            <option value="">Gafas marco delgado</option>
-            <option value="">Gafas Acetato</option>
-            <option value="">Gafas Acero</option>
-            <option value="">Gafas Nilon</option>
-            <option value="">Gafas de aviador clásico</option>
-          </select>
-
-          <div class="cajaFlex">
-            <button>Cancelar</button>
-            <button class="botonPrimario" type="submit" name="enviar" id="">Cancelar</button>
-          </div>
-        </form>
-      </article>
     </section>
   </div>
 </body>
+<script src="../../scripts/pedidos.js"></script>
 <!-- Inicio parte de footer -->
 <footer>
   <h3>
