@@ -1,4 +1,8 @@
 
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 /*Estilos para el encabezado*/
 .header{
 	width: 100%;
@@ -129,6 +133,8 @@
 	font-size: 30px;
 }
 
+/* Fin menu lateral */
+
 table{
     border-collapse: collapse;
     width: 100%;
@@ -147,6 +153,10 @@ td{
 	font-size: 18px;
 }
 
+td>a{
+	color: #009b34;
+}
+
 th{
 	border: 1px solid black;
 }
@@ -155,7 +165,7 @@ th{
 	border: 1px solid black;
 }
 
-section.ver-citas h2{
+section.ver-domicilios h2{
 	margin-top: 130px;
 	margin-left: 80px;
 	font-size: 60px;
@@ -191,4 +201,49 @@ button{
 	display:block;
 	font-size: 16px;
 	cursor: pointer;
+}
+
+.ventana{
+	background-color:white;
+	width:50%;
+	color:black;
+	font-size: 18px;
+	text-align: center;
+	padding: 33px;
+	min-height: 400px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #009b34;
+	position: absolute;
+	left:25%;
+	margin-top: -490px;
+	display:none;
+}
+
+#texto{
+	text-align: left;
+}
+
+#texto h2,h3{
+	color:#00802b	
+
+}
+
+#tabladomi h3{
+	color:#00802b;
+	text-align:left;	
+}
+
+.title>td{
+	color:#009b34;
+}
+
+#close{
+	position: absolute;
+	right:5%;
+	font-size: 25px;
+}
+
+#close i{
+	color: #009b34;
 }

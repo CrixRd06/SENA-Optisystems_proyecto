@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citas</title>
-    <link rel="stylesheet" href="/admin/css/citas.css">
+    <link rel="stylesheet" href="/Admin/Css/citas.css">
+	<link rel="stylesheet" href="/Estilos/all.css">
 </head>
 <body>
 	<!-- Header-->
@@ -18,7 +19,8 @@
 				<img src="/Imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
 			</div>
 			<nav class="menu">
-				<a href="../../indexprincipal.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt="">  Cerrar sesión</a>
+				<a href="../../indexprincipal.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar
+					sesión</a>
 			</nav>
 		</div>
 	</header>
@@ -29,10 +31,10 @@
 <div class="container-menu">
 	<div class="cont-menu">
 		<nav>
-			<a class="icono" href="#"><img src="/Admin/Imagenes/Iconos/bx-home.svg">Inicio</a>
+			<a class="icono" href="/Admin/Html/indexAdmin.html"><img src="/Admin/Imagenes/Iconos/bx-home.svg">Inicio</a>
 			<a href="#">Productos</a>
-			<a href="#">Domicilios</a>
-			<a href="#">Citas</a>
+			<a href="/admin/html/domicilios.html">Domicilios</a>
+			<a href="/admin/html/citas.html">Citas</a>
 			<a href="../Html/inventario.html">Inventario</a>
 			<a href="../Html/proveedores.html">Proveedores</a>
 		</nav>
@@ -40,13 +42,14 @@
 	</div>
 </div>
 <!-- Fin menu lateral -->
-    <section class="registar-inventario">
+<form action="">
+    <section class="ver-citas">
 		<h2>Citas</h2>
-		<div class="registro-producto">
+		<div class="ver-producto">
 			<table>
 				<caption></caption>
 				<!-- Fila -->
-					<tr>
+					<tr class="titulos">
 						<!-- Crear celdas -->
 						<td>#</td>
 						<td>Nombre</td>
@@ -65,20 +68,132 @@
 						<td>JuanitoA@gmail.com</td>
 						<td>3012207211</td>
 						<td>20/06/2022</td>
-						<td>$75.000</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
 					</tr>
 					<tr>
-						<td>1</td>
+						<td>2</td>
 						<td>Juanito alimaña</td>
 						<td>C.C</td>
 						<td>1022120611</td>
 						<td>JuanitoA@gmail.com</td>
 						<td>3012207211</td>
 						<td>20/06/2022</td>
-						<td>$75.000</td>
-					</tr>				
-			</table>
-		</div>
-    </section>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>Juanito alimaña</td>
+						<td>C.C</td>
+						<td>1022120611</td>
+						<td>JuanitoA@gmail.com</td>
+						<td>3012207211</td>
+						<td>20/06/2022</td>
+						<td>
+							<input type="checkbox" name="selecionar" id="" required>
+							<i class="fa-solid fa-trash-can"></i>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</section>
+		<button>Guardar</button>
+	</form>
 </body>
 </html>
