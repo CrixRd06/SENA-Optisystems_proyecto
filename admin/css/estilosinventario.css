@@ -1,6 +1,9 @@
 h1{
 	text-align:left;
 }
+.titulo{
+	margin-top: 80px;
+}
 table{
 	margin-top: 50px;
 	caption-side: bottom;
@@ -70,7 +73,7 @@ td{
 	transform: translateY(-30%);
 }
 
-}
+
 #btn-modal:checked ~ .modal .contenedor{
 	transform: translatey(0%);
 }
@@ -261,7 +264,17 @@ mnl-modal{
 	cursor: pointer;
 	font-size: 18px;
 }
+
+.cont-menu>nav>a{
+	margin-left:0px;
+}
+
+a.icono>img{
+	padding:10px;
+
+}
 /*Fin de Menù lateral*/
+
 .warpper{
 	display:flex;
 	flex-direction: column;
@@ -320,7 +333,7 @@ mnl-modal{
 .contenedorPrincipal{
     display: grid;
     grid-template-columns: 300px auto;
-    padding-top: 148px;
+    padding-top: 15px;
     height: calc(100vh);
 }
 
@@ -430,7 +443,6 @@ section h2{
   
   form input, button, select {
 	background-color: white; /* Green */
-	border: none;
 	border-radius: 8px;
 	color: black;
 	padding: 15px 28px;
