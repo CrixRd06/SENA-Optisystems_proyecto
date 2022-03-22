@@ -26,7 +26,7 @@
     </nav>
     <i class="fa-solid fa-circle-user"></i>
     <div class="cerrarSesion">
-      <a href="../../index.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
+      <a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
       </a>
     </div>
   </header>
@@ -35,14 +35,12 @@
   <div class="container-menu">
     <div class="cont-menu">
       <nav>
-        <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
-              <a href="#">Productos</a>
-              <a href="#">Domicilios</a>
-              <a href="citas.html">Citas</a>
-              <a
-                  href="inventario.html">Inventario</a>
-              <a
-                  href="proveedores.html">Proveedores</a>
+        <a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
+        <a href="#"></i> Productos</a>
+        <a href="/admin/html/domicilios.html"></i> Domicilios</a>
+        <a href="/Admin/Html/citas.html">Citas</a>
+        <a href="../Html/inventario.html">Inventario</a>
+        <a href="../Html/proveedores.html">Proveedores</a>
       </nav>
       <label for="btn-menu">✖️</label>
     </div>
@@ -53,8 +51,10 @@
     <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
     <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
     <div class="tabs">
-      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Proveedores</label>
-      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar Proveedor</label>
+      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista
+        Proveedores</label>
+      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar
+        Proveedor</label>
     </div>
 
     <section class="panels">
@@ -144,7 +144,7 @@
           <input class="inputsForm" type="text" id="direccion" disabled />
           <div class="cajaFlex">
             <span onclick="editProvider()">Editar</span>
-            <span type="submit" name="editar" id="" >Regresar</span>
+            <span type="submit" name="editar" id="">Regresar</span>
           </div>
         </form>
       </article>
@@ -160,4 +160,5 @@
   </h3>
 </footer>
 <!-- Fin parte de footer -->
+
 </html>

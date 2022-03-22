@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,224 +8,197 @@
 	<link rel="stylesheet" type="text/css" href="../css/estilosinventario.css">
 	<link rel="stylesheet" type="text/css" href="../../estilos/all.css">
 </head>
+
 <body>
 
-<!-- Header-->
-<header class="header">
-	<div class="container">
-	<div class="btn-menu">
-		<label for="btn-menu">☰</label>
-	</div>
-		<div class="logo">
-			<img src="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+	<!-- Header-->
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<img src="/imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+			</div>
+			<nav class="menu">
+				<a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
+			</nav>
 		</div>
-		<nav class="menu">
-			<a href="../../indexprincipal.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt="">  Cerrar sesión</a>
-		</nav> 
+	</header>
+	<div class="capa"></div>
+	<!-- Header -->
+	<!-- Menu lateral -->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
+				<a href="#"></i> Productos</a>
+				<a href="/admin/html/domicilios.html"></i> Domicilios</a>
+				<a href="/Admin/Html/citas.html">Citas</a>
+				<a href="../Html/inventario.html">Inventario</a>
+				<a href="../Html/proveedores.html">Proveedores</a>
+			</nav>
+			<label for="btn-menu">✖️</label></class>
+		</div>
 	</div>
-</header>
-<div class="capa"></div>
-<!-- Header -->
-<!-- Menu lateral -->
-<input type="checkbox" id="btn-menu">
-<div class="container-menu">
-<div class="cont-menu">
-	<nav>
-		<a href="#"><i class="fa-light fa-house"></i>Inicio</a>
-		<a href="#">Productos</a>
-		<a href="#">Domicilios</a>
-		<a href="#">Citas</a>
-		<a href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/inventario.html">Inventario</a>
-		<a href="G:/Mi unidad/SENA/Archivos gaes 1/Proyecto/Sitio web proyecto GAES1 2397178B/proveedores.html">Proveedores</a>
-	</nav>
-	<label for="btn-menu">✖️</label></class>
-</div>
-</div>
-<!-- Fin menu lateral -->
-<br>
-<br>
-<h1 class="titulo">inventario</h1>
-<table>
+	<!-- Fin menu lateral -->
 	<br>
-	<tr>
-		<td>CANTIDAD</td>
-		<td>PRODUCTO</td>
-		<td>PRECIO DE COMPRA</td>
-		<td>PRECIO DE VENTA</td>
-		<td>OBSERVACIONES</td>
-		<td>EDITAR-ELIMINAR</td>
-	</tr>
-	<tr>
-		<td>#</td>
-		<td>xxxxxxx</td>
-		<td>$00,00</td>
-		<td>$+</td>
-		<td>!</td>
-		<td>
-	        <label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-	        <label><button><i class="fa-solid fa-trash-can"></i></button></div></td></label>
-	</tr>
-	<tr>
-		<td>#</td>
-		<td>xxxxxxx</td>
-		<td>$00,00</td>
-		<td>$+</td>
-		<td>!</td>
-		<td>
-	        <label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-	        <label><button><i class="fa-solid fa-trash-can"></i></button></div></td></label>
-	</tr>
-	<tr>
-		<td>#</td>
-		<td>xxxxxxx</td>
-		<td>$00,00</td>
-		<td>$+</td>
-		<td>!</td>
-		<td>
-	        <label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-	        <label><button><i class="fa-solid fa-trash-can"></i></button></div></td></label>
-	</tr>
-	<tr>
-		<td>#</td>
-		<td>xxxxxxx</td>
-		<td>$00,00</td>
-		<td>$+</td>
-		<td>!</td>
-		<td>
-	        <label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-	        <label><button><i class="fa-solid fa-trash-can"></i></button></div></td></label>
-	</td>
-	</tr>
-</table>
-</div>
-	  </header>
-	  <!-- Inicio interfáz por pestañas  -->
-	  <div class="contenedorPrincipal warpper">
-		<input class="radio" id="agregar productos" name="group" type="radio" checked/>
+	<br>
+	<h1 class="titulo">inventario</h1>
+	<table>
+		<br>
+		<tr>
+			<td>CANTIDAD</td>
+			<td>PRODUCTO</td>
+			<td>PRECIO DE COMPRA</td>
+			<td>PRECIO DE VENTA</td>
+			<td>OBSERVACIONES</td>
+			<td>EDITAR-ELIMINAR</td>
+		</tr>
+		<tr>
+			<td>#</td>
+			<td>xxxxxxx</td>
+			<td>$00,00</td>
+			<td>$+</td>
+			<td>!</td>
+			<td>
+				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+			</td></label>
+		</tr>
+		<tr>
+			<td>#</td>
+			<td>xxxxxxx</td>
+			<td>$00,00</td>
+			<td>$+</td>
+			<td>!</td>
+			<td>
+				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+			</td></label>
+		</tr>
+		<tr>
+			<td>#</td>
+			<td>xxxxxxx</td>
+			<td>$00,00</td>
+			<td>$+</td>
+			<td>!</td>
+			<td>
+				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+			</td></label>
+		</tr>
+		<tr>
+			<td>#</td>
+			<td>xxxxxxx</td>
+			<td>$00,00</td>
+			<td>$+</td>
+			<td>!</td>
+			<td>
+				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+			</td></label>
+			</td>
+		</tr>
+	</table>
+	</div>
+	</header>
+	<!-- Inicio interfáz por pestañas  -->
+	<div class="contenedorPrincipal warpper">
+		<input class="radio" id="agregar productos" name="group" type="radio" checked />
 		<input class="radio" id="actualizar" name="group" type="radio" />
 		<input class="radio" id="consultar" name="group" type="radio" />
 		<input class="radio" id="eliminar" name="group" type="radio" />
 		<div class="tabs">
-		  <label class="tab" id="one-tab" for="crear"></label>
-		  <label class="tab" id="two-tab" for="actualizar"
-			>AGREGAR PRODUCTO</label >
-		  <label class="tab" id="three-tab" for="consultar"
-			>OBSERVACIONES</label >
-		  <label class="tab" id="four-tab" for="eliminar"
-			>GUARDAR</label
-		  >
+			<label class="tab" id="one-tab" for="crear"></label>
+			<label class="tab" id="two-tab" for="actualizar">AGREGAR PRODUCTO</label>
+			<label class="tab" id="three-tab" for="consultar">OBSERVACIONES</label>
+			<label class="tab" id="four-tab" for="eliminar">GUARDAR</label>
 		</div>
-  
-		<section class="panels">
-		  <h2>inventario</h2>
-		  <article class="panel" id="one-panel">
-			<form action="">
-			  <h3>
-				agregar producto
-				<i class="fa-solid fa-circle-plus"></i>
-			  </h3>
-			  <input
-				type="text"
-				name="nombre"
-				id=""
-				placeholder="Nombre Proveedor"
-			  />
-			  <input
-				type="email"
-				name="correo"
-				id=""
-				placeholder="Correo Electrónico Proveedor"
-			  />
-			  <input
-				type="text"
-				name="telefono"
-				id=""
-				placeholder="Teléfono Proveedor"
-			  />
-			  <div class="cajaFlex">
-				<button>Limpiar Campos</button>
-				<input type="submit" name="enviar" id="" value="Crear" />
-			  </div>
-			</form>
-		  </article>
-  
-		  <article class="panel" id="two-panel">
-			<form action="">
-			  <h3>
-				agregar producto
-				<i class="fa-solid fa-pen"></i>
-			  </h3>
-			  <input
-				type="text"
-				name="nombre"
-				id=""
-				value="nombre"
-			  />
-			  <input
-				type="text"
-				name="cantidad"
-				id=""
-				value="cantidad"
-			  />
-			  <input
-				type="precio"
-				name="precio de compra"
-				id=""
-				value="$00,00"
-			  />
-			  <input type="text" name="precio de venta" id="" value="precio de venta" />
-			  <div class="cajaFlex">
-				<button>cancelar</button>
-				<input type="submit" name="enviar" id="" value="agregar" />
-			  </div>
-			</form>
-		  </article>
-  
-		  <article class="panel" id="three-panel">
-			<form action="">
-			  <h3>
-				observaciones
-				<i class="fa-solid fa-magnifying-glass"></i>
-			  </h3>
-			    <select name="seleccionar producto" id="">
-				  <option value="">seleccionar producto</option>
-				  <option value="">1</option>
-				  <option value="">2</option>
-				  <option value="">3</option>
-				  <option value="">4</option>
-				  <option value="">5</option>	
-			    </select>
 
-			  <input type="text" name="observaciones" id="" value="observaciones" disabled/>
-			  <div class="cajaFlex">
-				<button>cancelar</button>
-				<input type="submit" name="editar" id="" value="guardar" />
-			  </div>
-			</form>
-		  </article>
-  
-		  <article class="panel" id="four-panel">
-			<form action="">
-			  <h3>
-				¿desea guardar?
-				<i class="fa-solid fa-circle-minus"></i>
-			  </h3>
-			  <div class="cajaFlex">
-				<button>Cancelar</button>
-				<input type="submit" name="enviar" id="" value="guardar" />
-			  </div>
-			</form>
-		  </article>
+		<section class="panels">
+			<h2>inventario</h2>
+			<article class="panel" id="one-panel">
+				<form action="">
+					<h3>
+						agregar producto
+						<i class="fa-solid fa-circle-plus"></i>
+					</h3>
+					<input type="text" name="nombre" id="" placeholder="Nombre Proveedor" />
+					<input type="email" name="correo" id="" placeholder="Correo Electrónico Proveedor" />
+					<input type="text" name="telefono" id="" placeholder="Teléfono Proveedor" />
+					<div class="cajaFlex">
+						<button>Limpiar Campos</button>
+						<input type="submit" name="enviar" id="" value="Crear" />
+					</div>
+				</form>
+			</article>
+
+			<article class="panel" id="two-panel">
+				<form action="">
+					<h3>
+						agregar producto
+						<i class="fa-solid fa-pen"></i>
+					</h3>
+					<input type="text" name="nombre" id="" value="nombre" />
+					<input type="text" name="cantidad" id="" value="cantidad" />
+					<input type="precio" name="precio de compra" id="" value="$00,00" />
+					<input type="text" name="precio de venta" id="" value="precio de venta" />
+					<div class="cajaFlex">
+						<button>cancelar</button>
+						<input type="submit" name="enviar" id="" value="agregar" />
+					</div>
+				</form>
+			</article>
+
+			<article class="panel" id="three-panel">
+				<form action="">
+					<h3>
+						observaciones
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</h3>
+					<select name="seleccionar producto" id="">
+						<option value="">seleccionar producto</option>
+						<option value="">1</option>
+						<option value="">2</option>
+						<option value="">3</option>
+						<option value="">4</option>
+						<option value="">5</option>
+					</select>
+
+					<input type="text" name="observaciones" id="" value="observaciones" disabled />
+					<div class="cajaFlex">
+						<button>cancelar</button>
+						<input type="submit" name="editar" id="" value="guardar" />
+					</div>
+				</form>
+			</article>
+
+			<article class="panel" id="four-panel">
+				<form action="">
+					<h3>
+						¿desea guardar?
+						<i class="fa-solid fa-circle-minus"></i>
+					</h3>
+					<div class="cajaFlex">
+						<button>Cancelar</button>
+						<input type="submit" name="enviar" id="" value="guardar" />
+					</div>
+				</form>
+			</article>
 		</section>
-	  </div>
-	  <!-- Fin interfáz por pestañas  -->
-	</body>
-	<!-- Inicio parte de footer -->
-	<footer>
-	  <h3>
-		@2022 Copyright - Todos los derechos reservados Kf Optica</h3>
-	</footer>
-	<!-- Fin parte de footer -->
-  </html>
+	</div>
+	<!-- Fin interfáz por pestañas  -->
 </body>
+<!-- Inicio parte de footer -->
+<footer>
+	<h3>
+		@2022 Copyright - Todos los derechos reservados Kf Optica</h3>
+</footer>
+<!-- Fin parte de footer -->
+
+</html>
+</body>
+
 </html>
