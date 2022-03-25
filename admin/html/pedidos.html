@@ -15,7 +15,7 @@
     <div class="btn-menu">
       <label for="btn-menu">☰</label>
     </div>
-    <img src="../Imagenes/logo.png" alt="" class="logo" />
+    <img src="../imagenes/logo.png" alt="" class="logo" />
     <nav>
       <ul>
         <li><a href="proveedores.html">Proveedores</a></li>
@@ -27,24 +27,26 @@
     </nav>
     <i class="fa-solid fa-circle-user"></i>
     <div class="cerrarSesion">
-      <a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
+      <a href="../../index.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
       </a>
     </div>
   </header>
   <!-- Menu lateral -->
   <input type="checkbox" id="btn-menu">
   <div class="container-menu">
-    <div class="cont-menu">
-      <nav>
-        <a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
-        <a href="#"></i> Productos</a>
-        <a href="/admin/html/domicilios.html"></i> Domicilios</a>
-        <a href="/Admin/Html/citas.html">Citas</a>
-        <a href="../Html/inventario.html">Inventario</a>
-        <a href="../Html/proveedores.html">Proveedores</a>
-      </nav>
-      <label for="btn-menu">✖️</label>
-    </div>
+      <div class="cont-menu">
+          <nav>
+              <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
+              <a href="#">Productos</a>
+              <a href="#">Domicilios</a>
+              <a href="citas.html">Citas</a>
+              <a
+                  href="inventario.html">Inventario</a>
+              <a
+                  href="proveedores.html">Proveedores</a>
+          </nav>
+          <label for="btn-menu">✖️</label>
+      </div>
   </div>
   <!-- Fin menu lateral -->
   <div class="contenedorPrincipal warpper">
@@ -52,10 +54,8 @@
     <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
 
     <div class="tabs">
-      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista
-        Pedidos</label>
-      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar
-        Pedido</label>
+      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Pedidos</label>
+      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar Pedido</label>
     </div>
 
     <section class="panels">
@@ -155,10 +155,6 @@
 
       <article class="panel" id="three-panel">
         <form action="">
-          <h3>
-            Consultar Pedido
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </h3>
           <input class="inputsForm" type="text" id="fecha" disabled />
           <input class="inputsForm" type="text" id="hora" disabled />
           <input class="inputsForm" type="text" id="cantidad" disabled />
