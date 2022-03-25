@@ -10,14 +10,30 @@ img{
     position: right;
     background-position: right;
     margin: center;
+    box-shadow: 5px 8px 12px black;
+    animation: movimiento 3s linear infinite;
 }
-.tittleimg{
-    height: 100vh;
+@keyframes boton{
+    0%{
+        bottom: 0;
+        opacity: 5;
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 5;
+    }
+}
+.tittle img{
     display:flex;
     flex-direction: colum;
     gap: 30px;
     align-items: center;
     justify-content: center;
+    margin-left: 60%;
+    margin-top: 2%;
 }
 h1{
     left: 50;
@@ -25,4 +41,21 @@ h1{
     font-size:220%;
     font-family: Arial, Helvetica, sans-serif; 
     position: rigth;
+    margin-left: 68%;
+}
+.boton{
+    margin-left: 73%;
+    margin-top: 4%;
+    animation: boton 3s linear infinite;
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
