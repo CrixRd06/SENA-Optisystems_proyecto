@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="/admin/css/productosestilos.css">
+    <link rel="stylesheet" href="/estilos/all.css">
+</head>
+
+<body>
+    <!-- Header-->
+    <header class="header">
+        <div class="container">
+            <div class="btn-menu">
+                <label for="btn-menu">☰</label>
+            </div>
+            <div class="logo">
+                <img src="/Imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+            </div>
+            <nav class="menu">
+                <a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
+            </nav>
+        </div>
+    </header>
+    <div class="capa"></div>
+    <!-- Header -->
+    <!-- Menu lateral -->
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
+                <a href="#"></i> Productos</a>
+                <a href="/admin/html/domicilios.html"></i> Domicilios</a>
+                <a href="/Admin/Html/citas.html">Citas</a>
+                <a href="../Html/inventario.html">Inventario</a>
+                <a href="../Html/proveedores.html">Proveedores</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+    <!-- Fin menu lateral -->
+    <!-- Contenido de la pagina -->
+    <h1>Productos</h1>
+    <div class="banners">
+        <h3>Banners</h3>
+        <a href="javascript:abrir()"><img src="/imagenes/banners.png" alt=""></a>
+    </div>
+    <div class="productos">
+        <h3>Productos</h3>
+        <div class="prod">
+            <img src="/imagenes/agregarprod.png" />
+            <h3>Agregar producto...</h3>
+        </div>
+        <div class="prod">
+            <img src="/imagenes/productos/marco_metalico_hombre_HD.jpg" />
+            <h3>Marco metalico masculino</h3>
+        </div>
+        <div class="prod">
+            <img src="/imagenes/productos/marco_metallico_mujer_HD.jpg" />
+            <h3>Marco metalico gris femenino</h3>
+        </div>
+    </div>
+
+    <div class="ventana-ban" id="bans">
+
+		<div id="close"><a href="javascript:cerrar()"><i class="fa-solid fa-circle-xmark"></i></a></div>
+
+		<div id="texto-ban">
+			<h2>Banners</h2><br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, id! Ipsam numquam laborum explicabo ad quos quasi est inventore deleniti consequatur, voluptatem unde consectetur ab?</p>
+            <br><br><br><br>
+            <label for="subir">Adjuntar banners</label>
+            <input type="file" name="subir" id="">
+		</div>
+	</div>
+    <!-- Fin contenido -->
+
+
+    <script>
+
+		function abrir() {
+			document.getElementById("bans").style.display = "block";
+		}
+
+		function cerrar() {
+			document.getElementById("bans").style.display = "none";
+		}
+
+	</script>
+
+</body>
+
+</html>

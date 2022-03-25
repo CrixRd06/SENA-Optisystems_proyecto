@@ -5,28 +5,13 @@
 	font-family: 'Arial', 'Helvetica', 'Times New Roman', 'Calibri', sans-serif;
 }
 
-body{
-	background-image: url("../Imagenes/pexels-santiago-boada-7613843.jpg");
-	background-size: 100vw 100vh;
-	background-repeat: no-repeat;
-}
-
-.capa{
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background: rgba(0,0,0,0);
-	z-index: -1;
-	top: 0;left: 0;
-}
-
 /*Estilos para el encabezado*/
 .header{
 	width: 100%;
 	height: 100px;
 	position: fixed;
 	top: 0;left: 0;
-	background-color: rgb(0,155,52,0.8)
+	background-color: rgb(0,155,52,1)
 }
 .container{
 	width: 90%;
@@ -140,33 +125,96 @@ a.icono>img{
 /*Fin de Menù lateral*/
 
 /*Contenido de la pagina*/
-#resumen{
-	margin-top:150px;
-	margin-left: 100px;
-	background-color: rgb(0,0,0,0.6);
-	width: 80vw;
-	height: 70vh;
-	font-family: 'Arial', sans-serif;
-}
 
-#resumen #contenido-resumen{
+.banners>h3{
+	margin-top: 8%;
 	margin-left: 30px;
-	padding: 35px;
+	font-size: 40px;
+	color: #007c2a;
 }
 
-#resumen #contenido-resumen h1{
-	font-size: 50px;
+.banners>a>img{
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 95%;
+	height: 20%;
+	padding: 10px;
+}
+
+.banners>a>img:hover{
+	background-color: beige;
+}
+
+
+.productos{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+.productos>h3{
+	position: absolute;
+	margin-right: 78%;
+	font-size: 40px;
+	color: #007c2a;
+	
+}
+
+.prod{
+	margin-top: 100px;
+}
+
+.prod>h3{
+	margin-top: 15px;
+	text-align: center;
+}
+
+.prod img{
+	width: 300px;
+	padding: 2px 16px;
+}
+
+.prod:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.ventana-ban {
+	background-color:white;
+	width:50%;
+	color:black;
+	font-size: 18px;
+	text-align: center;
+	padding: 33px;
+	min-height: 200px;
+	border-radius: 25px;
+	border-style: solid;
+	border-color: #009b34;
+	position: absolute;
+	left:25%;
+	margin-top: -790px;
+	display:none;
+}
+
+#texto-ban{
+	text-align: left;
+}
+
+#texto-ban h2,h3, label{
+	color:#00802b	
+
+}
+
+#close{
+	position: absolute;
+	right:5%;
+	font-size: 25px;
+}
+
+#close i{
 	color: #009b34;
-}
-
-#resumen #contenido-resumen p{
-	color:white;
-	font-size: 30px;
-	padding: 8px;
-}
-
-#resumen #contenido-resumen b{
-	color: #009B34;
 }
 
 /*Fin de contenido*/

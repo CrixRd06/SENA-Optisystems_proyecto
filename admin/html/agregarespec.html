@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=q, initial-scale=1.0">
+	<title>Agregar producto</title>
+	<link rel="stylesheet" href="/admin/css/agregarespec.css">
+	<link rel="stylesheet" href="/estilos/all.css">
+</head>
+
+<body>
+	<!-- Header-->
+	<header class="header">
+		<div class="container">
+			<div class="btn-menu">
+				<label for="btn-menu">☰</label>
+			</div>
+			<div class="logo">
+				<img src="/Imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+			</div>
+			<nav class="menu">
+				<a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+	<!-- Header -->
+	<!-- Menu lateral -->
+	<input type="checkbox" id="btn-menu">
+	<div class="container-menu">
+		<div class="cont-menu">
+			<nav>
+				<a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
+				<a href="#"></i> Productos</a>
+				<a href="/admin/html/domicilios.html"></i> Domicilios</a>
+				<a href="/Admin/Html/citas.html">Citas</a>
+				<a href="../Html/inventario.html">Inventario</a>
+				<a href="../Html/proveedores.html">Proveedores</a>
+			</nav>
+			<label for="btn-menu">✖️</label>
+		</div>
+	</div>
+	<!-- Fin menu lateral -->
+	<!-- Contenido -->
+	<div id="conte">
+		<div class="imagenproducto">
+			<img src="/imagenes/imagenprodu.png">
+		</div>
+		<div class="vistaprev">
+			<div class="precio">
+				<form action="">
+				<label for="agregar_titu" id="titu_produ">Título</label>
+				<input type="text" name="agregar_titu" id="title_produ" placeholder="Agregar nombre del producto">
+				<br><br>
+				<label for="agregar_precio"id="preci_produ" >Precio</label>
+				<input type="text" name="agregar_precio" id="precio_produ" placeholder="Agregar precio">				
+				<label for="agregarcantidad" id="agregar-produ">Cantidad: </label>
+				<input type="text" name="agregarcantidad" id="agregarCant" placeholder="Agregar cantidad">
+				<input class="comprar" type="button" value="Agregar producto">
+				</form>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="info">
+			<h3> Información adicional</h3>
+			<input type="text" name="info" id="infoAd" placeholder="Agregar información adicional">
+		</div>
+	</div>
+	<!-- Fin contenido -->
+</body>
+</html>
