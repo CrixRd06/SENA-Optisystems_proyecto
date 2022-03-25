@@ -23,13 +23,6 @@ header h1{
 	float: right; /*Texto flotante*/
 	padding-right: 0;
 	padding-top: 0;
- }	
-
-body{
- 	/*Incluir imagen*/
- 	/*background-image: url();*/
- 	/*background-repeat: no-repeat; Para que no se repita la imagen*/
-
  }
 
 header nav ul{
@@ -153,7 +146,8 @@ h2{
 
 .producto{
 	margin: 15px;
-
+	text-decoration: none;
+	color: #000000;
 }
 
 .producto img{

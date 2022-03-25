@@ -13,7 +13,9 @@ header{
 	align-items: center;
 }
 body{
+	position: relative;
 	padding: 25px;
+	min-height: 180vh;
 }
 
 .logo{
@@ -22,7 +24,7 @@ body{
 }
 nav ul{
 	display: flex;
-	gap: 100px;
+	gap: 20px;
 	justify-content: center;
 	align-items: center;
 }
@@ -50,90 +52,83 @@ span{
     font-size: 25px;
 }
 
-
-
-
-
-
-
-
-/*Inicio parte footer*/
-
 footer{
 	position: absolute;
-	left: 30px;
-	top: 100%;
-	right: 30px;
+	left: 0;
+	bottom: 0;
+	padding: 20px;
 	width: 100%;
 	background:  #f7f7f7;
-	text-align: center;
 }
 
-/* Inicio Menu rapido */
+footer .cajaCentral{
+	padding-top: 40px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+}
 
-
-footer div#menurap{
+#menurap{
+	width: auto;
 	text-align: left;
-	width:400px;
-	margin-left: 0px;
-	margin-top: 20px;
+	color:#009b34;
+	font-size: x-large;
+	margin-top: 60px;
+	margin-left: 60px;
 }
 
-footer div#menurap ul li{
+#menurap ul li{
 	list-style: none;
 	padding: 8px 8px;
 	margin-right: 0px;
 	font-size: 18px;
 }
 
-footer div#menurap ul li:hover{
+#menurap ul li:hover{
 	background-color: #f2f2f2;
-	font-weight: bold;
 }
 
-footer div#menurap ul li a{
+#menurap ul li a{
 	text-decoration: none; 
 	color: #000000;
 	display:block;
 }
 
-/* fin Menu rapido */
-
-/* Inicio mapa */
-
-
-footer>div.mapa{
-	margin-left:465px;
-	margin-top: -135px;
-	width:350px;
-	height:330px;
+.titulos{
+	grid-area: titulos;
+	display: flex;
+	justify-content: space-around;
 }
 
-/* Fin mapa */
-
-/* Inicio redes sociales */
-.redes{
-    display: flex;
-    justify-content: center;
-}
-.a-brands{
-    width: 35px;
-}
-
-/* Fin redes sociales */
-
-footer h3{
+.titulos h3{
 	color:#009b34;
 	text-align: center;
 }
-.title{
-    display:flex ;
-    justify-content: space-evenly;
-    gap: 300px;
-    padding: 25px;
-}
-.title h2{
-    color: #009a36;
+
+.redes{
+	display: flex;
+	gap: 20px;
+	font-size: 50px;
+
 }
 
-/* Fin Footer */
+footer div.redes ul li a#face{
+	color: #3b5998
+}
+
+footer div.redes ul li a#what{
+	color: #25D366
+}
+
+.copyright{
+	color: #009b34;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#face{
+	color: #3b5998;
+}
+
+#what{
+	color: #25D366
+}
