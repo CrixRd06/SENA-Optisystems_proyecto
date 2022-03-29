@@ -4,9 +4,6 @@
 	box-sizing: border-box;
 	font-family: 'Arial', sans-serif;	
 }
-header{
-    background-color: #f7f7f7;
-}
 body {
     height: 500px;
     width: 100%;
@@ -28,6 +25,7 @@ body {
 }
 
 header{
+    background-color: #f7f7f7;
 	display: grid;
 	grid-template-columns: 200px auto;
 	width: 100%;

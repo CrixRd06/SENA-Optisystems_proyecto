@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(../Imagenes/woman-1851464.jpg) no-repeat center top;
+	background: url(../imagenes/login.jpg) no-repeat center top;
 	background-size: cover;
 	font-family: sans-serif;
 }
@@ -48,11 +48,11 @@ header img{
 .login-box{
 	width: 350px;
 	height: 500px;
-	background: #009b34;
+	background: #009b34c5;
 	color: white;
 	position: absolute;
 	top: 12%;
-	left: 70%;
+	right: 70%;
 	box-sizing: border-box;
 	opacity: 100%;
 	border-radius: 10px;

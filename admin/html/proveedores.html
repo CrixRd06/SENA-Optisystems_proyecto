@@ -36,8 +36,8 @@
     <div class="cont-menu">
       <nav>
         <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
-              <a href="#">Productos</a>
-              <a href="#">Domicilios</a>
+              <a href="productos.html">Productos</a>
+              <a href="domicilios.html">Domicilios</a>
               <a href="citas.html">Citas</a>
               <a
                   href="inventario.html">Inventario</a>
@@ -52,9 +52,14 @@
   <div class="contenedorPrincipal warpper">
     <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
     <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
+    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
+
     <div class="tabs">
-      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Proveedores</label>
-      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar Proveedor</label>
+      <label onclick="openProvider(null, 0)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Proveedores</label>
+  
+      <label onclick="openProvider(null, 1)" class="tab" id="two-tab" for="inputAdministraProveedores">Administrar Proveedores</label>
+  
+      <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar Proveedores</label>
     </div>
 
     <section class="panels">
@@ -63,88 +68,153 @@
       <article class="panel" id="one-panel">
         <table>
           <tr>
+            <th>N°</th>
             <th>Nombre Empresa</th>
             <th>Correo electrónico</th>
             <th>Teléfono</th>
             <th>Lista Productos</th>
+            <th>Seleccionar</th>
           </tr>
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>1</td>
             <td>Lentes América</td>
             <td>ventas@lentesamerica.com</td>
             <td>+577447006</td>
             <td>calle 8 # 26-4</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>2</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>3</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>4</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>5</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>6</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>7</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>8</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this,1)">
+            <td>9</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
         </table>
       </article>
 
-      <article class="panel" id="three-panel">
+      <article class="panel" id="two-panel">
         <form action="">
           <input class="inputsForm" type="text" id="nombre" disabled />
           <input class="inputsForm" type="email" id="correo" disabled />
           <input class="inputsForm" type="text" id="telefono" disabled />
           <input class="inputsForm" type="text" id="direccion" disabled />
           <div class="cajaFlex">
-            <span onclick="editProvider()">Editar</span>
-            <span type="submit" name="editar" id="" >Regresar</span>
+            <span  class="botonSecundario" onclick="editProvider()">Editar</span>
+            <span class="botonPrimario" type="submit" name="editar" id="" >Regresar</span>
           </div>
         </form>
       </article>
+
+      <article class="panel" id="three-panel">
+        <form action="">
+          <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre Empresa"/>
+          <input class="inputsForm" type="email" id="cantidad"  placeholder="Correo Electrónico"/>
+          <input class="inputsForm" type="text" id="cantidad" placeholder="teléfono" />
+          <input class="inputsForm" type="text" id="cantidad" placeholder="Productos" />
+
+          </select>
+
+          <div class="cajaFlex">
+            <span  class="botonSecundario" onclick="editProvider()">Limpiar campo</span>
+            <span class="botonPrimario" type="submit" name="enviar" id="">Crear</span>
+          </div>
+        </form>
+      </article>
+
+      
     </section>
   </div>
   <!-- Fin interfáz por pestañas  -->

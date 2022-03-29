@@ -74,7 +74,10 @@ nav ul li a {
 nav ul li a:hover {
   color: #009b34;
 }
-/*no*/
+header a i{
+  list-style: none;
+  text-decoration: none;
+}
 article {
   width: 100%;
   display: flex;
@@ -123,7 +126,7 @@ form input, button, select, span {
 }
 
 form span:nth-child(1){
-  background-color: gray;
+  background-color: #636363;
   color: white;
   cursor: pointer;
 }
@@ -149,6 +152,11 @@ form input[type="submit"]:hover, .botonPrimario:hover{
     color: white;
     cursor: pointer;
 }
+form input[type="submit"]:hover, .botonSecundario:hover{
+  background-color: #8f8f8f;
+  color: white;
+  cursor: pointer;
+}
 
 /*******************************Aqui tabs***********/
 
@@ -172,7 +180,6 @@ form input[type="submit"]:hover, .botonPrimario:hover{
 .tab:hover{
   color: #009b34;
 }
-
 .panel{
   display:none;
   animation: fadein .8s;
@@ -197,7 +204,8 @@ form input[type="submit"]:hover, .botonPrimario:hover{
   color: white;
 }
 #inputListaProveedores:checked ~ .panels #one-panel,
-#inputAdministraProveedores:checked ~ .panels #three-panel{
+#inputAdministraProveedores:checked ~ .panels #three-panel
+#inputAdministraProveedores:checked ~ .panels #four-panel{
   display:flex;
 }
 /*Fin interfáz por pestañas*/
@@ -213,6 +221,12 @@ table tr td{
   padding:10px 20px;
   color: black;
   text-align: center;
+}
+.select{
+	display: flex;
+  justify-content: center;
+	font-size: 18px;
+  gap: 30px;
 }
 
 table tr:nth-child(odd) {

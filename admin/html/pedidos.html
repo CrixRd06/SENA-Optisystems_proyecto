@@ -25,9 +25,9 @@
         <li><a href="">Ayuda</a></li>
       </ul>
     </nav>
-    <i class="fa-solid fa-circle-user"></i>
+    <a href="../../html/login.html"><i class="fa-solid fa-circle-user"></i></a>
     <div class="cerrarSesion">
-      <a href="../../index.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
+      <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
       </a>
     </div>
   </header>
@@ -37,8 +37,8 @@
       <div class="cont-menu">
           <nav>
               <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
-              <a href="#">Productos</a>
-              <a href="#">Domicilios</a>
+              <a href="productos.html">Productos</a>
+              <a href="domicilios.html">Domicilios</a>
               <a href="citas.html">Citas</a>
               <a
                   href="inventario.html">Inventario</a>
@@ -52,10 +52,14 @@
   <div class="contenedorPrincipal warpper">
     <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
     <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
+    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
 
     <div class="tabs">
-      <label onclick="openProvider(null)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Pedidos</label>
-      <label onclick="openProvider(null)" class="tab" id="three-tab" for="inputAdministraProveedores">Administrar Pedido</label>
+      <label onclick="openProvider(null, 0)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Pedidos</label>
+
+      <label onclick="openProvider(null, 1)" class="tab" id="two-tab" for="inputAdministraProveedores">Administrar Pedido</label>
+
+      <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar pedido</label>
     </div>
 
     <section class="panels">
@@ -63,96 +67,134 @@
       <article class="panel" id="one-panel">
         <table>
           <tr>
+            <th>N°</th>
             <th>Nombre Empresa</th>
             <th>Nombre Producto</th>
             <th>Cantidad</th>
+            <th>Fecha</th>
             <th>Estado Pedido</th>
-            <th>Anexo</th>
+            <th>Seleccionar</th>
           </tr>
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>1</td>
+            <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>2</td>
+            <td>Lentes América</td>
             <td>Lentes de contacto Soflens</td>
             <td>25</td>
             <td>11/01/2022</td>
-            <td>2:15</td>
             <td>Recibido</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">  
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>3</td>
+            <td>Lentes América</td>
             <td>Marco metálico gris</td>
             <td>3</td>
             <td>01/05/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>4</td>
+            <td>Lentes América</td>
             <td>Marco Eagle azúl</td>
             <td>6</td>
             <td>05/03/2022</td>
-            <td>2:15</td>
-            <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td>Recibido</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>5</td>
+            <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>6</td>
+            <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>7</td>
+            <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>8</td>
+            <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
 
-          <tr onclick="openProvider(this)">
+          <tr onclick="openProvider(this, 1)">
+            <td>9</td>
+            <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
-            <td>2:15</td>
             <td>Enviado</td>
-            <td>Factura125_568_GF</td>
+            <td class="select">
+              <input type="checkbox" name="selecionar" id="">
+              <i class="fa-solid fa-trash-can"></i>
+            </td>
           </tr>
         </table>
       </article>
 
-      <article class="panel" id="three-panel">
+      <article class="panel" id="two-panel">
         <form action="">
           <input class="inputsForm" type="text" id="fecha" disabled />
           <input class="inputsForm" type="text" id="hora" disabled />
@@ -164,8 +206,23 @@
           </select>
 
           <div class="cajaFlex">
-            <span onclick="editProvider()">Editar</span>
+            <span class="botonSecundario" onclick="editProvider()">Editar</span>
             <span class="botonPrimario" type="submit" name="enviar" id="">Regresar</span>
+          </div>
+        </form>
+      </article>
+
+      <article class="panel" id="three-panel">
+        <form action="">
+          <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre proveedor"/>
+          <input class="inputsForm" type="number" id="cantidad"  placeholder="Cantidad"/>
+          <input class="inputsForm" type="text" id="cantidad" placeholder="Nombre del producto" />
+
+          </select>
+
+          <div class="cajaFlex">
+            <span class="botonSecundario" onclick="editProvider()">Limpiar campo</span>
+            <span class="botonPrimario" type="submit" name="enviar" id="">Crear</span>
           </div>
         </form>
       </article>
