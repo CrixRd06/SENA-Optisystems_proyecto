@@ -47,10 +47,61 @@ img{
 	width: 100%;
 	object-fit: cover;
 }
-span{
-    color:#009a36;
-    font-size: 25px;
+h2{
+	color: #009b34;
+	text-align: center;
+	font-size: 30pt;
+	padding: 40px;
 }
+.info{
+	display: grid;
+	grid-template-areas: 
+		'text image'
+		'redes image';
+}
+.redess{
+	display: flex;
+	grid-area: redes;
+	gap: 20px;
+	width: 100%;
+	min-width: 400px;
+	max-width: 600px;
+	flex-direction: column;
+}
+.info img{
+	grid-area: image;
+}
+.info p{
+	grid-area: text;
+	width: 100%;
+	min-width: 400px;
+	max-width: 600px;
+	font-size: 18pt;
+}
+.redess .iconRedes{
+	display: flex;
+	align-items: center;
+	font-size: 30pt;
+	text-decoration: none;
+
+	gap: 10px;
+}
+.facebook i, .facebook span{
+	color: #3b5998;
+}
+.whatsapp i, .whatsapp span{
+	color: #25D366;
+}
+.redess a span{
+	font-size: 20pt;
+}
+
+
+
+
+
+
+
 
 footer{
 	position: absolute;
