@@ -2,10 +2,12 @@ h1{
 	text-align:left;
 }
 .titulo{
-	margin-top: 80px;
-	margin-right: 50%;
-	margin-left: 2%;
-	font-size: 200%;
+	position: right;
+    background-position: right;
+    margin: center;
+    box-shadow: 1px 1px 10px rgb(4, 196, 68);
+	text-align-last: center;
+    margin-top: 15%;
 }
 table{
 	margin-top: 50px;
@@ -13,7 +15,7 @@ table{
 	margin-left: auto;
 	margin-right: auto;
 	border-collapse: collapse;
-	background-image: linear-gradient(to left,green,white);
+	
 	box-shadow: 5px 5px 5px gray;
 }
 th{
@@ -24,6 +26,7 @@ caption{
 	padding-top: 20px;
 	font-style: italic;
 	color: black;
+	
 }
 td,th{
 	border: 2px solid black;
@@ -31,10 +34,18 @@ td,th{
 	padding-right: 18px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	position: center;
+	
+
 }
 td{
 	padding-right: 10xp;
 }
+.sop{
+	background-color:rgba(3, 119, 42, 0.8);
+	vertical-align: center;
+}
+
 
 .ventana{
 	background: rgba(0,0,102,1);
