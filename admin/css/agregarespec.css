@@ -6,30 +6,30 @@
 	top: 0;left: 0;
 	background-color: rgb(0,155,52,1)
 }
-.container{
+.contenedor{
 	width: 90%;
 	max-width: 1200px;
 	margin: auto;
 }
-.container .btn-menu, .logo{
+.contenedor .btn-menu, .logo{
 	float: left;
 	line-height:100px;
 }
-.container .btn-menu label{
+.contenedor .btn-menu label{
 	color: #fff;
 	font-size: 25px;
 	cursor: pointer;
 }
 .logo img{
 	margin-left: 20px;
-	margin-top: 30px;
+	margin-top: 10px;
 	width: 40%;
 }
-.container .menu{
+.contenedor .menu{
 	float: right;
 	line-height: 100px;
 }
-.container .menu a{
+.contenedor .menu a{
 	display: inline-block;
 	padding: 15px;
 	line-height: normal;
@@ -40,7 +40,7 @@
 	font-size: 15px;
 	margin-right: 5px;
 }
-.container .menu a:hover{
+.contenedor .menu a:hover{
 	background-color: #33af5d;
 	font-size: 15px;
 }
@@ -56,7 +56,7 @@
 #btn-menu{
 	display: none;
 }
-.container-menu{
+.contenedor-menu{
 	position: fixed;
 	background: rgba(0,0,0,0.5);
 	width: 100%;
@@ -67,7 +67,7 @@
 	opacity: 0;
 	visibility: hidden;
 }
-#btn-menu:checked ~ .container-menu{
+#btn-menu:checked ~ .contenedor-menu{
 	opacity: 1;
 	visibility: visible;
 }
@@ -80,7 +80,7 @@
 	transition: all 500ms ease;
 	transform: translateX(-100%);
 }
-#btn-menu:checked ~ .container-menu .cont-menu{
+#btn-menu:checked ~ .contenedor-menu .cont-menu{
 	transform: translateX(0%);
 }
 .cont-menu nav{
@@ -124,7 +124,7 @@ a.icono>img{
 
 .precio{
 	width: 300px;
-	margin-right: 50px;
+	margin-right: 0px;
 }
 
 #title_produ{
@@ -154,8 +154,16 @@ a.icono>img{
 	margin-left: 120px;
 }
 
+#prev{
+	margin-left:35px;
+}
+
 .vistaprev{
 	float:right;
+}
+
+#imagProdu{
+	margin-left: -50px;
 }
 
 .imagenproducto{
@@ -165,8 +173,8 @@ a.icono>img{
 }
 
 .imagenproducto img{
-	width: 800px;
-	height: 400px;
+	width: 110%;
+	height: 115%;
 	padding: 4px;
 }
 
@@ -182,7 +190,7 @@ a.icono>img{
 }
 
 #agregarCant{
-	margin-top: 100px;
+	margin-top: 61px;
 }
 
 .comprar {
@@ -219,6 +227,11 @@ a.icono>img{
   background-color: #f2f2f2;
 }
 
+#adicio{
+	margin-top: 40px;
+	margin-left: -50px;
+}
+
 .info{
 	margin-top:400px;
 	margin-left: 30px;
@@ -230,6 +243,7 @@ a.icono>img{
 	color:white;
 	padding-left: 10px;
 	font-size: 35px;
+	width:99.4%;
 }
 
 #infoAd{
