@@ -11,20 +11,23 @@ const inputCorreo = document.getElementById("correo");
 const inputTelefono = document.getElementById("telefono");
 const inputDireccion = document.getElementById("direccion");
 
-const inputs = document.getElementsByClassName("inputsForm")
+const inputs = document.getElementsByClassName("inputsForm");
+const buttonDisable = document.getElementById("buttonDisable");
+var interruptor = true;
+var colorInputs = "black";
 
 function editProvider(){
-    
+    inputNombre.focus();
+
     for (var i = 0; i < 4; i++) {
-        let n = 0;
-        n += i;
-        inputs[n].disabled = false;
+
+        inputs[i].disabled = false;
      }
-    console.log(inputs)
 }
 
 function openProvider(element, tab){
     if(element != null){
+        tabTwo.classList.remove("tabHidden");
         let name = element.childNodes[1].childNodes[0].nodeValue;
         let email = element.childNodes[3].childNodes[0].nodeValue;
         let phone = element.childNodes[5].childNodes[0].nodeValue;
@@ -63,4 +66,20 @@ function openProvider(element, tab){
         break;
     }
 }
+function disableProvider(){ 
+     if(interruptor == true){
+        buttonDisable.innerHTML = "Habilitar";
+        interruptor = false;
+        colorInputs = "gray"
+     }else{
+        buttonDisable.innerHTML = "Inhabilitar";
+        interruptor = true;
+        colorInputs = "black"
+     }
+     for (var i = 0; i < 4; i++) {
 
+        inputs[i].disabled = true;
+        inputs[i].style.color = colorInputs;
+
+     }
+}

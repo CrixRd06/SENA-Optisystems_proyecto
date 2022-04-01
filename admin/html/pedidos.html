@@ -18,7 +18,7 @@
     <img src="../imagenes/logo.png" alt="" class="logo" />
     <nav>
       <ul>
-        <li><a href="proveedores.html">Proveedores</a></li>
+        <li><a href="proveedores.html">Gestionar Proveedores</a></li>
         <li>
           <a href="pedidos.html" class="seleccionado">Administrar Pedidos</a>
         </li>
@@ -50,21 +50,18 @@
   </div>
   <!-- Fin menu lateral -->
   <div class="contenedorPrincipal warpper">
-    <input class="radio" id="inputListaProveedores" name="group" type="radio" checked />
-    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
-    <input class="radio" id="inputAdministraProveedores" name="group" type="radio" />
-
     <div class="tabs">
       <label onclick="openProvider(null, 0)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Pedidos</label>
 
-      <label onclick="openProvider(null, 1)" class="tab" id="two-tab" for="inputAdministraProveedores">Administrar Pedido</label>
+      <label onclick="openProvider(null, 1)" class="tab tabHidden" id="two-tab" for="inputAdministraProveedores">Administrar Pedido</label>
 
       <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar pedido</label>
+
+      <label onclick="openProvider(null, 3)" class="tab" id="four-tab" for="inputAdministraProveedores">Reportes</label>
     </div>
 
     <section class="panels">
-      <h2>Historial de Pedidos</h2>
-      <article class="panel" id="one-panel">
+      <article class="panel" id="one-panel" style="display: flex;">
         <table>
           <tr>
             <th>N°</th>
@@ -73,7 +70,9 @@
             <th>Cantidad</th>
             <th>Fecha</th>
             <th>Estado Pedido</th>
-            <th>Seleccionar</th>
+            <th>
+              <i class="fa-solid fa-pen"></i>
+            </th>
           </tr>
           <tr onclick="openProvider(this, 1)">
             <td>1</td>
@@ -83,8 +82,7 @@
             <td>13/02/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -95,9 +93,8 @@
             <td>25</td>
             <td>11/01/2022</td>
             <td>Recibido</td>
-            <td class="select">  
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -109,8 +106,7 @@
             <td>01/05/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -122,8 +118,7 @@
             <td>05/03/2022</td>
             <td>Recibido</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -135,8 +130,7 @@
             <td>13/02/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -148,8 +142,7 @@
             <td>13/02/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -161,8 +154,7 @@
             <td>13/02/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -174,8 +166,7 @@
             <td>13/02/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -187,8 +178,7 @@
             <td>13/02/2022</td>
             <td>Enviado</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
         </table>
@@ -227,6 +217,75 @@
         </form>
       </article>
 
+      <article class="panel" id="four-panel">
+        <table>
+          <tr>
+            <th>N°</th>
+            <th>Producto</th>
+            <th>Cantidad</th>
+          </tr>
+
+          <tr>
+            <td>1</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>2</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>3</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>4</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>5</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>6</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>7</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>8</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>9</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+
+          <tr>
+            <td>10</td>
+            <td>Lentes América</td>
+            <td>15</td>
+          </tr>
+        </table>
+      </article>
     </section>
   </div>
 </body>
