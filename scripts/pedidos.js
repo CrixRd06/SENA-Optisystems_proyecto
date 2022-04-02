@@ -1,10 +1,12 @@
 const tabOne = document.getElementById("one-tab");
 const tabTwo = document.getElementById("two-tab");
-const tabthree = document.getElementById("three-tab");
+const tabThree = document.getElementById("three-tab");
+const tabFour = document.getElementById("four-tab");
 
 const panelOne = document.getElementById("one-panel");
 const panelTwo = document.getElementById("two-panel");
 const panelThree = document.getElementById("three-panel");
+const panelFour = document.getElementById("four-panel");
 
 const inputFecha = document.getElementById("fecha");
 const inputHora = document.getElementById("hora");
@@ -27,6 +29,8 @@ function editProvider(){
 
 function openProvider(element, tab){
     if(element != null){
+        tabTwo.classList.remove("tabHidden");
+        
         let fecha = element.childNodes[3].childNodes[0].nodeValue;
         let hour = element.childNodes[5].childNodes[0].nodeValue;
         let quantity = element.childNodes[7].childNodes[0].nodeValue;
@@ -48,26 +52,50 @@ function openProvider(element, tab){
             panelOne.style.display = "flex";
             panelTwo.style.display = "none";
             panelThree.style.display = "none";
+            panelFour.style.display = "none";
             tabOne.classList.add("tabChecked");
             tabTwo.classList.remove("tabChecked");
-            tabthree.classList.remove("tabChecked");
+            tabThree.classList.remove("tabChecked");
+            tabFour.classList.remove("tabChecked");
         break;
         case 1:
             panelOne.style.display = "none";
             panelTwo.style.display = "flex";
             panelThree.style.display = "none";
+            panelFour.style.display = "none";
             tabOne.classList.remove("tabChecked");
             tabTwo.classList.add("tabChecked");
-            tabthree.classList.remove("tabChecked");
+            tabThree.classList.remove("tabChecked");
+            tabFour.classList.remove("tabChecked");
         break;
         case 2:
             panelOne.style.display = "none";
             panelTwo.style.display = "none";
             panelThree.style.display = "flex";
+            panelFour.style.display = "none";
             tabOne.classList.remove("tabChecked");
             tabTwo.classList.remove("tabChecked");
-            tabthree.classList.add("tabChecked");
+            tabThree.classList.add("tabChecked");
+            tabFour.classList.remove("tabChecked");
         break;
 
+        case 3:
+            panelOne.style.display = "none";
+            panelTwo.style.display = "none";
+            panelThree.style.display = "none";
+            panelFour.style.display = "flex";
+            tabOne.classList.remove("tabChecked");
+            tabTwo.classList.remove("tabChecked");
+            tabThree.classList.remove("tabChecked");
+            tabFour.classList.add("tabChecked");
+        break;
     }
+}
+function disableProvider(){
+    for (var i = 0; i < 4; i++) {
+
+        inputs[i].disabled = true;
+        inputs[i].style.color = "gray"
+     }
+     
 }

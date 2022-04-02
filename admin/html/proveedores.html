@@ -19,8 +19,8 @@
     <img src="../imagenes/logo.png" alt="" class="logo" />
     <nav>
       <ul>
-        <li><a href="proveedores.html" class="seleccionado">Registro Proveedores</a></li>
-        <li><a href="pedidos.html">Historial Pedidos</a></li>
+        <li><a href="proveedores.html" class="seleccionado">Gestionar Proveedores</a></li>
+        <li><a href="pedidos.html">Administrar Pedidos</a></li>
         <li><a href="">Ayuda</a></li>
       </ul>
     </nav>
@@ -35,14 +35,14 @@
   <div class="container-menu">
     <div class="cont-menu">
       <nav>
-        <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
-              <a href="productos.html">Productos</a>
-              <a href="domicilios.html">Domicilios</a>
-              <a href="citas.html">Citas</a>
-              <a
-                  href="inventario.html">Inventario</a>
-              <a
-                  href="proveedores.html">Proveedores</a>
+        <a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
+				<a href="/admin/html/productos.html"></i> Productos</a>
+				<a href="/admin/html/domicilios.html"></i> Domicilios</a>
+				<a href="/Admin/Html/citas.html">Citas</a>
+				<a href="inventario.html">Inventario</a>
+				<a href="proveedores.html">Proveedores</a>
+				<a href="/admin/html/gestion_usuarios.html">Gestión de usuarios</a>
+				<a href="https://www.facebook.com/kfoptica">Facebook</a>
       </nav>
       <label for="btn-menu">✖️</label>
     </div>
@@ -57,13 +57,12 @@
     <div class="tabs">
       <label onclick="openProvider(null, 0)" class="tab tabChecked" id="one-tab" for="inputListaProveedores">Lista Proveedores</label>
   
-      <label onclick="openProvider(null, 1)" class="tab" id="two-tab" for="inputAdministraProveedores">Administrar Proveedores</label>
+      <label onclick="openProvider(null, 1)" class="tab tabHidden" id="two-tab" for="inputAdministraProveedores">Administrar Proveedor</label>
   
-      <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar Proveedores</label>
+      <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar Proveedor</label>
     </div>
 
     <section class="panels">
-      <h2>Gestión de Proveedores</h2>
 
       <article class="panel" id="one-panel">
         <table>
@@ -73,7 +72,9 @@
             <th>Correo electrónico</th>
             <th>Teléfono</th>
             <th>Lista Productos</th>
-            <th>Seleccionar</th>
+            <th>
+              <i class="fa-solid fa-pen"></i>
+            </th>
           </tr>
           <tr onclick="openProvider(this,1)">
             <td>1</td>
@@ -82,8 +83,7 @@
             <td>+577447006</td>
             <td>calle 8 # 26-4</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -94,8 +94,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -106,8 +105,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -118,8 +116,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -130,8 +127,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -142,8 +138,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -154,8 +149,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -166,8 +160,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
 
@@ -178,8 +171,7 @@
             <td>+573625874</td>
             <td>carrera 5 # 37-8</td>
             <td class="select">
-              <input type="checkbox" name="selecionar" id="">
-              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-solid fa-pen"></i>
             </td>
           </tr>
         </table>
@@ -193,7 +185,7 @@
           <input class="inputsForm" type="text" id="direccion" disabled />
           <div class="cajaFlex">
             <span  class="botonSecundario" onclick="editProvider()">Editar</span>
-            <span class="botonPrimario" type="submit" name="editar" id="" >Regresar</span>
+            <span class="botonPrimario" type="submit" name="editar" id="buttonDisable" onclick="disableProvider()">Inhabilitar</span>
           </div>
         </form>
       </article>

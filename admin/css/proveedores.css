@@ -46,7 +46,10 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 0 0 100px #00000025;
-} 
+}
+header a{
+  color: black;
+}
 .logo {
   width: 250px;
 }
@@ -165,11 +168,17 @@ form input[type="submit"]:hover, .botonSecundario:hover{
   flex-direction: column;
   align-items: center;
 }
+.tabs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 100%;
+}
 .tab{
   cursor: pointer;
   padding:10px 20px;
   margin:0px 2px;
-  background: white;
   display:inline-block;
   color: black;
   border-radius:3px 3px 0px 0px;
@@ -180,9 +189,14 @@ form input[type="submit"]:hover, .botonSecundario:hover{
 .tab:hover{
   color: #009b34;
 }
+.tabHidden{
+  display: none;
+}
 .panel{
   display:none;
   animation: fadein .8s;
+  background-color: white;
+  padding: 40px;
 }
 @keyframes fadein {
     from {
@@ -224,9 +238,11 @@ table tr td{
 }
 .select{
 	display: flex;
+  opacity: 0;
   justify-content: center;
 	font-size: 18px;
   gap: 30px;
+  
 }
 
 table tr:nth-child(odd) {
@@ -241,6 +257,9 @@ table tr:nth-child(even) {
 }
 table tr:hover{
   background-color: #ddffe9;
+}
+table tr:hover .select{
+  opacity: 1;
 }
 
 /*Menù lateral*/
