@@ -175,3 +175,94 @@ footer div.redes ul li a#what{
         transform: translateY(0);
     }
 }
+.contenedor{
+	margin-left: 30px;
+}
+
+.tienda{
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+}
+
+.producto{
+	margin: 15px;
+}
+
+.producto a{
+	text-decoration:none;
+	color:black;
+}
+
+.producto img{
+	width: 250px;
+	padding: 2px 16px;
+}
+
+.producto:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.lentes, .mujer, .hombre, .unisex{
+	display: inherit;
+}
+
+#mujer:checked ~ #imagenes .hombre, #mujer:checked ~ #imagenes .unisex, #mujer:checked ~ #imagenes .lentes{
+	display:none;
+}
+
+#hombre:checked ~ #imagenes .mujer, #hombre:checked ~ #imagenes .unisex, #hombre:checked ~ #imagenes .lentes{
+	display:none;
+}
+
+#unisex:checked ~ #imagenes .mujer, #unisex:checked ~ #imagenes .hombre, #unisex:checked ~ #imagenes .lentes{
+	display:none;
+}
+
+#lentes:checked ~ #imagenes .mujer, #lentes:checked ~ #imagenes .hombre, #lentes:checked ~ #imagenes .unisex{
+	display:none;
+}
+
+.paginacion {
+  display: inline-block;
+  margin-left: 525px;
+}
+
+.paginacion a {
+	list-style: none; 
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.paginacion a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+h3{
+    text-align: center;
+    margin-left: auto;
+}
+h1{
+    text-align: center;
+}
+.fre button{
+	color: #fefffe;
+	background-color: #009B00;
+	width: 160px;
+	height: 50px;
+	font-size: 130%;
+    margin-left: 45%;
+    margin-top: 2%;
+    margin-right: 20%;
+    margin-bottom: 3%;
+    
+}
+h2 {
+    color: #009B34;
+    margin-left: 32px;
+    margin-top: 20px;
+    font-size: 50px;
+	text-align: center;
+}
