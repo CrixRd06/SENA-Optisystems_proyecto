@@ -26,7 +26,7 @@
     </nav>
     <i class="fa-solid fa-circle-user"></i>
     <div class="cerrarSesion">
-      <a href="../../index.html"><img src="../Imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
+      <a href="../../index.html"><img src="../imagenes/Iconos/bx-log-out.svg" alt=""> Cerrar sesión
       </a>
     </div>
   </header>
@@ -35,14 +35,14 @@
   <div class="container-menu">
     <div class="cont-menu">
       <nav>
-        <a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
-				<a href="/admin/html/productos.html"></i> Productos</a>
-				<a href="/admin/html/domicilios.html"></i> Domicilios</a>
-				<a href="/Admin/Html/citas.html">Citas</a>
-				<a href="inventario.html">Inventario</a>
-				<a href="proveedores.html">Proveedores</a>
-				<a href="/admin/html/gestion_usuarios.html">Gestión de usuarios</a>
-				<a href="https://www.facebook.com/kfoptica">Facebook</a>
+        <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
+              <a href="productos.html">Productos</a>
+              <a href="domicilios.html">Domicilios</a>
+              <a href="citas.html">Citas</a>
+              <a
+                  href="inventario.html">Inventario</a>
+              <a
+                  href="proveedores.html">Proveedores</a>
       </nav>
       <label for="btn-menu">✖️</label>
     </div>
@@ -68,6 +68,7 @@
         <table>
           <tr>
             <th>N°</th>
+            <th>NIT</th>
             <th>Nombre Empresa</th>
             <th>Correo electrónico</th>
             <th>Teléfono</th>
@@ -78,10 +79,17 @@
           </tr>
           <tr onclick="openProvider(this,1)">
             <td>1</td>
+            <td>2-8605123303</td>
             <td>Lentes América</td>
             <td>ventas@lentesamerica.com</td>
             <td>+577447006</td>
-            <td>calle 8 # 26-4</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco gris unisex</option>
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Marco tipo eagle rojo</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -89,10 +97,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>2</td>
+            <td>3-258689532</td>
             <td name="v1">OP Óptica</td>
             <td name="v2">contacto@opOptica.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo coco rectangular</option>
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Marco tipo eagle rojo</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -100,10 +115,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>3</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>5-6359874</td>
+            <td name="v1">Ópticas Lux</td>
+            <td name="v2">contacto@optLux.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo eagle purpura</option>
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Marco tipo eagle rojo</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -111,10 +133,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>4</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>6-6358741</td>
+            <td name="v1">Zoom Ópticas</td>
+            <td name="v2">contacto@ZoomOpt.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo coco masculino</option>
+                <option value="">Marco tipo eagle rojo</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -122,10 +151,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>5</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>8-356974</td>
+            <td name="v1">Prisma Eyestyle</td>
+            <td name="v2">contacto@PrismEStyle.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo eagle rojo</option>
+                <option value="">Marco tipo eagle rojo</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -133,10 +169,18 @@
 
           <tr onclick="openProvider(this,1)">
             <td>6</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>2-2547821</td>
+            <td name="v1">Visual Click</td>
+            <td name="v2">contacto@VisClick.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco metálico gris femenino</option>
+                <option value="">Lentes tipo eagles</option>
+                <option value="">Lentes tipo eagles</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -144,10 +188,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>7</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>6-5478213</td>
+            <td name="v1">GafasVintage</td>
+            <td name="v2">contacto@GafasVintage.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco tipo coco femenino</option>
+                <option value="">Marco métalico blanco</option>
+                <option value="">Marco azúl metálico unisex</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -155,10 +206,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>8</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>7-6325841</td>
+            <td name="v1">Sunglass Co</td>
+            <td name="v2">contac@SunglassCo.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco azúl metálico unisex</option>
+                <option value="">Marco métalico blanco</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -166,10 +224,17 @@
 
           <tr onclick="openProvider(this,1)">
             <td>9</td>
-            <td name="v1">OP Óptica</td>
-            <td name="v2">contacto@opOptica.com</td>
+            <td>8-325641</td>
+            <td name="v1">LensLove</td>
+            <td name="v2">contacto@LensLove.com</td>
             <td>+573625874</td>
-            <td>carrera 5 # 37-8</td>
+            <td>
+              <select name="" id="list">
+                <option value="">Marco métalico blanco</option>
+                <option value="">Marco azúl metálico unisex</option>
+                <option value="">Lentes tipo eagles</option>
+              </select>
+            </td>
             <td class="select">
               <i class="fa-solid fa-pen"></i>
             </td>
@@ -195,7 +260,7 @@
           <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre Empresa"/>
           <input class="inputsForm" type="email" id="cantidad"  placeholder="Correo Electrónico"/>
           <input class="inputsForm" type="text" id="cantidad" placeholder="teléfono" />
-          <input class="inputsForm" type="text" id="cantidad" placeholder="Productos" />
+          <input class="inputsForm" type="text" id="cantidad" placeholder="Productos">
 
           </select>
 

@@ -160,6 +160,9 @@ form input[type="submit"]:hover, .botonSecundario:hover{
   color: white;
   cursor: pointer;
 }
+#list{
+  border: none;
+}
 
 /*******************************Aqui tabs***********/
 
