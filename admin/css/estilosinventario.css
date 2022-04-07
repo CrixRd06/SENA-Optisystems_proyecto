@@ -7,7 +7,7 @@ h1{
     margin: center;
     box-shadow: 1px 1px 10px rgb(4, 196, 68);
 	text-align-last: center;
-    margin-top: 15%;
+    margin-top: 8%;
 }
 table{
 	margin-top: 50px;
@@ -35,8 +35,14 @@ td,th{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	position: center;
-	
-
+	text-decoration: beige;
+}
+h1 {
+    color: #009B34;
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 50px;
+  
 }
 td{
 	padding-right: 10xp;
@@ -44,6 +50,7 @@ td{
 .sop{
 	background-color:rgba(3, 119, 42, 0.8);
 	vertical-align: center;
+	color: #f1f1f1;
 }
 
 
@@ -413,14 +420,16 @@ section h2{
   #agregar producto:checked ~ .panels #one-panel,
   #actualizar:checked ~ .panels #two-panel,
   #consultar:checked ~ .panels #three-panel,
-  #eliminar:checked ~ .panels #four-panel{
+  #eliminar:checked ~ .panels #four-panel
+  #reporte:checked ~ .panels #six-teb{
 	display:flex;
   }
   
   #agregar producto:checked ~ .tabs #one-tab,
   #actualizar:checked ~ .tabs #two-tab,
   #consultar:checked ~ .tabs #three-tab,
-  #eliminar:checked ~ .tabs #four-tab{
+  #eliminar:checked ~ .tabs #four-tab
+  #reporte:checked ~ .tabs #six-teb{
 	background:#009b34;
 	color: white;
   }
@@ -437,21 +446,24 @@ section h2{
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	max-width: 500px;
+	max-width: 560px;
 	background-color: #f1f1f1;
 	gap: 15px;
 	border-radius: 15px;
 	margin: 0;
   }
-  
-  form h3{
+  h3{
+	  margin-top: 240px;
+	  text-align: center;
+  }
+  form h4{
 	  display: flex;
 	  justify-content: center;
 	  align-items: center;
 	  gap: 15px;
   }
   
-  form h3 .fa-solid{
+  form h4 .fa-solid{
 	  font-size: 20pt !important;
   }
   
@@ -472,9 +484,11 @@ section h2{
 	width: 100%;
   }
   form button{
-	  background-color: gray;
+	  background-color: #009B34;
 	  color: white;
 	  cursor: pointer;
+	  right: 0;
+	  top: 0;
   }
   
   form button:hover{

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>productos</title>
+	<title>inventario</title>
 	<link rel="stylesheet" type="text/css" href="../css/estilosinventario.css">
 	<link rel="stylesheet" type="text/css" href="../../estilos/all.css">
 </head>
@@ -47,10 +47,12 @@
 	<!-- Fin menu lateral -->
 	<br>
 	<br>
-	<h1 class="titulo">inventario</h1>
+	<h1>inventario</h1>
 	<table>
 		<thead>
 			<tr class="sop">
+				<td>ENTRADA DE PRODUCTO</td>
+				<td>SALIDA DEPRODUCTO</td>
 				<td>CANTIDAD</td>
 				<td>PRODUCTO</td>
 				<td>CODIGO DE PRODUCTO</td>
@@ -62,7 +64,9 @@
 		</thead>
 		<tbody>
 			<tr>
-			<td>65</td>
+			<td>40</td>
+			<td>7</td>
+			<td>33</td>
 			<td>lentes</td>
 			<td>xxxxxxx</td>
 			<td>$170.000</td>
@@ -74,6 +78,8 @@
 			</td></label>
 			</tr>
 			<tr class="tap" id="lap">
+				<td>50</td>
+		    	<td>5</td>
 				<td>45</td>
 				<td>marco metalico de mujer</td>
 				<td>xxxxxxx</td>
@@ -86,6 +92,8 @@
 				</td></label>
 			</tr>
 			<tr>
+				<td>60</td>
+			    <td>35</td>
 				<td>25</td>
 				<td>marco metalico de hombre</td>
 				<td>xxxxxxx</td>
@@ -98,6 +106,8 @@
 				</td></label>
 			</tr>
 			<tr>
+				<td>70</td>
+			    <td>15</td>
 				<td>55</td>
 				<td>lentes de contacto</td>
 				<td>xxxxxxx</td>
@@ -125,6 +135,7 @@
 			<label class="tab" id="two-tab" for="actualizar">AGREGAR PRODUCTO</label>
 			<label class="tab" id="three-tab" for="consultar">OBSERVACIONES</label>
 			<label class="tab" id="four-tab" for="eliminar">GUARDAR</label>
+			<form id= "four-tab"action="/SENA-Optisystems_proyecto/html/reporte.html"><button>REPORTE</button></form>
 		</div>
 
 		<section class="panels">
@@ -147,10 +158,10 @@
 
 			<article class="panel" id="two-panel">
 				<form action="">
-					<h3>
+					<h4>
 						agregar producto
 						<i class="fa-solid fa-pen"></i>
-					</h3>
+					</h4>
 					<input type="text" name="nombre" id="" value="nombre" />
 					<input type="text" name="cantidad" id="" value="cantidad" />
 					<input type="precio" name="precio de compra" id="" value="$00,00" />
@@ -164,17 +175,18 @@
 
 			<article class="panel" id="three-panel">
 				<form action="">
-					<h3>
+					<h4>
 						observaciones
 						<i class="fa-solid fa-magnifying-glass"></i>
-					</h3>
+					</h4>
 					<select name="seleccionar producto" id="">
-						<option value="">seleccionar producto</option>
-						<option value="">1</option>
-						<option value="">2</option>
-						<option value="">3</option>
-						<option value="">4</option>
-						<option value="">5</option>
+						<option disabled selected>seleccionar producto..</option>
+						<option value="">lente</option>
+						<option value="">marco metalico de mujer</option>
+						<option value="">marco metalico para hombre</option>
+						<option value="">lentes de contacto</option>
+						<option value="">lentes para sol</option> 
+					
 					</select>
 
 					<input type="text" name="observaciones" id="" value="observaciones" disabled />
@@ -187,14 +199,17 @@
 
 			<article class="panel" id="four-panel">
 				<form action="">
-					<h3>
+					<h4>
 						¿desea guardar?
 						<i class="fa-solid fa-circle-minus"></i>
-					</h3>
+					</h4>
 					<div class="cajaFlex">
 						<button>Cancelar</button>
 						<input type="submit" name="enviar" id="" value="guardar" />
 					</div>
+					<article class="panel" id="six-tab">
+						<form action="">
+							<form for="pagina.index"> <button></button></form>
 				</form>
 			</article>
 		</section>
