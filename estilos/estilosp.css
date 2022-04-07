@@ -15,7 +15,7 @@ header img{
 	padding-top: 12px; /*Desplazar hacia abajo*/
 	padding-left: 5px;
 }
-header nav ul{
+header div nav ul{
  	list-style: none; /*Quitar el estilo*/
  	background: none;
  	text-align: center;
@@ -30,7 +30,7 @@ header nav ul li{
 	display:inline-block; /*Opciones de lista alineados*/
 }
 
-header nav ul li a{
+header div nav ul li a{
 	text-decoration: none; /*Para quitar el subrayado*/
 	color: black;
 	padding:8px 12px;
@@ -41,7 +41,7 @@ header nav ul li a{
 
 header nav ul li a:hover{
 	background-color: #39ac60;
-	font-size: 15px;
+	color: white;
 	font-weight: bold;
 
 }
@@ -60,7 +60,6 @@ h2{
   font-family: sans-serif;
   margin-left: 0px;
   background-color: white;
-  max-width: 1263px;
   width: 100%;
   padding: 20px;
   box-sizing: border-box;
@@ -72,14 +71,13 @@ h2{
     list-style: none;
 }
 
-#galeria > ul.diapo{
+#galeria > ul#diapo{
   position: relative;
-  max-width: 1263px;
   width: 100%;
-  height: 500px;
+  height: 700px;
 }
 
-#galeria > ul.diapo li {
+#galeria > ul#diapo li {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -89,17 +87,17 @@ h2{
     transition: linear;
 }
 
-#galeria > ul.diapo li img{
+#galeria > ul#diapo li img{
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 }
 
-#galeria > ul.diapo li:first-child {
+#galeria > ul#diapo li:first-child {
     opacity: 1; /*Mostramos el primer <li>*/
 }
 
-#galeria > ul.diapo li:target {
+#galeria > ul#diapo li:target {
     opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
 }
 
@@ -124,16 +122,18 @@ h2{
   border-radius: 100%;
 }
 
-.oferta{
+#oferta{	
 	margin-left: 35px;
+	margin-right: 35px;
 	font-size: 60px;
+	margin-top:2%;
+	border-bottom: 2px solid #009B34;
 }
 
 .tienda{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
-
 }
 
 .producto{
@@ -145,6 +145,11 @@ h2{
 .producto img{
 	width: 300px;
 	padding: 2px 16px;
+}
+
+.producto h3{	
+	font-size: large;
+	text-align: center;
 }
 
 .producto:hover {
@@ -172,7 +177,7 @@ footer{
 /* Inicio Menu rapido */
 
 #menu-r{
-	width: 200px;
+	width: 150px;
 	text-align: left;
 	color:#009b34;
 	font-size: x-large;
@@ -215,14 +220,12 @@ footer nav#menurap ul li a{
 	width:300px;
 	color:#009b34;
 	font-size: x-large;
-	margin-left:490px;
+	margin-left:10px;
+	margin-top: 60px;
 }
 
-footer>div.mapa{
-	margin-left:465px;
-	margin-top: -135px;
-	width:350px;
-	height:330px;
+footer>div#mapa{
+	text-align: center;
 }
 
 /* Fin mapa */
@@ -235,58 +238,59 @@ footer>div.mapa{
 	width:300px;
 	color:#009b34;
 	font-size: x-large;
-	margin-left:880px;
+	margin-left:10px;
+	margin-top: 60px;
 }
 
-footer>nav.redes{
+footer>#redes{
 	text-align: right;
-	width: 350px;
-	margin-left: 850px;
+	width: 250px;
+	margin-left: 10px;
 	color: #009b34;
 	margin-top: -220px;
 }
 
-footer>nav.redes ul{
+footer>#redes ul{
 	list-style: none; /*Quitar el estilo*/
  	background: none;
  	text-align: center;
  	font-family: 'Arial', sans-serif;
  	font-size: 40px;
-	padding: 8px;
 }
 
-footer nav.redes ul li{
+footer #redes ul li{
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 70px;
 	padding: 5px;
 }
 
-footer nav.redes ul li:hover{
+footer #redes ul li:hover{
 	background-color: #f2f2f2;
 	font-weight: bold;
 }
 
-footer nav.redes ul li a{
+footer #redes ul li a{
 	text-decoration: none; 
 	display:block;
 	margin:0;
 	padding:0;
 }
 
-footer nav.redes ul li a#face{
+footer #redes ul li a#face{
 	color: #3b5998
 }
 
-footer nav.redes ul li a#what{
+footer #redes ul li a#what{
 	color: #25D366
 }
 
 
 /* Fin redes sociales */
 
-footer h3{
+footer .copyright>h3{
 	color:#009b34;
+	font-size: large;
 	text-align: center;
 }
 

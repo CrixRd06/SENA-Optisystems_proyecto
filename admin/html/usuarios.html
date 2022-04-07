@@ -23,7 +23,7 @@
 				<img src="/imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
 			</div>
 			<nav class="menu">
-				<a href="../../indexprincipal.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar
+				<a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar
 					sesión</a>
 			</nav>
 		</div>
@@ -57,63 +57,61 @@
 			</div>
 			<div id="user" class="row">
 				<div class="col-3">
-					<div id="imagen">
-						<img id="userimg" src="/admin/imagenes/blank-profile-picture-973460.svg" alt="">
-						<form action="javascript:agregar()"></form><button id="agregarimg">Agregar</button>
-						<button>Eliminar</button>
-						<input type="file" name="" id="archivo" style="display:none">
-					</div>
-				</div>
-				<div id="infoUser" class="col-9">
-					<h3>Información personal</h3>
-					<div id="info">
-						<input type="text" name="nombres" id="" placeholder="Nombres">
-						<input type="text" name="apellidos" id="" placeholder="Apellidos">
-						<select name="" id="">
-							<option value="">C.C</option>
-							<option value="">PEP</option>
-							<option value="">Pasaporte</option>
-						</select>
-						<input type="text" name="numero" id="" placeholder="Nº de identificación">
-						<input type="email" name="correo" id="" placeholder="Email">
-						<input type="text" name="celular" id="" placeholder="Celular">
-					</div>
-					<h3>Configuración</h3>
-					<div id="config">
-						<input type="text" name="" id="" placeholder="Nombre de usuario">
-						<select name="" id="">
-							<option value="">Tipo de usuario</option>
-							<option value="">Cliente</option>
-							<option value="">Empleado</option>
-						</select>
-						<input type="text" name="" id="Rol" placeholder="Rol">
-					</div>
-					<h3>Permisos</h3>
-					<div id="perm">
-						<ul>
-							<li><label for="per1">Ver Productos</label><input type="checkbox" name="per1" id=""></li>
-							<li><label for="per1">Editar Productos</label><input type="checkbox" name="per1" id=""></li>
-							<li><label for="per1">Ver Citas</label><input type="checkbox" name="per1" id=""></li>
-							<li><label for="per1">Ver Domicilios</label><input type="checkbox" name="per1" id=""></li>
-							<li><label for="per1">Ver inventario</label><input type="checkbox" name="per1" id=""></li>
-							<li><label for="per1">Editar inventario</label><input type="checkbox" name="per1" id="">
-							</li>
-							<li><label for="per1">Ver proveedores</label><input type="checkbox" name="per1" id=""></li>
-							<li><label for="per1">Editar Proveedores</label><input type="checkbox" name="per1" id="">
-							</li>
-						</ul>
+					<div class="row">
+						<div id="imagen">
+							<img id="userimg" src="/admin/imagenes/blank-profile-picture-973460.svg" alt="">
+						<div class="row">
+						<button class="col-4"> Agregar</button>
+						<button class="col-4" >Eliminar</button></div>	
 					</div>
 				</div>
 			</div>
+			<div id="infoUser" class="col-9">
+				<h3>Información personal</h3>
+				<div id="info">
+					<input type="text" name="nombres" id="" placeholder="Nombres">
+					<input type="text" name="apellidos" id="" placeholder="Apellidos">
+					<select name="" id="">
+						<option value="">C.C</option>
+						<option value="">PEP</option>
+						<option value="">Pasaporte</option>
+					</select>
+					<input type="text" name="numero" id="" placeholder="Nº de identificación">
+					<input type="email" name="correo" id="" placeholder="Email">
+					<input type="text" name="celular" id="" placeholder="Celular">
+				</div>
+				<h3>Configuración</h3>
+				<div id="config">
+					<input type="text" name="" id="" placeholder="Nombre de usuario">
+					<select name="" id="">
+						<option value="">Tipo de usuario</option>
+						<option value="">Cliente</option>
+						<option value="">Empleado</option>
+					</select>
+					<input type="text" name="" id="Rol" placeholder="Rol">
+				</div>
+				<h3>Permisos</h3>
+				<div id="perm">
+					<ul>
+						<li><label for="per1">Ver Productos</label><input type="checkbox" name="per1" id=""></li>
+						<li><label for="per1">Editar Productos</label><input type="checkbox" name="per1" id=""></li>
+						<li><label for="per1">Ver Citas</label><input type="checkbox" name="per1" id=""></li>
+						<li><label for="per1">Ver Domicilios</label><input type="checkbox" name="per1" id=""></li>
+						<li><label for="per1">Ver inventario</label><input type="checkbox" name="per1" id=""></li>
+						<li><label for="per1">Editar inventario</label><input type="checkbox" name="per1" id="">
+						</li>
+						<li><label for="per1">Ver proveedores</label><input type="checkbox" name="per1" id=""></li>
+						<li><label for="per1">Editar Proveedores</label><input type="checkbox" name="per1" id="">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		</div>
 	</section>
 
 	<!-- boton agregar imagen -->
 	<script>
-		function agregar() {
-			document.getElementById("agregarimg").addEvenListener = 'click';
-			document.getElementById("archivo").click();
-		}
 	</script>
 
 </body>
