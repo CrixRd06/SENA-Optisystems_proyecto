@@ -36,14 +36,14 @@
   <div class="container-menu">
       <div class="cont-menu">
           <nav>
-            <a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
-            <a href="/admin/html/productos.html"></i> Productos</a>
-            <a href="/admin/html/domicilios.html"></i> Domicilios</a>
-            <a href="/Admin/Html/citas.html">Citas</a>
-            <a href="inventario.html">Inventario</a>
-            <a href="proveedores.html">Proveedores</a>
-            <a href="/admin/html/gestion_usuarios.html">Gestión de usuarios</a>
-            <a href="https://www.facebook.com/kfoptica">Facebook</a>
+              <a href="indexAdmin.html"><i class="fa-light fa-house"></i>Inicio</a>
+              <a href="productos.html">Productos</a>
+              <a href="domicilios.html">Domicilios</a>
+              <a href="citas.html">Citas</a>
+              <a
+                  href="inventario.html">Inventario</a>
+              <a
+                  href="proveedores.html">Proveedores</a>
           </nav>
           <label for="btn-menu">✖️</label>
       </div>
@@ -65,6 +65,7 @@
         <table>
           <tr>
             <th>N°</th>
+            <th>NIT</th>
             <th>Nombre Empresa</th>
             <th>Nombre Producto</th>
             <th>Cantidad</th>
@@ -76,7 +77,8 @@
           </tr>
           <tr onclick="openProvider(this, 1)">
             <td>1</td>
-            <td>Lentes América</td>
+            <td>2-8605123303</td>
+            <td>OP Óptica</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
@@ -88,7 +90,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>2</td>
-            <td>Lentes América</td>
+            <td>3-258689532</td>
+            <td>LensLove</td>
             <td>Lentes de contacto Soflens</td>
             <td>25</td>
             <td>11/01/2022</td>
@@ -100,7 +103,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>3</td>
-            <td>Lentes América</td>
+            <td>5-6359874</td>
+            <td>Ópticas Lux</td>
             <td>Marco metálico gris</td>
             <td>3</td>
             <td>01/05/2022</td>
@@ -112,7 +116,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>4</td>
-            <td>Lentes América</td>
+            <td>6-6358741</td>
+            <td>Zoom Ópticas</td>
             <td>Marco Eagle azúl</td>
             <td>6</td>
             <td>05/03/2022</td>
@@ -124,7 +129,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>5</td>
-            <td>Lentes América</td>
+            <td>8-356974</td>
+            <td>Prisma Eyestyle</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
@@ -136,7 +142,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>6</td>
-            <td>Lentes América</td>
+            <td>2-2547821</td>
+            <td>Visual Click</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
@@ -148,7 +155,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>7</td>
-            <td>Lentes América</td>
+            <td>1-256348</td>
+            <td>GafasVintage</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
@@ -160,7 +168,8 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>8</td>
-            <td>Lentes América</td>
+            <td>6-5478213</td>
+            <td>GafasVintage</td>
             <td>Gafas de sol</td>
             <td>15</td>
             <td>13/02/2022</td>
@@ -172,6 +181,20 @@
 
           <tr onclick="openProvider(this, 1)">
             <td>9</td>
+            <td>7-6325841</td>
+            <td>Sunglass Co</td>
+            <td>Gafas de sol</td>
+            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Enviado</td>
+            <td class="select">
+              <i class="fa-solid fa-pen"></i>
+            </td>
+          </tr>
+
+          <tr onclick="openProvider(this, 1)">
+            <td>10</td>
+            <td>8-325641</td>
             <td>Lentes América</td>
             <td>Gafas de sol</td>
             <td>15</td>
@@ -204,9 +227,32 @@
 
       <article class="panel" id="three-panel">
         <form action="">
-          <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre proveedor"/>
+          <select name="" id="list">
+            <option value="">Proveedor</option>
+            <option value="">Lentes América</option> 
+            <option value="">OP Óptica</option>
+            <option value="">Ópticas Lux</option>
+            <option value="">Zoom Ópticas</option>
+            <option value="">Prisma Eyestyle</option>
+            <option value="">Visual Click</option>
+            <option value="">GafasVintage</option>
+            <option value="">Sunglass Co</option>
+            <option value="">LensLove</option>
+          </select>
           <input class="inputsForm" type="number" id="cantidad"  placeholder="Cantidad"/>
-          <input class="inputsForm" type="text" id="cantidad" placeholder="Nombre del producto" />
+          <select name="" id="list">
+            <option value="">Producto</option> 
+            <option value="">Marco gris unisex</option>
+            <option value="">Marco metálico gris femenino</option>
+            <option value="">Marco tipo eagle rojo</option>
+            <option value="">Marco tipo eagle purpura</option>
+            <option value="">Marco metálico gris femenino</option>
+            <option value="">Marco tipo eagle azúl</option>
+            <option value="">Marco tipo eagle negro</option>
+            <option value="">Marco tipo coco rojo</option>
+            <option value="">Marco tipo coco gris</option>
+            <option value="">Marco metálico azúl unisex</option>
+          </select>
 
           </select>
 
@@ -221,68 +267,79 @@
         <table>
           <tr>
             <th>N°</th>
+            <th>Fecha solicitud</th>
             <th>Producto</th>
             <th>Cantidad</th>
           </tr>
 
           <tr>
             <td>1</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>22/05/2022</td>
+            <td>Marco metálico azúl unisex</td>
+            <td>10</td>
           </tr>
 
           <tr>
             <td>2</td>
-            <td>Lentes América</td>
+            <td>18/05/2022</td>
+            <td>Marco tipo eagle azúl</td>
             <td>15</td>
           </tr>
 
           <tr>
             <td>3</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>03/05/2022</td>
+            <td>Marco tipo coco rojo</td>
+            <td>13</td>
           </tr>
 
           <tr>
             <td>4</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>27/04/2022</td>
+            <td>Marco tipo eagle purpura</td>
+            <td>45</td>
           </tr>
 
           <tr>
             <td>5</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>18/04/2022</td>
+            <td>Marco tipo eagle negro</td>
+            <td>35</td>
           </tr>
 
           <tr>
             <td>6</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>05/04/2022</td>
+            <td>Marco metálico gris femenino</td>
+            <td>11</td>
           </tr>
 
           <tr>
             <td>7</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>23/03/2022</td>
+            <td>Marco tipo coco gris</td>
+            <td>8</td>
           </tr>
 
           <tr>
             <td>8</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>20/03/2022</td>
+            <td>Marco tipo coco cuadrado</td>
+            <td>32</td>
           </tr>
 
           <tr>
             <td>9</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>18/02/2022</td>
+            <td>Marco tipo eagle morado</td>
+            <td>25</td>
           </tr>
 
           <tr>
             <td>10</td>
-            <td>Lentes América</td>
-            <td>15</td>
+            <td>13/02/2022</td>
+            <td>Marco metálico blanco unisex</td>
+            <td>35</td>
           </tr>
         </table>
       </article>
