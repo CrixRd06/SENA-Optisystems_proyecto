@@ -1,10 +1,6 @@
-*{
+body{
 	margin: 5px 10px 10px 10px;
 }
-
-/*header{
-	background: #009b34;
-}*/
 
 html{
 	min-height: 100%;

@@ -4,6 +4,8 @@ body{
 	background: url(../imagenes/login3.jpg) no-repeat center top;
 	background-size: cover;
 	font-family: sans-serif;
+	width: 100vw;
+	height: 100vh;
 }
 
 

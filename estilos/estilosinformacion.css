@@ -1,194 +1,248 @@
-/*PANTALLA*/
-*{
-	margin:0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Arial', sans-serif;	
+
+body{
+	width:100%;
+	font-family: Arial, Helvetica, sans-serif;
 }
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
 header{
-    background-color: #f7f7f7;
+	border-bottom: 1px solid grey;
 }
-header{
-	display: grid;
-	grid-template-columns: 200px auto;
-	width: 100%;
-	padding: 15px;
-	gap: 35px;
-	align-items: center;
-}
-.logo{
+
+header img{
 	width: 200px;
 	height: 200px;
+	border-radius: 10px;
+	padding-top: 12px; /*Desplazar hacia abajo*/
+	padding-left: 5px;
 }
-nav ul{
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	align-items: center;
+header div nav ul{
+ 	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 20px;
+ 	padding:8px;
+	margin-top: 70px;
+	margin-left: 0;
+ }
+
+header nav ul li{
+	display:inline-block; /*Opciones de lista alineados*/
 }
-nav ul li{
-	list-style: none;
-	font-size: 23px;	
-}
-nav ul li a{
-	text-decoration: none;
+
+header div nav ul li a{
+	text-decoration: none; /*Para quitar el subrayado*/
 	color: black;
-	padding: 8px 12px;
+	padding:8px 12px;
+	display:block;
+	margin-left: 5px;
+	margin-right: 5px;
 }
-nav ul li a:hover{
-	color:white;
-	background-color: #009b36;
+
+header nav ul li a:hover{
+	background-color: #39ac60;
+	color: white;
+	font-weight: bold;
+
 }
+/*Fin parte superior de la pagina */
+
+/* formulario informacion inicio */
+
+form h2{
+	font-size:30px;
+}
+
+.tituloinfo{
+	color: #009B34;
+	margin-left:32px;
+	margin-top: -35px;
+	font-size: 60px;
+	margin-left: 10%;
+}
+
+.form-register{
+	border-top: 2px solid #009B34;
+	border: 1px solid grey;
+	width: 50px;	
+	padding:40px;
+	margin: auto;
+	height: 400px;
+	width: 80%;
+	height:100%;
+	padding-left: 62px;
+	padding-right: 63px;
+	padding-top: 22px;
+	font-size: 15px;
+}
+
+.controls {
+	width: 432px;
+	font-size: 20px;
+	height: 30px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+#boton{
+	margin-top: 30px;
+	margin-left: 83%;
+	background-color: #009b34;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 10px 28px;
+	text-align: center;
+	text-decoration: none;
+	display:block;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#boton:hover{
+	background-color: #3e8e41;
+}
+/* formulario informacion fin */
+
+/*Inicio parte footer*/
+
 footer{
-	left: 0;
-	bottom: 0;
-	padding: 20px;
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	right: 30px;
 	width: 100%;
 	background:  #f7f7f7;
-	margin-top: 15;
+	text-align: center;
 }
 
-footer .cajaCentral{
-	padding-top: 40px;
-	display: grid;
-	grid-template-columns: auto auto auto;
+#titles, #seccionesFt{
+	margin:0;
 }
+/* Inicio Menu rapido */
 
-#menurap{
-	width: auto;
+#menu-r{
+	width: 150px;
 	text-align: left;
 	color:#009b34;
 	font-size: x-large;
 	margin-top: 60px;
-	margin-left: 60px;
+	margin-left: 40px;
+
 }
 
-#menurap ul li{
+footer nav#menurap{
+	text-align: left;
+	width:400px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+footer nav#menurap ul li{
 	list-style: none;
 	padding: 8px 8px;
-	margin-right: 0px;
+	margin-left: 20px;
 	font-size: 18px;
+	width: 300px;
 }
 
-#menurap ul li:hover{
+footer nav#menurap ul li:hover{
 	background-color: #f2f2f2;
+	font-weight: bold;
 }
 
-#menurap ul li a{
+footer nav#menurap ul li a{
 	text-decoration: none; 
 	color: #000000;
 	display:block;
 }
 
-.titulos{
-	grid-area: titulos;
-	display: flex;
-	justify-content: space-around;
+/* fin Menu rapido */
+
+/* Inicio mapa */
+
+#ubica{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-right:70px;
+	margin-top: 60px;
 }
 
-.titulos h2{
-	color:#009b34;
+footer>div#mapa{
 	text-align: center;
 }
 
-.redes{
-	display: flex;
-	gap: 20px;
-	font-size: 50px;
+/* Fin mapa */
 
+/* Inicio redes sociales */
+
+
+#social{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-left:10px;
+	margin-top: 60px;
 }
 
-footer div.redes ul li a#face{
+footer>#redes{
+	text-align: right;
+	width: 250px;
+	margin-left: 10px;
+	color: #009b34;
+	margin-top: -220px;
+}
+
+footer>#redes ul{
+	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 40px;
+}
+
+footer #redes ul li{
+	display: inline-block;
+	width: 80px;
+	height: 70px;
+	padding: 5px;
+}
+
+footer #redes ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer #redes ul li a{
+	text-decoration: none; 
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+footer #redes ul li a#face{
 	color: #3b5998
 }
 
-footer div.redes ul li a#what{
+footer #redes ul li a#what{
 	color: #25D366
 }
 
-.copyright{
-	color: #009b34;
+
+/* Fin redes sociales */
+
+footer .copyright>h3{
+	color:#009b34;
+	font-size: large;
 	text-align: center;
-	margin-top: 30px;
 }
 
-#face{
-	color: #3b5998;
-}
-
-#what{
-	color: #25D366
-}
-#top{
-
-    position: right;
-    background-position: right;
-    margin: center;
-    box-shadow: 5px 8px 12px black;
-    animation: movimiento 3s linear infinite;
-}
-/*PANTALLA*/
-/*foter*/
-footer{
-	left: 0;
-	bottom: 0;
-	padding: 20px;
-	width: 100%;
-	background:  #f7f7f7;
-	margin-top: 15;
-}
-
-footer .cajaCentral{
-	padding-top: 40px;
-	display: grid;
-	grid-template-columns: auto auto auto;
-}
-/*foter*/
-h2{
-	color: #009B34;
-	margin-left:32px;
-	margin-top: -35px;
-	font-size: 50px;
-	margin-left: 10%;
-
-}
-
-.form-register{
-	width: 50px;
-	background:green;
-	padding:40px;
-	margin: auto;
-	margin-top: 10px;
-	border-radius: 4px;
-	font-family: "calibri";
-	color: white;
-	height: 400px;
-
-}
-.controls {
-	width: 432px;
-	font-size: 156%;
-	margin: 4px;
-
-}
-.form-register{
-	width: 80%;
-	background: #;
-	padding-left: 62px;
-	padding-right: 63px;
-	padding-top: 22px;
-	border-radius: 0px;
-	margin-bottom: -36px;
-	border: 1px solid #1f5;
-	font-family:calibri ;
-	font-size: 15px;
-}
-.botons{
-	color: #060606;
-	background-color: #ffffff;
-	width: 150px;
-	height: 40px;
-	font-size: 130%;
-	margin-right: -500px;
-	max-width: 50%;
-}
+/* Fin Footer */

@@ -1,14 +1,16 @@
-*{
-	margin: 5px 10px 10px 10px;
+body{
+	font-family: Arial, Helvetica, sans-serif;
 }
-
-/*header{
-	background: #009b34;
-}*/
 
 html{
 	min-height: 100%;
 	position: relative;
+}
+
+/* Inicio Header */
+
+.row{
+	width:90vw;
 }
 
 header img{
@@ -19,60 +21,58 @@ header img{
 	padding-left: 5px;
 }
 
-header h1{
-	color: white;
-	float: right; 
-	padding-right: 0;
-	padding-top: 0;
- }	
-
-
-header nav ul{
+header div nav ul{
  	list-style: none; 
  	background: none;
  	text-align: center;
  	font-family: 'Arial', sans-serif;
  	font-size: 20px;
- 	padding:4px;
- 	margin-top: -160px;
- 	margin-left: 170px;
- 	margin-bottom: 50px;
+ 	padding:8px;
+	margin-top: 70px;
+	margin-left: 0;
  }
 
 header nav ul li{
 	display:inline-block; 
 }
 
-header nav ul li a{
+header div nav ul li a{
 	text-decoration: none;
 	color: black;
-	padding:8px 8px;
+	padding:8px 12px;
 	display:block;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 header nav ul li a:hover{
 	background-color: #39ac60;
-	font-size: 15px;
+	color: white;
 	font-weight: bold;
 
 }
+/* Fin Header */
 
-header nav ul input{
-	margin-left: 55px;
+/*  Inicio visualizacion del producto */
+
+#producto{
+	margin: 0 50px 0 50px;
 }
 
 .precio{
 	width: 300px;
-	margin-right: 50px;
+	margin-right: 0px;
 }
 
 .precio h3{
 	word-break:break-all;
 	color: #009B34;
 	font-size: 32px;
+	text-align: right;
 }
 
 .precio h2{
+	margin-top: 30px;
 	word-break:break-all;
 	text-align: right;
 	font-size: 20px;
@@ -99,12 +99,12 @@ header nav ul input{
 }
 
 .comprar {
-	margin-top: 150px;
+   margin-top: 148px;
   background-color: #4CAF50; /* Green */
   border: none;
   border-radius: 8px;
   color: white;
-  padding: 15px 120px;
+  padding: 15px 119px;
   text-align: center;
   text-decoration: none;
   display:block;
@@ -121,7 +121,7 @@ header nav ul input{
   color: black;
   border: 1px solid black;
   border-radius: 8px;
-  padding: 15px 90px;
+  padding: 15px 87px;
   text-align: center;
   text-decoration: none;
   display: block;
@@ -142,27 +142,35 @@ header nav ul input{
 	font-size: 35px;
 }
 
+/*  Fin visualizacion del producto */
+
 /*Inicio parte footer*/
 
 footer{
 	position: absolute;
-	left: -20px;
 	top: 100%;
-	right: 30px;
-	width: 1263px;
+	width: 100%;
 	background:  #f7f7f7;
 	text-align: center;
+}
+
+#titles{
+		margin-left: 50px;
+}
+
+#seccionesFt{
+	margin-left: 50px;
 }
 
 /* Inicio Menu rapido */
 
 #menu-r{
-	width: 200px;
+	width: 150px;
 	text-align: left;
 	color:#009b34;
 	font-size: x-large;
 	margin-top: 60px;
-	margin-left: 60px;
+	margin-left: 0px;
 
 }
 
@@ -170,14 +178,14 @@ footer nav#menurap{
 	text-align: left;
 	width:400px;
 	margin-left: 0px;
-	margin-top: 20px;
 }
 
 footer nav#menurap ul li{
 	list-style: none;
 	padding: 8px 8px;
-	margin-right: 0px;
+	margin:0;
 	font-size: 18px;
+	width: 300px;
 }
 
 footer nav#menurap ul li:hover{
@@ -200,15 +208,12 @@ footer nav#menurap ul li a{
 	width:300px;
 	color:#009b34;
 	font-size: x-large;
-	margin-left:490px;
-	margin-top: -36px;
+	margin-right:20px;
+	margin-top: 60px;
 }
 
-footer>div.mapa{
-	margin-left:465px;
-	margin-top: -135px;
-	width:350px;
-	height:330px;
+footer>div#mapa{
+	text-align: center;
 }
 
 /* Fin mapa */
@@ -221,66 +226,60 @@ footer>div.mapa{
 	width:300px;
 	color:#009b34;
 	font-size: x-large;
-	margin-left:880px;
-	margin-top: -38px;
+	margin-left:10px;
+	margin-top: 60px;
 }
 
-footer>nav.redes{
+footer>#redes{
 	text-align: right;
-	width: 350px;
-	margin-left: 850px;
+	width: 250px;
+	margin-left: 10px;
 	color: #009b34;
-	margin-top: -260px;
+	margin-top: -220px;
 }
 
-footer>nav.redes ul{
+footer>#redes ul{
 	list-style: none; /*Quitar el estilo*/
  	background: none;
  	text-align: center;
  	font-family: 'Arial', sans-serif;
  	font-size: 40px;
-	padding: 8px;
 }
 
-footer nav.redes ul li{
+footer #redes ul li{
 	display: inline-block;
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 70px;
 	padding: 5px;
 }
 
-footer nav.redes ul li:hover{
+footer #redes ul li:hover{
 	background-color: #f2f2f2;
 	font-weight: bold;
 }
 
-footer nav.redes ul li a{
+footer #redes ul li a{
 	text-decoration: none; 
 	display:block;
 	margin:0;
 	padding:0;
 }
 
-footer nav.redes ul li a#face{
+footer #redes ul li a#face{
 	color: #3b5998
 }
 
-footer nav.redes ul li a#what{
+footer #redes ul li a#what{
 	color: #25D366
 }
 
 
 /* Fin redes sociales */
 
-footer h3{
+footer .copyright>h3{
 	color:#009b34;
+	font-size: large;
 	text-align: center;
 }
 
 /* Fin Footer */
-
-@media(max-width:600px){
-	nav ul{
-		display:block;
-	}
-}
