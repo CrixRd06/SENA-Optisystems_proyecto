@@ -17,8 +17,11 @@ const inputAnexos = document.getElementById("anexos");
 
 const inputs = document.getElementsByClassName("inputsForm")
 
+var todosMisInputs = document.getElementsByClassName("todosMisInputs");
+
 function editProvider(){
-    
+    inputFecha.focus();
+
     for (var i = 0; i < 7; i++) {
         let n = 0;
         n += i;
@@ -90,12 +93,4 @@ function openProvider(element, tab){
             tabFour.classList.add("tabChecked");
         break;
     }
-}
-function disableProvider(){
-    for (var i = 0; i < 4; i++) {
-
-        inputs[i].disabled = true;
-        inputs[i].style.color = "gray"
-     }
-     
 }

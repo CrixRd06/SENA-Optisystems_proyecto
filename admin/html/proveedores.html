@@ -257,16 +257,16 @@
 
       <article class="panel" id="three-panel">
         <form action="">
-          <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre Empresa"/>
-          <input class="inputsForm" type="email" id="cantidad"  placeholder="Correo Electrónico"/>
-          <input class="inputsForm" type="text" id="cantidad" placeholder="teléfono" />
-          <input class="inputsForm" type="text" id="cantidad" placeholder="Productos">
+          <input class="inputsForm" type="text" id="nomProveedor" placeholder ="Nombre Empresa" required/>
+          <input class="inputsForm" type="email" id="cantidad"  placeholder="Correo Electrónico" required/>
+          <input class="inputsForm" type="text" id="cantidad" placeholder="teléfono" required/>
+          <input class="inputsForm" type="text" id="cantidad" placeholder="Productos" required>
 
           </select>
 
           <div class="cajaFlex">
-            <span  class="botonSecundario" onclick="editProvider()">Limpiar campo</span>
-            <span class="botonPrimario" type="submit" name="enviar" id="">Crear</span>
+            <input type = "reset"  class="botonSecundario" onclick="editProvider()" value = "Limpiar Campos">
+            <input class = "botonPrimario" type="submit" name="enviar" id="" value="Crear">
           </div>
         </form>
       </article>
@@ -275,6 +275,9 @@
     </section>
   </div>
   <!-- Fin interfáz por pestañas  -->
+  <script>
+    alert("Has ingresado exitosamente a la gestión de proveedores")
+  </script>
 </body>
 <script src="../../scripts/proveedores.js"></script>
 <!-- Inicio parte de footer -->

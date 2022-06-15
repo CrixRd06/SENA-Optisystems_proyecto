@@ -57,7 +57,6 @@
 
       <label onclick="openProvider(null, 2)" class="tab" id="three-tab" for="inputAdministraProveedores">Agregar pedido</label>
 
-      <label onclick="openProvider(null, 3)" class="tab" id="four-tab" for="inputAdministraProveedores">Reportes</label>
     </div>
 
     <section class="panels">
@@ -220,14 +219,14 @@
 
           <div class="cajaFlex">
             <span class="botonSecundario" onclick="editProvider()">Editar</span>
-            <span class="botonPrimario" type="submit" name="enviar" id="">Regresar</span>
+            <span onclick="openProvider(null, 0)" class="botonPrimario" type="submit" name="enviar" id="">Regresar</span>
           </div>
         </form>
       </article>
 
       <article class="panel" id="three-panel">
         <form action="">
-          <select name="" id="list">
+          <select name="" id="selectProv" required>
             <option value="">Proveedor</option>
             <option value="">Lentes América</option> 
             <option value="">OP Óptica</option>
@@ -239,8 +238,8 @@
             <option value="">Sunglass Co</option>
             <option value="">LensLove</option>
           </select>
-          <input class="inputsForm" type="number" id="cantidad"  placeholder="Cantidad"/>
-          <select name="" id="list">
+          <input class="inputsForm" type="number" id="cantidad"  placeholder="Cantidad" required/>
+          <select name="" id="selectProduc" required class="">
             <option value="">Producto</option> 
             <option value="">Marco gris unisex</option>
             <option value="">Marco metálico gris femenino</option>
@@ -257,92 +256,12 @@
           </select>
 
           <div class="cajaFlex">
-            <span class="botonSecundario" onclick="editProvider()">Limpiar campo</span>
-            <span class="botonPrimario" type="submit" name="enviar" id="">Crear</span>
+            <input class="botonSecundario" type = "reset" onclick="editProvider()" value="Limpiar Campos"/>
+            <input class="botonPrimario" type="submit"  name="enviar" id="" value = "Crear"/>
           </div>
         </form>
       </article>
 
-      <article class="panel" id="four-panel">
-        <table>
-          <tr>
-            <th>N°</th>
-            <th>Fecha solicitud</th>
-            <th>Producto</th>
-            <th>Cantidad</th>
-          </tr>
-
-          <tr>
-            <td>1</td>
-            <td>22/05/2022</td>
-            <td>Marco metálico azúl unisex</td>
-            <td>10</td>
-          </tr>
-
-          <tr>
-            <td>2</td>
-            <td>18/05/2022</td>
-            <td>Marco tipo eagle azúl</td>
-            <td>15</td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td>03/05/2022</td>
-            <td>Marco tipo coco rojo</td>
-            <td>13</td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>27/04/2022</td>
-            <td>Marco tipo eagle purpura</td>
-            <td>45</td>
-          </tr>
-
-          <tr>
-            <td>5</td>
-            <td>18/04/2022</td>
-            <td>Marco tipo eagle negro</td>
-            <td>35</td>
-          </tr>
-
-          <tr>
-            <td>6</td>
-            <td>05/04/2022</td>
-            <td>Marco metálico gris femenino</td>
-            <td>11</td>
-          </tr>
-
-          <tr>
-            <td>7</td>
-            <td>23/03/2022</td>
-            <td>Marco tipo coco gris</td>
-            <td>8</td>
-          </tr>
-
-          <tr>
-            <td>8</td>
-            <td>20/03/2022</td>
-            <td>Marco tipo coco cuadrado</td>
-            <td>32</td>
-          </tr>
-
-          <tr>
-            <td>9</td>
-            <td>18/02/2022</td>
-            <td>Marco tipo eagle morado</td>
-            <td>25</td>
-          </tr>
-
-          <tr>
-            <td>10</td>
-            <td>13/02/2022</td>
-            <td>Marco metálico blanco unisex</td>
-            <td>35</td>
-          </tr>
-        </table>
-      </article>
     </section>
   </div>
 </body>

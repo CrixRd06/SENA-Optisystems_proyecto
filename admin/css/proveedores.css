@@ -128,7 +128,7 @@ form input, button, select, span {
   width: 100%;
 }
 
-form span:nth-child(1){
+.cajaFlex .botonSecundario{
   background-color: #636363;
   color: white;
   cursor: pointer;
