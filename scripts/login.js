@@ -59,6 +59,7 @@ formulario.addEventListener('submit', (e) => {
             window.location = "../admin/html/indexAdmin.html";
             return true;
         }
+
         // document.querySelectorAll('.formulario_grupo-correct').forEach((icono) => {
         //     icono.classList.remove('formulario_grupo-correct');
         // });
