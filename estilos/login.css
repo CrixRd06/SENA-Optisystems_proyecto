@@ -2,6 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	background: url(../imagenes/login.jpg) no-repeat center top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-size: cover;
 	font-family: sans-serif;
 }
@@ -35,7 +37,6 @@ header i {
 	margin-right: 10px;
 }
 
-
 .login-box {
 	width: 450px;
 	height: 635px;
@@ -47,14 +48,12 @@ header i {
 	box-sizing: border-box;
 	opacity: 100%;
 	border-radius: 10px;
+	align-items: center;
 }
 
 .formulario_grupo {
 	margin-top: -10px;
 	padding-top: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 .formulario_grupo-input {
@@ -69,13 +68,16 @@ header i {
 }
 
 .label-inputs {
+	display: block;
 	padding-bottom: 10px;
 	font-weight: 700;
 	cursor: pointer;
+	text-align: left;
+	margin-left: 62px;
 }
 
-
 .formulario-input {
+	margin-left: 61px;
 	width: 300px;
 	height: 45px;
 	line-height: 45px;
@@ -85,6 +87,7 @@ header i {
 	color: black;
 	padding: 0 40px 0 10px;
 	font-size: 16px;
+	align-items: center;
 }
 
 .message-error{
@@ -93,6 +96,7 @@ header i {
 	margin: 10px 0px 0px 0px;
 	display: none;
 	text-align: center;
+	margin-left: 61px;
 }
 
 .message-error-on{
@@ -119,8 +123,9 @@ header i {
 }
 
 #BtnSubmit {
-	margin-top: 20px;
+	margin-top: 10px;
 	margin-bottom: 20px;
+	margin-left: 149px;
 	background-color: white;
 	border: none;
 	border-radius: 8px;
@@ -149,9 +154,8 @@ header i {
 .cajaCondiciones{
 	display: flex;
 	margin-top: 30px;
-	margin-left: 90px;
-	margin-right: 75px;
-	word-wrap: break-word;
+	margin-left: 70px;
+	margin-right: 65px;
 }
 
 .inputch{
@@ -164,16 +168,17 @@ header i {
 	padding-top: 1px;
 	margin-left: 2px; 
 	cursor: pointer;
-	width: 700px;
-	display: inline-block; 
+	width: 280px;
 	vertical-align: top;
+	word-wrap: break-word;
+	text-align: center;
 }
 
 .error-formulario{
 	margin-top: 0px;
-	margin-bottom: 20px;
-	height: 45px;
-	line-height: 45px;
+	margin-bottom: 10px;
+	height: 35px;
+	line-height: 35px;
 	background-color: #AD1B00;
 	border-radius: 15px;
 	display: none;
@@ -185,7 +190,8 @@ header i {
 }
 
 .error-formulario p{
-	margin: 0 0 0 15px;
+	font-size: 12px;
+	margin: 0px 8px 0px 8px;
 }
  
 .formulario_grupo-correct .icono-estado{
@@ -196,9 +202,6 @@ header i {
 .formulario_grupo-incorrect{
 	margin-top: -10px;
 	padding-top: 10px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 }
 
 /* Estilos de validación */
