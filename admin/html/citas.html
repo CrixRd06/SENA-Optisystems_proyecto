@@ -47,24 +47,23 @@
 		</div>
 	</div>
 	<!-- Fin menu lateral -->
-	<form action="">
-		<section class="ver-citas">
-			<h2>Citas</h2>
-			<div class="ver-producto">
-				<table>
-					<caption></caption>
-					<!-- Fila -->
+	<section class="ver-citas">
+		<h2>Citas</h2>
+		<div class="ver-producto">
+			<table id="tableCitas">
+				<thead>
 					<tr class="titulos">
-						<!-- Crear celdas -->
-						<td>#</td>
-						<td>Nombre</td>
-						<td>Tipo</td>
-						<td>nº de identificación</td>
-						<td>Correo</td>
-						<td>Celular</td>
-						<td>Fecha</td>
-						<td>Selección</td>
+						<th>n</th>
+						<th>Nombre</th>
+						<th>Tipo</th>
+						<th>nº de identificación</th>
+						<th>Correo</th>
+						<th>Celular</th>
+						<th>Fecha</th>
+						<th>Selección</th>
 					</tr>
+				</thead>
+				<tbody>
 					<tr>
 						<td>1</td>
 						<td>Juanito alimaña</td>
@@ -74,7 +73,7 @@
 						<td>3012207211</td>
 						<td>28/07/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -87,20 +86,20 @@
 						<td>3023409812</td>
 						<td>20/07/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Maria Mireyavedo Manriquez</a></td>
+						<td>Maria Mireyavedo Manriquez</td>
 						<td>C.C</td>
 						<td>1112348769</td>
 						<td>MariaMacevedo@gmail.com</td>
 						<td>3208948921</td>
 						<td>20/05/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -113,20 +112,20 @@
 						<td>3228570713</td>
 						<td>10/06/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
 					<tr>
 						<td>5</td>
-						<td>Francisco Aguilar</a></td>
+						<td>Francisco Aguilar</td>
 						<td>C.C</td>
 						<td>65174230</td>
 						<td>Faguilar@gmail.com</td>
 						<td>3131721821</td>
 						<td>15/04/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -139,7 +138,7 @@
 						<td>3182996041</td>
 						<td>08/04/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -152,7 +151,7 @@
 						<td>3191320116</td>
 						<td>22/05/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -165,7 +164,7 @@
 						<td>3015195037</td>
 						<td>01/05/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -178,7 +177,7 @@
 						<td>3001171071</td>
 						<td>11/05/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
@@ -191,13 +190,50 @@
 						<td>3013681119</td>
 						<td>02/05/22</td>
 						<td>
-							<input type="checkbox" name="selecionar" id="">
+							<input type="checkbox">
 							<i class="fa-solid fa-trash-can"></i>
 						</td>
 					</tr>
-				</table>
-			</div>
-		</section>
-	</form>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<button id="btn-excel" class="btn-excel" onclick="exportTableToExcel('tableCitas')">Excel</button>
+
+	<script>
+		function exportTableToExcel(tableID, filename = '') {
+			var downloadLink;
+			var dataType = 'application/vnd.ms-excel';
+			var tableSelect = document.getElementById(tableID);
+			var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
+
+			// Specify file name
+			filename = filename ? filename + '.xls' : 'excel_data.xls';
+
+			// Create download link element
+			downloadLink = document.createElement("a");
+
+			document.body.appendChild(downloadLink);
+
+			if (navigator.msSaveOrOpenBlob) {
+				var blob = new Blob(['ufeff', tableHTML], {
+					type: dataType
+				});
+				navigator.msSaveOrOpenBlob(blob, filename);
+			} else {
+				// Create a link to the file
+				downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
+
+				// Setting the file name
+				downloadLink.download = filename;
+
+				//triggering the function
+				downloadLink.click();
+
+			}
+		}
+	</script>
+
 </body>
+
 </html>

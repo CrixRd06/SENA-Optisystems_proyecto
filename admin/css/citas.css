@@ -114,7 +114,6 @@
 
 .ver-producto{
 	width: 90%;
-	border: 5px solid #ffff;
 	border-radius: 10px;
 	margin-top: 0px;
 	margin-left: 50px;
@@ -135,7 +134,7 @@ table{
     width: 100%;
 }
 
-.titulos>td{
+.titulos>th{
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -179,9 +178,9 @@ tr i:hover{
 	background-color: #d9d9d9;
 }
 
-button{
+.btn-excel{
 	margin-top: 10px;
-	margin-left: 1000px;
+	margin-left: 1100px;
 	background-color: #009b34;
 	border: none;
 	border-radius: 8px;
@@ -192,4 +191,8 @@ button{
 	display:block;
 	font-size: 16px;
 	cursor: pointer;
+}
+
+.btn-excel:hover{
+	background-color: #007c2a;
 }
