@@ -35,13 +35,14 @@
 	<div class="contenedor-menu">
 		<div class="cont-menu">
 			<nav>
-				<a class="icono" href="/admin/html/indexAdmin.html">Inicio</a>
-				<a href="/admin/html/productos.html"></i> Productos</a>
-				<a href="/admin/html/domicilios.html"></i> Domicilios</a>
-				<a href="/Admin/Html/citas.html">Citas</a>
-				<a href="inventario.html">Inventario</a>
-				<a href="proveedores.html">Proveedores</a>
-				<a href="/admin/html/gestion_usuarios.html">Gestión de usuarios</a>
+				<a class="icono" href="./indexAdmin.html">Inicio</a>
+				<a href="./productos.html"></i> Productos</a>
+				<a href="./domicilios.html"></i> Domicilios</a>
+				<a href="./citas.html">Citas</a>
+				<a href="./inventario.html">Inventario</a>
+				<a href="./proveedores.html">Proveedores</a>
+				<a href="./rrhh.html">Recursos Humanos</a>
+				<a href="./gestion_usuarios.html">Gestión de usuarios</a>
 				<a href="https://www.facebook.com/kfoptica">Facebook</a>
 			</nav>
 			<label for="btn-menu">✖️</label>
@@ -60,53 +61,54 @@
 					<div class="row">
 						<div id="imagen">
 							<img id="userimg" src="/admin/imagenes/blank-profile-picture-973460.svg" alt="">
-						<div class="row">
-						<button class="col-4"> Agregar</button>
-						<button class="col-4" >Eliminar</button></div>	
+							<div class="row">
+								<button class="col-4"> Agregar</button>
+								<button class="col-4">Eliminar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="infoUser" class="col-9">
+					<h3>Información personal</h3>
+					<div id="info">
+						<input type="text" name="nombres" id="" placeholder="Nombres">
+						<input type="text" name="apellidos" id="" placeholder="Apellidos">
+						<select name="" id="">
+							<option value="">C.C</option>
+							<option value="">PEP</option>
+							<option value="">Pasaporte</option>
+						</select>
+						<input type="text" name="numero" id="" placeholder="Nº de identificación">
+						<input type="email" name="correo" id="" placeholder="Email">
+						<input type="text" name="celular" id="" placeholder="Celular">
+					</div>
+					<h3>Configuración</h3>
+					<div id="config">
+						<input type="text" name="" id="" placeholder="Nombre de usuario">
+						<select name="" id="">
+							<option value="">Tipo de usuario</option>
+							<option value="">Cliente</option>
+							<option value="">Empleado</option>
+						</select>
+						<input type="text" name="" id="Rol" placeholder="Rol">
+					</div>
+					<h3>Permisos</h3>
+					<div id="perm">
+						<ul>
+							<li><label for="per1">Ver Productos</label><input type="checkbox" name="per1" id=""></li>
+							<li><label for="per1">Editar Productos</label><input type="checkbox" name="per1" id=""></li>
+							<li><label for="per1">Ver Citas</label><input type="checkbox" name="per1" id=""></li>
+							<li><label for="per1">Ver Domicilios</label><input type="checkbox" name="per1" id=""></li>
+							<li><label for="per1">Ver inventario</label><input type="checkbox" name="per1" id=""></li>
+							<li><label for="per1">Editar inventario</label><input type="checkbox" name="per1" id="">
+							</li>
+							<li><label for="per1">Ver proveedores</label><input type="checkbox" name="per1" id=""></li>
+							<li><label for="per1">Editar Proveedores</label><input type="checkbox" name="per1" id="">
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-			<div id="infoUser" class="col-9">
-				<h3>Información personal</h3>
-				<div id="info">
-					<input type="text" name="nombres" id="" placeholder="Nombres">
-					<input type="text" name="apellidos" id="" placeholder="Apellidos">
-					<select name="" id="">
-						<option value="">C.C</option>
-						<option value="">PEP</option>
-						<option value="">Pasaporte</option>
-					</select>
-					<input type="text" name="numero" id="" placeholder="Nº de identificación">
-					<input type="email" name="correo" id="" placeholder="Email">
-					<input type="text" name="celular" id="" placeholder="Celular">
-				</div>
-				<h3>Configuración</h3>
-				<div id="config">
-					<input type="text" name="" id="" placeholder="Nombre de usuario">
-					<select name="" id="">
-						<option value="">Tipo de usuario</option>
-						<option value="">Cliente</option>
-						<option value="">Empleado</option>
-					</select>
-					<input type="text" name="" id="Rol" placeholder="Rol">
-				</div>
-				<h3>Permisos</h3>
-				<div id="perm">
-					<ul>
-						<li><label for="per1">Ver Productos</label><input type="checkbox" name="per1" id=""></li>
-						<li><label for="per1">Editar Productos</label><input type="checkbox" name="per1" id=""></li>
-						<li><label for="per1">Ver Citas</label><input type="checkbox" name="per1" id=""></li>
-						<li><label for="per1">Ver Domicilios</label><input type="checkbox" name="per1" id=""></li>
-						<li><label for="per1">Ver inventario</label><input type="checkbox" name="per1" id=""></li>
-						<li><label for="per1">Editar inventario</label><input type="checkbox" name="per1" id="">
-						</li>
-						<li><label for="per1">Ver proveedores</label><input type="checkbox" name="per1" id=""></li>
-						<li><label for="per1">Editar Proveedores</label><input type="checkbox" name="per1" id="">
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
 		</div>
 	</section>
 

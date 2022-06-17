@@ -56,7 +56,22 @@ formulario.addEventListener('submit', (e) => {
     if (campos.email && campos.password && terminos.checked) {
         if (email == "adminti@gmail.com" && password == "Adminti12,") {
             window.alert("El ingreso ha sido exitoso");
-            window.location = "../admin/html/indexAdmin.html";
+            window.location = "./admin/html/indexAdmin.html";
+            return true;
+        }
+        if (email == "gerentecompras@gmail.com" && password == "Gerentei12,") {
+            window.alert("El ingreso ha sido exitoso");
+            window.location = "./admin/html/proveedores.html";
+            return true;
+        }
+        if (email == "jefeInventario@gmail.com" && password == "Inventario12,") {
+            window.alert("El ingreso ha sido exitoso");
+            window.location = "./admin/html/inventario.html";
+            return true;
+        }
+        if (email == "jefePersonal@gmail.com" && password == "Recursosh12,") {
+            window.alert("El ingreso ha sido exitoso");
+            window.location = "./admin/html/rrhh.html";
             return true;
         }
 
