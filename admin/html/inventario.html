@@ -18,10 +18,10 @@
 				<label for="btn-menu">☰</label>
 			</div>
 			<div class="logo">
-				<img src="/imagenes/Logo OptiSystems/Variante Horizontal/PNGH/default-monochrome-white.png">
+				<img src="../imagenes/logo.png" alt="" class="logo">
 			</div>
 			<nav class="menu">
-				<a href="/index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
+				<a href="../../index.html"><i class="fa-solid fa-arrow-right-from-bracket"></i> Cerrar sesión</a>
 			</nav>
 		</div>
 	</header>
@@ -65,22 +65,22 @@
 		</thead>
 		<tbody>
 			<tr>
-			<td>40</td>
-			<td>7</td>
-			<td>33</td>
-			<td>lentes</td>
-			<td>xxxxxxx</td>
-			<td>$170.000</td>
-			<td>$250,000</td>
-			<td>!</td>
-			<td>
-				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
-			</td></label>
+				<td>40</td>
+				<td>7</td>
+				<td>33</td>
+				<td>lentes</td>
+				<td>xxxxxxx</td>
+				<td>$170.000</td>
+				<td>$250,000</td>
+				<td>!</td>
+				<td>
+					<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+					<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+				</td></label>
 			</tr>
 			<tr class="tap" id="lap">
 				<td>50</td>
-		    	<td>5</td>
+				<td>5</td>
 				<td>45</td>
 				<td>marco metalico de mujer</td>
 				<td>xxxxxxx</td>
@@ -88,13 +88,13 @@
 				<td>$200.000</td>
 				<td>!</td>
 				<td>
-				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+					<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+					<label><button><i class="fa-solid fa-trash-can"></i></button></div>
 				</td></label>
 			</tr>
 			<tr>
 				<td>60</td>
-			    <td>35</td>
+				<td>35</td>
 				<td>25</td>
 				<td>marco metalico de hombre</td>
 				<td>xxxxxxx</td>
@@ -102,13 +102,13 @@
 				<td>$200.000</td>
 				<td>!</td>
 				<td>
-				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+					<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+					<label><button><i class="fa-solid fa-trash-can"></i></button></div>
 				</td></label>
 			</tr>
 			<tr>
 				<td>70</td>
-			    <td>15</td>
+				<td>15</td>
 				<td>55</td>
 				<td>lentes de contacto</td>
 				<td>xxxxxxx</td>
@@ -116,8 +116,8 @@
 				<td>$120.00</td>
 				<td>!</td>
 				<td>
-				<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
-				<label><button><i class="fa-solid fa-trash-can"></i></button></div>
+					<label><button><i class="fa-solid fa-pen-to-square"></i></button></label>
+					<label><button><i class="fa-solid fa-trash-can"></i></button></div>
 				</td></label>
 				</td>
 			</tr>
@@ -136,7 +136,7 @@
 			<label class="tab" id="two-tab" for="actualizar">AGREGAR PRODUCTO</label>
 			<label class="tab" id="three-tab" for="consultar">OBSERVACIONES</label>
 			<label class="tab" id="four-tab" for="eliminar">GUARDAR</label>
-			<form id= "four-tab"action="/SENA-Optisystems_proyecto/html/reporte.html"><button>REPORTE</button></form>
+			<form id="four-tab" action="/SENA-Optisystems_proyecto/html/reporte.html"><button>REPORTE</button></form>
 		</div>
 
 		<section class="panels">
@@ -144,7 +144,7 @@
 			<article class="panel" id="one-panel">
 				<form action="">
 					<h3>
-						agregar producto
+						AGREGAR PRODUCTO
 						<i class="fa-solid fa-circle-plus"></i>
 					</h3>
 					<input type="text" name="nombre" id="" placeholder="Nombre Proveedor" />
@@ -160,13 +160,21 @@
 			<article class="panel" id="two-panel">
 				<form action="">
 					<h4>
-						agregar producto
+						AGREGAR PRODUCTO
 						<i class="fa-solid fa-pen"></i>
 					</h4>
-					<input type="text" name="nombre" id="" value="nombre" />
-					<input type="text" name="cantidad" id="" value="cantidad" />
-					<input type="precio" name="precio de compra" id="" value="$00,00" />
-					<input type="text" name="precio de venta" id="" value="precio de venta" />
+					<label class="fet" id="Nombre">Nombre :</label>
+					<input class="fet" placeholder="Nombre" required title="Se necesita ingresar el nombre" type="text"
+						autocomplete="ON"><br>
+					<label class="fet" id="cantidad">cantidad :</label>
+					<input class="fet" placeholder="cantidad" required title="Se necesita ingresar la cantidad"
+						type="text" autocomplete="ON"><br>
+					<label class="fet" id="valor">valor :</label>
+					<input class="fet" placeholder="valor" required title="Se necesita ingresar el valor" type="text"
+						autocomplete="ON"><br>
+					<label class="fet" id="precio de venta">precio de venta :</label>
+					<input class="fet" placeholder="precio de venta" required
+						title="Se necesita ingresar el precio de venta" type="text" autocomplete="ON"><br>
 					<div class="cajaFlex">
 						<button>cancelar</button>
 						<input type="submit" name="enviar" id="" value="agregar" />
@@ -177,20 +185,20 @@
 			<article class="panel" id="three-panel">
 				<form action="">
 					<h4>
-						observaciones
+						OBSERVACIONES
 						<i class="fa-solid fa-magnifying-glass"></i>
 					</h4>
-					<select name="seleccionar producto" id="">
+					<select name="seleccionar producto" id="" >
 						<option disabled selected>seleccionar producto..</option>
 						<option value="">lente</option>
 						<option value="">marco metalico de mujer</option>
 						<option value="">marco metalico para hombre</option>
 						<option value="">lentes de contacto</option>
-						<option value="">lentes para sol</option> 
-					
-					</select>
+						<option value="">lentes para sol</option>
 
-					<input type="text" name="observaciones" id="" value="observaciones" disabled />
+					</select>
+					<input class="top" type="text" placeholder="text" placeholder="seleccionar producto" required
+						title="seleccionar producto" maxlength="10" size="35" id="text">
 					<div class="cajaFlex">
 						<button>cancelar</button>
 						<input type="submit" name="editar" id="" value="guardar" />
@@ -201,28 +209,44 @@
 			<article class="panel" id="four-panel">
 				<form action="">
 					<h4>
-						¿desea guardar?
+						¿DESEAS GUARDAR?
 						<i class="fa-solid fa-circle-minus"></i>
 					</h4>
 					<div class="cajaFlex">
-						<button>Cancelar</button>
-						<input type="submit" name="enviar" id="" value="guardar" />
-					</div>
-					<article class="panel" id="six-tab">
-						<form action="">
-							<form for="pagina.index"> <button></button></form>
-				</form>
-			</article>
+						<input type="reset" value="cancelar" class="botonC" onclick="saludo()">
+						<input type="submit">
+
+						<script>
+
+							function saludo() {
+								window.confirm('¿esta seguro que desea cancelar? perdera los cambios');
+							}
+
+						</script>
+						<article class="panel" id="six-tab">
+							<form action="">
+								<form for="pagina.index"> <button></button></form>
+							</form>
+						</article>
 		</section>
 	</div>
+	<script>
+		function limpiar() {
+			window.confirm("¿esta seguro que desea cancelar? perdera los cambios")
+		}
+	</script>
+
 	<!-- Fin interfáz por pestañas  -->
+	<!--<script>
+		alert("Bienvenidos a la gestión de inventario")
+	  </script>
 </body>
-<!-- Inicio parte de footer -->
-<footer>
-	<h3>
-		@2022 Copyright - Todos los derechos reservados Kf Optica</h3>
-</footer>
-<!-- Fin parte de footer -->
+<-- Inicio parte de footer -->
+	<footer>
+		<h3>
+			@2022 Copyright - Todos los derechos reservados Kf Optica</h3>
+	</footer>
+	<!-- Fin parte de footer -->
 
 </html>
 </body>

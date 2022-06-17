@@ -5,7 +5,7 @@ h1{
 	position: right;
     background-position: right;
     margin: center;
-    box-shadow: 1px 1px 10px rgb(4, 196, 68);
+    box-shadow: 1px 1px 10px rgb(0,155,52,0.8);
 	text-align-last: center;
     margin-top: 8%;
 }
@@ -48,9 +48,9 @@ td{
 	padding-right: 10xp;
 }
 .sop{
-	background-color:rgba(3, 119, 42, 0.8);
+	background-color:rgb(0,155,52,0.8);
 	vertical-align: center;
-	color: #f1f1f1;
+	color: #000000;
 }
 
 
@@ -184,8 +184,10 @@ mnl-modal{
 	height: 100px;
 	position: fixed;
 	top: 0;left: 0;
-	background-color: rgb(0,155,52,0.8)
+	background-color:rgba(204, 204, 204, 0.8)
 }
+
+
 .container{
 	width: 90%;
 	max-width: 1200px;
@@ -344,8 +346,7 @@ a.icono>img{
   #actualizar:checked ~ .tabs #two-tab,
   #consultar:checked ~ .tabs #three-tab,
   #eliminar:checked ~ .tabs #four-tab{
-	background:#009b34;
-	color: white;
+	
   }
   /*Fin interfáz por pestañas*/
   
@@ -442,7 +443,7 @@ section h2{
   }
   
   form {
-	padding: 20px;
+	padding: 8px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
