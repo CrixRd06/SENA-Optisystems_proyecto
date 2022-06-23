@@ -70,7 +70,7 @@
     <br>
     <h1>JORNADA</h1>
     <div class="tabla">
-        <table>
+        <table id="tablaTres">
             <thead>
                 <tr>
                     <th>Id Usuario</th>
@@ -97,7 +97,7 @@
                 <td>Tarde</td>
                 <td>Aprendiz</td>
                 <td>3204070823</td>
-                <td>Car 54 #20-10</td>
+                <td>Car 54 No20-10</td>
                 <td>01/06/2022</td>
                 <td>04/04/2023</td>
             </tr>
@@ -111,7 +111,7 @@
                 <td>Mañana</td>
                 <td>Obra labor</td>
                 <td>3054785162</td>
-                <td>Call 55 #10-20</td>
+                <td>Call 55 No10-20</td>
                 <td>01/03/2022</td>
                 <td>27/03/2022</td>
             </tr>
@@ -125,10 +125,9 @@
                 <td>Tarde</td>
                 <td>Obra labor</td>
                 <td>3021428521</td>
-                <td>Av 20 #18-70</td>
+                <td>Av 20 No18-70</td>
                 <td>15/03/2022</td>
                 <td>20/03/2023</td>
-            </tr>
             </tr>
             <tr>
                 <td>126</td>
@@ -140,7 +139,7 @@
                 <td>Noche</td>
                 <td>Temporal</td>
                 <td>3057814631</td>
-                <td>Call 80 #85-74</td>
+                <td>Call 80 No85-74</td>
                 <td>02/02/2022</td>
                 <td>22/03/2022</td>
             </tr>
@@ -154,7 +153,7 @@
                 <td>Noche</td>
                 <td>Obra labor</td>
                 <td>3041547413</td>
-                <td>Call 88 #75-64</td>
+                <td>Call 88 No75-64</td>
                 <td>23/07/2021</td>
                 <td>12/11/2022</td>
             </tr>
@@ -168,7 +167,7 @@
                 <td>Mañana</td>
                 <td>Obra labor</td>
                 <td>3102379117</td>
-                <td>Carr 5 #3-74</td>
+                <td>Carr 5 No3-74</td>
                 <td>01/02/2022</td>
                 <td>27/03/2022</td>
             </tr>
@@ -182,7 +181,7 @@
                 <td>Mañana</td>
                 <td>Obra labor</td>
                 <td>3083720732</td>
-                <td>Carr 8 #20-59</td>
+                <td>Carr 8 No20-59</td>
                 <td>12/11/2021</td>
                 <td>06/08/2023</td>
             </tr>
@@ -196,7 +195,7 @@
                 <td>Mañana</td>
                 <td>Obra labor</td>
                 <td>3202442650</td>
-                <td>Call 59#27-35 </td>
+                <td>Call 59 No27-35 </td>
                 <td>18/07/2021</td>
                 <td>25/11/2023</td>
             </tr>
@@ -210,7 +209,7 @@
                 <td>Tarde</td>
                 <td>Obra labor</td>
                 <td>3096440967</td>
-                <td>Carr 56A #51-81</td>
+                <td>Carr 56A No51-81</td>
                 <td>05/01/2022</td>
                 <td>02/08/2023</td>
             </tr>
@@ -224,7 +223,7 @@
                 <td>Tarde</td>
                 <td>Obra labor</td>
                 <td>3106361804</td>
-                <td>Call 10 #9-78</td>
+                <td>Call 10 No9-78</td>
                 <td>06/08/2021</td>
                 <td>09/04/2023</td>
             </tr>
@@ -232,7 +231,7 @@
     </div>
     <div class="grid__">
         <div class="reloj">
-            <button type="button" class="descargar">Descargar tabla </button>
+            <button type="button" class="descargar" onclick="exportTableToExcel('tablaTres')">Descargar tabla </button>
         </div>
     </div>
     <script src="../../scripts/rrh.js"></script>

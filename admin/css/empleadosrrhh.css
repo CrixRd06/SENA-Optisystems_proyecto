@@ -76,69 +76,150 @@ nav ul li a {
 nav ul li a:hover {
     color: #06a83c;
 }
-/*/
-menu lateral
-/*/
-.menu{
-    width: 3rem;
-    height: 4rem;
-    border-radius: 1rem;
-    position: absolute;
-    top: 4rem;
-    left: 2%;
-    font-size: 2.5rem;
-    text-align: center;
-    transition: left 0.7s;
+/*Menù lateral*/
+#btn-menu{
+	display: none;
 }
-.checkbox:checked ~ .menu {
-     left: 15%;
-     border-radius: 0 0.5rem 0.5rem 0;
+.container-menu{
+	position: fixed;
+	background: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	top:0; 
+	left: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
 }
-
-.left-panel {
-    width: 15%;
-    height: 100%;
-    background-color: #009b34;
-    position: absolute;
-    top: 0%;
-    left: -40%;
-    display: flex;
-    justify-content: center;
-    transition: left 0.4s;
-    padding-top: 10rem;
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
 }
-
-.checkbox:checked ~ .left-panel {
-    left: 0;
+.cont-menu{
+	width: 100%;
+	max-width: 250px;
+	background: #009b34;
+	height: 100%;
+	position: fixed;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
 }
-
-
-.checkbox{
-    display: none;
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
 }
-
-.left-panel li:hover{
-
+.cont-menu nav{
+	transform: translateY(15%);
+}
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: white;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
 	border-left: 5px solid white;
 	background: #007c2a;
-} 
-
-.left-panel li{
-    list-style: none;
-    font-size: 2rem;
-    text-align: left;
-    padding: 0.5rem;
-    margin: 0rem 0;
+}
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
 }
 
-.left-panel ul a {
-    text-decoration: none;
-    color: #fff;
+.cont-menu>nav>a{
+	margin-left:0px;
 }
 
+.ver-producto{
+	width: 90%;
+	border: 5px solid #ffff;
+	border-radius: 10px;
+	margin-top: 0px;
+	margin-left: 50px;
+	padding: 15px;
+	align-items: center;
+}
+
+.ver-producto input{
+	width:100px;
+}
+
+.ver-prodycto caption{
+	font-size: 30px;
+}
+
+.header table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.titulos>td{
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.header td{
+	border: 1px solid black;
+	padding: 5px;
+	text-align: center;
+	font-family: garamond, sans-serif;
+	font-size: 18px;
+}
+
+.header th{
+	border: 1px solid black;
+}
+
+.btn-acciones img:hover{
+	border: 1px solid black;
+}
+
+.header section.ver-citas h2{
+	margin-top: 130px;
+	margin-left: 80px;
+	font-size: 60px;
+	margin-bottom: 0px;
+	color: #009b34;
+}
+.header input[type=checkbox]{
+	transform: scale(1.5);
+	width:14px;
+	margin-left: 5px;
+}
+
+.header tr i{
+	padding:3px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+
+.header tr i:hover{
+	background-color: #d9d9d9;
+}
+
+.header button{
+	margin-top: 10px;
+	margin-left: 1000px;
+	background-color: #009b34;
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 15px 28px;
+	text-align: center;
+	text-decoration: none;
+	display:block;
+	font-size: 16px;
+	cursor: pointer;
+}
+/*finnnn*/
 .grid{
-    background: #8CF19A;
-    padding: 0.5em;
+    background: #009b34;
+    padding: 1em;
     display: grid;
     grid-template-columns: 100%;
 }
@@ -149,14 +230,14 @@ menu lateral
 .grid img{
     display: block;
     margin: auto;
-    width: 5rem;
-    height: 5rem;
+    width: 10rem;
+    height: 10rem;
 }
 h1{
     font-size: 3em;
     text-align: center;
-    color: #1E7829;
-    text-shadow: 0.5em 0.5em 1em;
+    color: #eaeaea;
+    text-shadow: 0.5em 0.5em 1em rgb(113, 113, 113);
 }
 
 
@@ -171,7 +252,7 @@ h1{
 
 .formulario header{
     width: 100%;
-    background-color: #8CF19A;
+    background-color: #009b34;
     overflow: hidden;
     color: white;
 }
@@ -201,7 +282,7 @@ h1{
 .contact input:not([type='submit']), .contact textarea, .contact select{
     text-align: center;
     border: none;
-    border-bottom: 2px solid #8CF19A;
+    border-bottom: 2px solid #009b34;
     margin-bottom: 10px;
     font-size: 15px;
     outline: none;
@@ -215,7 +296,7 @@ h1{
 input[type='submit']{
     padding: 0.5em;
     border: none;
-    background-color: #8CF19A;
+    background-color: #009b34;
     color: white;
     border-radius: 1em;
     font-size: 20px;
