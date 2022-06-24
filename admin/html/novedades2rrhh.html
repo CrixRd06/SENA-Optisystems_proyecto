@@ -9,8 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/admin/css/novedades2rrhh.css">
-    <link rel="stylesheet" href="../css/rrhh.css">
+    <link rel="stylesheet" href="../css/novedades2rrhh.css">
 </head>
 <body>
     <header>
@@ -68,7 +67,7 @@
     <br>
     <h1>NOVEDADES</h1>
     <div class="tabla">
-        <table>
+        <table id="tablaDos">
             <thead>
                 <tr>
                     <th>Id Novedad</th>
@@ -205,7 +204,7 @@
     </div>
     <div class="grid__">
         <div class="reloj">
-            <button type="button" class="descargar">Descargar tabla </button>
+            <button type="button" class="descargar" onclick="exportTableToExcel('tablaDos')">Descargar tabla </button>
         </div>
     <script src="../../scripts/rrh.js"></script>
 </body>

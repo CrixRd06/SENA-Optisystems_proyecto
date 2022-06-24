@@ -7,7 +7,6 @@
 header{
 	display: grid;
 	grid-template-columns: 200px auto;
-	width: 100%;
 	padding: 15px;
 	gap: 90px;
 	align-items: center;
@@ -43,9 +42,16 @@ nav ul li a:hover{
 }
 img{
 	border-radius: 15px;
-	height: 500px;
+	width: 200px;
+	object-fit: cover;
+}
+
+.info > img{
+	border-radius: 15px;
 	width: 100%;
 	object-fit: cover;
+	max-height: 350px;
+
 }
 h2{
 	color: #009b34;

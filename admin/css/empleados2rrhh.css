@@ -138,7 +138,7 @@ menu lateral
 }
 
 .grid{
-    background: #8CF19A;
+    background: #009b34;
     padding: 1em;
     display: grid;
     grid-template-columns: 100%;
@@ -192,7 +192,7 @@ tr:hover td{
 }
 
 .grid__{
-    background: #8CF19A;
+    background: #009b34;
     padding: 1em;
     display: grid;
     grid-template-columns: 100%;

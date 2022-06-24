@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RRHH</title>
     <link rel="icon" href="../imagenes/logo.ico">
-    <link rel="stylesheet" href="../css/consultarrrhh.css">
     <link rel="stylesheet" href="../../fontawesome-free-6.0.0-web/css/all.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/rrhh.css">
+    <link rel="stylesheet" href="../css/consultarrrhh.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    
 </head>
 
 <body>
@@ -68,10 +78,93 @@
         <img src="../imagenes/Kf optica sin fondo.png" alt="">
     </div>
     <br>
-    <h1>JORNADA</h1>
-    <script src="../../scripts/rrh.js"></script>
+    
+    <div>  <h1 class="hletra">GRÁFICO DE CUMPLIMIENTO</h1> </div><br><br>
+
+    
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-8">
+            <div>
+                <canvas id="myChart"></canvas>
+              </div>
+          </div>
+          <div class="col-md-2">
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <br><br>
+    
+
+    <script>
+        const labels = [
+          'Junio 01',
+          'Junio 02',
+          'Junio 03',
+          'Junio 04',
+          'Junio 05',
+          'Junio 06',
+          'Junio 07',
+          'Junio 08',
+          'Junio 09',
+          'Junio 10',
+          'Junio 11',
+          'Junio 12',
+          'Junio 13',
+          'Junio 14',
+          'Junio 15',
+          'Junio 16',
+          'Junio 17',
+          'Junio 18',
+          'Junio 19',
+          'Junio 20',
+          'Junio 21',
+          'Junio 22',
+          'Junio 23',
+          'Junio 24',
+          'Junio 25',
+          'Junio 26',
+          'Junio 27',
+          'Junio 28',
+          'Junio 29',
+          'Junio 30',
+        ];
+      
+        const data = {
+          labels: labels,
+          datasets: [
+          {
+            minBarLength: 100,
+            label: 'Cumplimiento Junio',
+            backgroundColor: '#229954',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [8,7,12,10,8,8,8,7,8,8,10,,7,6,8,7,8,5,,6,7,8,8,8,8,,8,7,7,7]
+
+        }]
+        };
+        
+      
+        const config = {
+          type: 'bar',
+          data: data,
+          options: {}
+        };
+      </script>
+
+
+<script>
+    const myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  </script>
+    <h1  class="hletra">JORNADA</h1>
     <div class="tabla">
-        <table>
+        <table id="tablaUno">
             <thead>
                 <tr>
                     <th>Id horario</th>
@@ -166,9 +259,16 @@
     </div>
     <div class="grid__">
         <div class="reloj">
-            <button type="button" class="descargar">Descargar tabla </button>
+            <button type="button" class="descargarTabla" onclick="exportTableToExcel('tablaUno')">Descargar tabla </button>
         </div>
     </div>
+    <br>
+    <br>
+  
+
+    
+     
 </body>
+<script src="../../scripts/rrh.js"></script>  
 
 </html>
