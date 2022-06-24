@@ -1,3 +1,7 @@
+*{
+	font-family:Arial, Helvetica, sans-serif;
+}
+
 /*Estilos para el encabezado*/
 .header{
 	width: 100%;
@@ -128,6 +132,7 @@ a.icono>img{
 }
 
 #title_produ{
+	margin-left:10px;
 	margin-top: 10px;
 	width:290px;
 	height: 30px;
@@ -137,21 +142,20 @@ a.icono>img{
 	word-break:break-all;
 	color: #009B34;
 	font-size: 50px;
-	margin-left: 170px;
+	margin-left: 174px;
 }
 
 #preci_produ{
 	margin-top: 10px;
 	word-break:break-all;
 	text-align: right;
-	margin-left: 190px;
-	font-size: 40px;
+	margin-left: 212px;
+	font-size: 30px;
 }
 
 #precio_produ{
 	margin-top: 10px;
-	margin-top: 20px;
-	margin-left: 120px;
+	margin-left: 95px;
 }
 
 #prev{
@@ -234,7 +238,7 @@ a.icono>img{
 
 .info{
 	margin-top:400px;
-	margin-left: 30px;
+	margin-left: 20px;
 	margin-right: 30px;
 }
 
@@ -243,11 +247,11 @@ a.icono>img{
 	color:white;
 	padding-left: 10px;
 	font-size: 35px;
-	width:99.4%;
+	width:97%;
 }
 
 #infoAd{
-	width: 99.4%;
+	width: 97%;
 	height: 100px;
 	margin-top:-10px;
 	margin-bottom: 50px;

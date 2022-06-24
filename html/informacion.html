@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Informacion</title>
-	<link rel="stylesheet" href="../estilos/estilosinformacion.css">
+	<link rel="stylesheet" href="../estilos/informacion.css">
 	<link rel="stylesheet" href="../estilos/all.css">
 	<link rel="stylesheet" href="/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+	<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="../scripts/informacion.js"></script> -->
 </head>
-
 <body>
 	<script src="/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
 	<!-- Inicio parte superior de la pagina -->
@@ -37,76 +38,309 @@
 	<!-- Fin parte superior de la pagina-->
 
 	<body>
-		<br>
-		<br>
-		<form action="../html/pago.html" class="form-register">
-			<h1 class="tituloInfo">Información de contacto y envió</h1>
-			<br>
-			<input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombres">
-			<input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
-			<select class="controls" id="">
-				<option disabled selected>Tipo de identificación</option>
-				<option>C.C</option>
-				<option>PEP</option>
-				<option>Pasaporte</option>
-			</select>
-			<input class="controls" type="text" name="numero de identificacion" id="numero de identificacion"
-				placeholder="Número de identificación" pattern="[0-9]+">
-			<input class="controls" type="email" name="correo electronico" id="correo electronico"
-				placeholder="Correo electronico">
-			<input class="controls" type="text" name="celular" id="celular" placeholder="Celular" required>
-			<select class="controls" id="" required>
-				<option disabled selected>Departamento</option>
-				<option value="">Amazonas</option>
-				<option value="">Antioquia</option>
-				<option value="">Bogotá D.C</option>
-				<option value="">Cundinamarca</option>
-				<option value="">Magdalena</option>
-				<option value="">Putumayo</option>
-				<option value="">Quindio</option>
-				<option value="">Sucre</option>
-				<option value="">Tolima</option>
-				<option value="">Nariño</option>
-				<option value="">Cauca</option>
-				<option value="">Huila</option>
-				<option value="">Cesar</option>
-			</select>
-			<input class="controls" type="text" name="ciudad" id="ciudad" placeholder="Ciudad" required>
-			<select class="controls" id="" required>
-				<option disabled selected>Localidad..</option>
-				<option value="">Antonio Nariño</option>
-				<option value="">Barrios Unidos</option>
-				<option value="">Bosa</option>
-				<option value="">Chapinero</option>
-				<option value="">Ciudad bólivar</option>
-				<option value="">Engativa</option>
-				<option value="">Fontibón</option>
-				<option value="">Kennedy</option>
-				<option value="">La calendaria</option>
-				<option value="">Los mártires</option>
-				<option value="">Puente aranda</option>
-				<option value="">Rafael uribe uribe</option>
-				<option value="">San cristóbal</option>
-				<option value="">Santa fe</option>
-				<option value="">Suba</option>
-				<option value="">Sumapaz</option>
-				<option value="">Teusaquillo</option>
-				<option value="">Tunjuelito</option>
-				<option value="">Usaquén</option>
-				<option value="">Usme</option>
-			</select>
-			<input class="controls" type="text" name="direccion" id="direccion" placeholder="Dirección" required>
-			<input class="controls" type="text" name="complemento(casa, torre, etc)" id="complemento(casa, torre, etc)"
-				placeholder="Complemento(casa, torre, etc)">
-			<h2>Nota adicional</h2>
-			<textarea name="" id="" cols="122" rows="2" placeholder="Escriba aqui su nota..." maxlength="250"></textarea>
-			<h2>Adjuntar formula</h2>
-			<input type="file" name="" id="" placeholder="">
-			<input type="submit" value="Confirmar" id="boton">
-		</form>
+		<div class="wrap">
+			<ul class="tabs">
+				<li><a href="#tab1"><span class="fa-solid fa-circle-info"></span><span
+							class="tabs-text">Información</span></a></li>
+				<li><a href="#tab2" class="tab2"><span class="fa-solid fa-wallet"></span><span class="tabs-text">Metodo de
+							pago</span></a></li>
+				<li><a href="#tab3" class="tab3"><span class="fa-solid fa-bag-shopping"></span><span
+							class="tabs-text">Confirmación</span></a></li>
+			</ul>
+
+			<div class="sectionTabs">
+				<!-- Pestaña de información -->
+				<!-- <article id="tab1">
+					<div class="container"> -->
+						<form action="#" class="form-register" id="forms">
+							<h1>Información de contacto y envió</h1>
+							<br>
+							<div class="row">
+								<!-- Nombres -->
+								<div class="formulario_grupo col" id="name-group">
+									<div class="formulario-group-input">
+										<input type="text" class="formulario-input" id="nombre" name="name"
+											placeholder="Nombres">
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Los nombres solo pueden contener letras y espacios.</p>
+								</div>
+
+								<!-- Apellidos -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<input type="text" class="formulario-input" id="firstname" name="firtsname"
+											placeholder="Apellidos">
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Los apellidos solo pueden contener letras y espacios.</p>
+								</div>
+							</div>
+							<div class="row">
+								<!-- Tipo de identificación -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<select class="formulario-input" id="tipoIdentif">
+											<option disabled selected>Tipo de identificación</option>
+											<option>C.C</option>
+											<option>PEP</option>
+											<option>Pasaporte</option>
+										</select>
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Escoja un tipo de identificación.</p>
+								</div>
+								<!-- numero de identificación -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<input type="text" class="formulario-input" id="numIdentif" name="numIdentif"
+											placeholder="n° de identificación">
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">el número de identificación solo puede contener números</p>
+								</div>
+							</div>
+							<div class="row">
+								<!-- Correo electronico -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<input type="email" class="formulario-input" id="email" name="email"
+											placeholder="Email">
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">El correo electronico solo puede contener numeros, letras,
+										puntos, guión y
+										guión bajo.</p>
+								</div>
+								<!-- Celular -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<input type="text" class="formulario-input" id="numberphone" name="numberphone"
+											placeholder="Celular">
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">El celular debe tener 10 digitos y solo puede contener
+										números.
+									</p>
+								</div>
+							</div>
+							<div class="row">
+								<!-- Departamento -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<select class="formulario-input" id="state">
+											<option disabled selected>Departamento</option>
+											<option value="">Amazonas</option>
+											<option value="">Antioquia</option>
+											<option value="">Bogotá D.C</option>
+											<option value="">Cundinamarca</option>
+											<option value="">Magdalena</option>
+											<option value="">Putumayo</option>
+											<option value="">Quindio</option>
+											<option value="">Sucre</option>
+											<option value="">Tolima</option>
+											<option value="">Nariño</option>
+											<option value="">Cauca</option>
+											<option value="">Huila</option>
+											<option value="">Cesar</option>
+										</select>
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Escoja un departamento.</p>
+								</div>
+								<!-- Ciudad -->
+								<div class="formulario_grupo col">
+									<div class="formulario-group-input">
+										<select class="formulario-input" id="state">
+											<option disabled selected>Ciudad</option>
+											<option value="">Bogotá D.C</option>
+										</select>
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Escoja una ciudad.</p>
+								</div>
+							</div>
+							<div class="row">
+								<!-- Localidad -->
+								<div class="formulario_grupo col-2">
+									<div class="formulario-group-input">
+										<select class="formulario-input" id="local">
+											<option disabled selected>Localidad..</option>
+											<option value="">Antonio Nariño</option>
+											<option value="">Barrios Unidos</option>
+											<option value="">Bosa</option>
+											<option value="">Chapinero</option>
+											<option value="">Ciudad bólivar</option>
+											<option value="">Engativa</option>
+											<option value="">Fontibón</option>
+											<option value="">Kennedy</option>
+											<option value="">La calendaria</option>
+											<option value="">Los mártires</option>
+											<option value="">Puente aranda</option>
+											<option value="">Rafael uribe uribe</option>
+											<option value="">San cristóbal</option>
+											<option value="">Santa fe</option>
+											<option value="">Suba</option>
+											<option value="">Sumapaz</option>
+											<option value="">Teusaquillo</option>
+											<option value="">Tunjuelito</option>
+											<option value="">Usaquén</option>
+											<option value="">Usme</option>
+										</select>
+										<i class="icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Escoja una localidad.</p>
+								</div>
+
+								<!-- Dirección -->
+								<div class="formulario_grupo col-6">
+									<div class="formulario-group-input">
+										<input type="text" class="formulario-input" id="nombre" name="name"
+											placeholder="Dirección">
+										<i class=" icono-estado fas fa-circle-xmark"></i>
+									</div>
+									<p class="message-error">Coloque una dirección, esta solo puede contener numeros y
+										letras</p>
+								</div>
+
+								<!-- Complemento -->
+								<div class="formulario_grupo col-4">
+									<div class="formulario-group-input">
+										<input type="text" class="formulario-input" id="complement" name="complement"
+											placeholder="Complemento(casa, torre, etc)">
+									</div>
+								</div>
+							</div><br>
+							<div class="row">
+								<div class="col">
+									<h2>Nota adicional</h2>
+									<textarea name="aditionalText" class="aditionalText" cols="74" rows="2"
+										placeholder="Escriba aqui su nota..." maxlength="250"></textarea>
+								</div>
+								<div class="col">
+									<h2>Adjuntar formula</h2>
+									<input type="file" name="" id="" placeholder="">
+								</div>
+							</div>
+							<input type="submit" value="Confirmar" id="boton" class="boton" hred>
+						</form>
+						<script src="../scripts/validacionInfo.js"></script>
+					</div>
+				</article>
+				<!-- Pestaña de información fin -->
+				<!-- Pestaña de metodo de pago -->
+				<article id="tab2">
+					<div class="container">
+						<div class="pay">
+							<h1>Metodo de pago</h1>
+							<div class="row">
+								<div class="col">
+									<div class="paymentMethods">
+										<h2>Escoja como va a pagar:</h2>
+										<br>
+										<form action="">
+											<div class="methodTypes">
+												<div><input type="radio" name="pago" value="a"
+														class="methodTypes-input" /><label for="nequi">Nequi</label>
+												</div>
+												<div><input type="radio" name="pago" value="i"
+														class="methodTypes-input" /><label
+														for="daviplata">Daviplata</label></div>
+												<div><input type="radio" name="pago" value="e"
+														class="methodTypes-input" /><label
+														for="Efectivo">Efectivo</label>
+												</div>
+												<div><input type="radio" name="pago" value="o"
+														class="methodTypes-input"><label for="PSE">PSE</label>
+												</div>
+												<input type="submit" value="Continuar" class="btn-payment">
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="col">
+									<div class="paymentSummary">
+										<img src="../imagenes/lentes.png">
+										<br><br><br>
+										<div class="subtotal">
+											<table>
+												<tr>
+													<td>
+														<p>Subtotal:</p>
+													</td>
+													<td class="subtotalPrice">
+														<p>$120.000</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p>Costos de envio:</p>
+													</td>
+													<td class="subtotalPrice">
+														<p>$120.000</p>
+													</td>
+												</tr>
+												<tr>
+													<td>
+														<p>Total:</p>
+													</td>
+													<td class="subtotalPrice">
+														<p>$120.000</p>
+													</td>
+												</tr>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- Pestaña de metodo de pago fin -->
+				<!-- Pestaña de confirmación -->
+				<article id="tab3">
+					<div class="container">
+						<div class="confirm">
+							<h1>Confirma tu pedido</h1>
+							<div class="confirm-panels">
+								<div class="row">
+									<div class="col-4">
+										<div class="confirm-product">
+											<p class="confirm-titles"><i
+													class="confirm-icon fa-solid fa-tag"></i>&nbsp;Producto</p>
+											<img src="../imagenes/productos/Recortadas/Marco-COCO-Hombre-3_HD.png">
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="confirm-sending">
+											<p class="confirm-titles"><i
+													class="confirm-icon fa-solid fa-truck"></i>&nbsp;Envío</p>
+											<p>Dirección</p>
+										</div>
+									</div>
+									<div class="col-4">
+										<div class="confirm-payment">
+											<p class="confirm-titles"><i
+													class="confirm-icon fa-solid fa-dollar-sign"></i>&nbsp;Pago</p>
+											<p>Metodo de pago...</p>
+											<p>Total: $$$</p>
+										</div>
+									</div>
+									<div class="col">
+										<form action="#"><input type="submit" value="Confirmar" class="btn-confirm">
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- Pestaña de confirmación fin -->
+			</div>			
+		</div>		
 	</body>
 	<br><br>
-	<footer>
+	<!-- <footer>
 		<div class="row" id="titles">
 			<h2 class="col" id="menu-r">Menú rapido</h2>
 			<h2 class="col" id="ubica">Aqui nos ubicamos:</h2>
@@ -140,6 +374,6 @@
 		<div class="copyright">
 			<h3>@2022 Copyright - Todos los derechos reservados a Kf Optica</h3>
 		</div>
-	</footer>
+	</footer> -->
 
 </html>

@@ -45,7 +45,9 @@ header img{
 	margin-top: 10px;
 }
 
+/* Fin de header empresa */
 
+/* Inicio contenido */
 .login-box{
 	width: 1040px;
 	height:650px;
@@ -218,6 +220,8 @@ header img{
 	display: inline-block;
 	position: relative;
 }
+
+/* Fin contenido */
 
 /* Estilos de validación */
 

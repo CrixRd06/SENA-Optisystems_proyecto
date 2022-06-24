@@ -1,5 +1,5 @@
 *{
-	font-family: 'Arial', 'Helvetica', 'Times New Roman', 'Calibri', sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
 }
 
 body{
@@ -74,7 +74,7 @@ body{
 
 /*Menù lateral*/
 #btn-menu{
-	display: none;
+	display: none;	
 }
 .contenedor-menu{
 	position: fixed;
@@ -90,6 +90,7 @@ body{
 #btn-menu:checked ~ .contenedor-menu{
 	opacity: 1;
 	visibility: visible;
+	margin-right: 20px;
 }
 .cont-menu{
 	width: 100%;

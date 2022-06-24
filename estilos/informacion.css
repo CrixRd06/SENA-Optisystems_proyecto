@@ -1,0 +1,587 @@
+body{
+	width:100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+	min-height: 100%;
+	position: relative;
+}
+
+header{
+	border-bottom: 1px solid grey;
+}
+
+header img{
+	width: 200px;
+	height: 200px;
+	border-radius: 10px;
+	padding-top: 12px; /*Desplazar hacia abajo*/
+	padding-left: 5px;
+}
+header div nav ul{
+ 	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 20px;
+ 	padding:8px;
+	margin-top: 70px;
+	margin-left: 0;
+ }
+
+header nav ul li{
+	display:inline-block; /*Opciones de lista alineados*/
+}
+
+header div nav ul li a{
+	text-decoration: none; /*Para quitar el subrayado*/
+	color: black;
+	padding:8px 12px;
+	display:block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+header nav ul li a:hover{
+	background-color: #39ac60;
+	color: white;
+	font-weight: bold;
+
+}
+/*Fin parte superior de la pagina */
+
+/* Tabs */
+
+.wrap{
+	width:1100px;
+	max-width: 90%;
+	margin: 30px auto;
+}
+
+ul.tabs{
+	background:#009B34;
+	list-style: none;
+	margin-left: 12px;
+	margin-right: 12px;
+	margin-bottom: 0;
+	display: flex;
+	padding: 0;
+	
+}
+
+ul.tabs li{
+	width: 18%;
+}
+
+ul.tabs li a{
+	color: white;
+	text-decoration: none;
+	font-size: 16px;
+	display: block;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.tabs-text{
+	margin-left: 10px;
+	font-weight:600;
+}
+
+.active{
+	background: #006421;
+}
+
+/* formulario informacion inicio */
+.form-register{
+	border: 1px solid grey;
+	margin: auto;
+	width: 100%;
+	height:100%;
+	padding: 0 20px 0 20px;
+	font-size: 15px;
+}
+
+.form-register h1{
+	color: #009B34;
+	text-align: center;
+	font-size: 55px;
+}
+
+.formulario_grupo{
+	padding-left: 10px;
+	padding-top: 10px;
+	display: inline-block;
+}
+
+.formulario-grupo-input{
+	position: relative;
+}
+
+.formulario-input{
+	width:100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: white;
+	color: black;
+	border: black solid 1px;
+	padding: 0 10px 0 10px;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.message-error{
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}
+
+.message-error-on{
+	display: block;
+}
+
+.icono-estado{
+	position: absolute;
+	right: 30px;
+	bottom: 13px;
+	color: rgb(0, 155, 52);
+	z-index: 100;
+	font-size: 18px;
+	opacity: 0;
+}
+
+.inputch{
+	margin-top:7px;
+	margin-right: 10px;
+}
+
+.label-inputs{
+	padding-bottom: 10px;
+	display:block;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.login-box h1{
+	text-align: center;
+	color:white;
+	
+}
+
+.boton{
+	text-decoration: none;
+}
+
+.exito-formulario{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.boton{
+	margin: 20px 440px;
+	width: 150px;
+	height: 45px;
+	background-color: #009B34;
+	border: none;
+	border-radius: 8px;
+	line-height: 45px;
+	color: white;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.boton:hover{
+	background-color:#006d24;
+}
+
+.message-exito{
+	font-size: 14px;
+	display: none;
+}
+
+.message-exito-activo{
+	display: block;
+}
+
+.cajaCondiciones{
+	display: flex;
+	margin-top: 20px;
+	margin-left: 234px;
+	margin-right: 200px;
+}
+
+.label-condiciones{
+	word-wrap:normal; 
+	padding-top: 1px;
+	margin-left: 2px; 
+	cursor: pointer;
+	width: 900px;
+	display: inline-block; 
+	vertical-align: top;
+} 
+
+.error-formulario{
+	margin-top: 15px;
+	margin-bottom: -10px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #AD1B00;
+	border-radius: 15px;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.error-formulario-activo{
+	display: flex;
+
+}
+
+.error-formulario p{
+	font-size: 14px;
+	margin: 0 0 0 15px;
+}
+
+.formulario_grupo-correct .icono-estado{
+	color:rgb(0, 155, 52);
+	opacity: 1; 
+}
+
+.formulario_grupo-incorrect{
+	margin-left: 10px;
+	margin-top: -10px;
+	padding-left: 40px;
+	padding-top: 30px;
+	display: inline-block;
+	position: relative;
+}
+
+/* Fin contenido */
+
+/* Estilos de validación */
+
+.formulario_grupo-incorrect .label-inputs{
+	color: #AD1B00;
+}
+
+.formulario_grupo-incorrect .icono-estado{
+	color: #AD1B00;
+	opacity: 1;
+}
+
+.formulario_grupo-incorrect .formulario-input{
+	width:100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: white;
+	padding: 0 10px 0 10px;
+	text-decoration: none;
+	display:block;
+	font-size: 16px;
+	border: 3px solid #AD1B00;
+}
+/* formulario informacion fin */
+/* formulario pago */
+
+.pay{
+	border: 1px solid grey;
+	margin: auto;
+	width: 100%;
+	height:100%;
+	padding: 0 30px 30px 30px;
+	font-size: 15px;
+}
+
+.pay h1{
+	color: #009B34;
+	text-align: center;
+	font-size: 55px;
+	margin-bottom: 30px;
+}
+
+.paymentSummary {
+	background: #0BA504;
+	height: 450px;
+	background-size: cover;
+	background-position: center;
+}
+
+.paymentSummary img{
+	margin-left: 25px;
+	margin-top: 15px;
+	width:90%;
+}
+
+.subtotal table{
+	table-layout: fixed;
+  	width: 90%;
+	margin:0px 10px 0px 25px;
+	color: white;
+	font-size: 20px;
+}
+
+.subtotalPrice{
+	text-align: right;
+}
+
+.paymentMethods {
+	background-size: cover;
+	background-position: center;
+	height: 450px;
+}
+
+
+.paymentMethods h2{
+	color: #009b34;
+	font-size: 35px;
+	text-align: left;
+}
+
+.methodTypes{
+	margin-left: 30px;
+}
+
+.methodTypes label{
+	text-align: left;
+	margin-left: 10px;
+	font-size: 25px;
+}
+
+.methodTypes-input{
+	width: 1.1em;
+	height: 1.1em;
+}
+
+
+.btn-payment{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	background-color: #009b34;	
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 10px 28px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.btn-payment:hover{
+	background-color: #006421;
+}
+/* tab2 payment end */
+
+/*  tab3 confirm*/
+.confirm-panels{
+	margin-bottom: 50px;
+}
+
+.confirm{
+	border: 1px solid grey;	
+	padding:40px;
+	margin: auto;
+	width: 100%;
+	height:100%;
+	padding: 0 20px 0 20px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.confirm h1{
+	color: #009B34;
+	text-align: center;
+	font-size: 55px;
+	margin-bottom: 40px;
+}
+
+.confirm-product img{
+	width: 250px;
+	height: auto;
+	border: grey 0.5px solid;
+}
+
+.confirm-titles, .confirm-icon{
+	display: flex;
+	align-items: center;
+}
+
+.confirm-titles{
+	font-size:30px;
+	color: black;
+}
+
+.confirm-product p{
+	margin-left: 70px;
+}
+
+.confirm-sending p.confirm-titles{
+	margin-left:90px;
+}
+
+.confirm-payment p.confirm-titles{
+	margin-left: 120px;
+}
+
+.confirm-icon{
+	color: #009b34;
+	font-size: 40px;
+}
+
+.btn-confirm{
+	margin-top: 100px;
+	margin-bottom: 20px;
+	background-color: #009b34;	
+	border: none;
+	border-radius: 8px;
+	color: white;
+	padding: 10px 28px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+.btn-confirm:hover{
+	background-color: #006421;
+}
+
+/* tab3 confirm end */
+
+/*Inicio parte footer*/
+
+footer{
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	right: 30px;
+	width: 100%;
+	background:  #f7f7f7;
+	text-align: center;
+}
+
+#titles, #seccionesFt{
+	margin:0;
+}
+/* Inicio Menu rapido */
+
+#menu-r{
+	width: 150px;
+	text-align: left;
+	color:#009b34;
+	font-size: x-large;
+	margin-top: 60px;
+	margin-left: 40px;
+
+}
+
+footer nav#menurap{
+	text-align: left;
+	width:400px;
+	margin-left: 0px;
+	margin-top: 20px;
+}
+
+footer nav#menurap ul li{
+	list-style: none;
+	padding: 8px 8px;
+	margin-left: 20px;
+	font-size: 18px;
+	width: 300px;
+}
+
+footer nav#menurap ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer nav#menurap ul li a{
+	text-decoration: none; 
+	color: #000000;
+	display:block;
+}
+
+/* fin Menu rapido */
+
+/* Inicio mapa */
+
+#ubica{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-right:70px;
+	margin-top: 60px;
+}
+
+footer>div#mapa{
+	text-align: center;
+}
+
+/* Fin mapa */
+
+/* Inicio redes sociales */
+
+
+#social{
+	text-align: center;
+	width:300px;
+	color:#009b34;
+	font-size: x-large;
+	margin-left:10px;
+	margin-top: 60px;
+}
+
+footer>#redes{
+	text-align: right;
+	width: 250px;
+	margin-left: 10px;
+	color: #009b34;
+	margin-top: -220px;
+}
+
+footer>#redes ul{
+	list-style: none; /*Quitar el estilo*/
+ 	background: none;
+ 	text-align: center;
+ 	font-family: 'Arial', sans-serif;
+ 	font-size: 40px;
+}
+
+footer #redes ul li{
+	display: inline-block;
+	width: 80px;
+	height: 70px;
+	padding: 5px;
+}
+
+footer #redes ul li:hover{
+	background-color: #f2f2f2;
+	font-weight: bold;
+}
+
+footer #redes ul li a{
+	text-decoration: none; 
+	display:block;
+	margin:0;
+	padding:0;
+}
+
+footer #redes ul li a#face{
+	color: #3b5998
+}
+
+footer #redes ul li a#what{
+	color: #25D366
+}
+
+
+/* Fin redes sociales */
+
+footer .copyright>h3{
+	color:#009b34;
+	font-size: large;
+	text-align: center;
+}
+
+/* Fin Footer */
