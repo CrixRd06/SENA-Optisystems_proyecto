@@ -1,45 +1,80 @@
-*{
-	margin:0;
+* {
+	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-    font-family: 'Arial', sans-serif;	
-}
-header{
-	display: grid;
-	grid-template-columns: 200px auto;
-	padding: 15px;
-	gap: 90px;
-	align-items: center;
-}
-body{
-	position: relative;
-	padding: 25px;
-	min-height: 180vh;
+	font-family: 'Arial', sans-serif;
 }
 
-.logo{
-	width: 200px;
-	height: 200px;
+/*Inicio parte superior de la pagina */
+
+body {
+	padding: 25px;
 }
-nav ul{
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+header {
+	display: grid;
+	grid-template-columns: 200px auto;
+	width: 100%;
+	padding: 15px;
+	gap: 35px;
+	align-items: center;
+}
+
+header img {
+	border-radius: 15px;
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	margin-top: 5px;
+}
+
+header h1 {
+	color: white;
+	/*Color del texto*/
+	float: right;
+	/*Texto flotante*/
+	padding-right: 0;
+	padding-top: 0;
+}
+
+header nav ul {
 	display: flex;
 	gap: 20px;
 	justify-content: center;
 	align-items: center;
-}
-nav ul li{
+	margin-right: 35px;
 	list-style: none;
-	font-size: 23px;
+	background: none;
+	font-size: 20px;
 }
-nav ul li a{
+
+header ul li {
+	display: inline-block;
+	/*Opciones de lista alineados*/
+}
+
+header ul li a {
 	text-decoration: none;
+	/*Para quitar el subrayado*/
 	color: black;
 	padding: 8px 12px;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;
 }
-nav ul li a:hover{
-	color:white;
-	background-color: #009b36;
+
+header nav ul li a:hover {
+	background-color: #39ac60;
+	color: white;
+	font-weight: bold;
 }
+/*Fin parte superior de la pagina */
+
 img{
 	border-radius: 15px;
 	width: 200px;
@@ -103,16 +138,11 @@ h2{
 }
 
 
-
-
-
-
-
+/*Inicio parte footer*/
 
 footer{
 	position: absolute;
 	left: 0;
-	bottom: 0;
 	padding: 20px;
 	width: 100%;
 	background:  #f7f7f7;

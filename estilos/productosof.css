@@ -1,61 +1,79 @@
-body{
-	width:100%;
-	font-family: Arial, Helvetica, sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arial', sans-serif;
 }
 
-html{
+/*Inicio parte superior de la pagina */
+
+body {
+	padding: 25px;
+}
+
+html {
 	min-height: 100%;
 	position: relative;
 }
 
-header img{
-	width: 200px;
-	height: 200px;
-	border-radius: 10px;
-	padding-top: 12px; /*Desplazar hacia abajo*/
-	padding-left: 5px;
+header {
+	display: grid;
+	grid-template-columns: 200px auto;
+	width: 100%;
+	padding: 15px;
+	gap: 35px;
+	align-items: center;
 }
 
-header h1{
-	color: white; /*Color del texto*/
-	float: right; /*Texto flotante*/
+header img {
+	border-radius: 15px;
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	margin-top: 5px;
+}
+
+header h1 {
+	color: white;
+	/*Color del texto*/
+	float: right;
+	/*Texto flotante*/
 	padding-right: 0;
 	padding-top: 0;
- }	
-
-
-header nav ul{
- 	list-style: none; /*Quitar el estilo*/
- 	background: none;
- 	text-align: center;
- 	font-family: 'Arial', sans-serif;
- 	font-size: 20px;
- 	padding:8px;
- 	margin-top: -160px;
- 	margin-left: 120px;
- }
-
-header nav ul li{
-	display:inline-block; /*Opciones de lista alineados*/
 }
 
-header nav ul li a{
-	text-decoration: none; /*Para quitar el subrayado*/
+header nav ul {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	margin-right: 35px;
+	list-style: none;
+	background: none;
+	font-size: 20px;
+}
+
+header ul li {
+	display: inline-block;
+	/*Opciones de lista alineados*/
+}
+
+header ul li a {
+	text-decoration: none;
+	/*Para quitar el subrayado*/
 	color: black;
-	padding:10px 15px;
-	display:block;
+	padding: 8px 12px;
+	display: block;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
-header nav ul li a:hover{
+header nav ul li a:hover {
 	background-color: #39ac60;
-	font-size: 15px;
+	color: white;
 	font-weight: bold;
-
 }
-
-header nav ul input{
-	margin-left: 55px;
-}
+/*Fin parte superior de la pagina */
 
 h2{
 	color: #009B34;
@@ -203,10 +221,10 @@ h2{
 
 footer{
 	position: absolute;
-	left: -20px;
+	left: 0px;
 	top: 100%;
 	right: 30px;
-	width: 1263px;
+	width: 100%;
 	background:  #f7f7f7;
 	text-align: center;
 }
